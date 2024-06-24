@@ -1,4 +1,4 @@
-DMR Database Python Tool (public release)
+DMR Database Tool (public release)
 
 This script is designed to download a CSV file from a specified URL, process the data,
 and convert it into various formats suitable for different radio databases. It can also
@@ -31,6 +31,6 @@ Required Python Modules:
 - shutil: For copying files.
 
 Application Information:
-- Name: DMR Database Python Tool
+- Name: DMR Database Tool
 - Version: v0.1
 - Author: PD2EMC aka Einstein with help of ChatGPT

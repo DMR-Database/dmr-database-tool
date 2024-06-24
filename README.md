@@ -1,8 +1,6 @@
 # DMR-Database-Python-Tool
 DMR Database Python Tool
 
-DMR Database Python Tool
-
 This script is designed to download a CSV file from a specified URL, process the data,
 and convert it into various formats suitable for different radio databases. It can also
 clean up the downloaded files and display the current count of entries in the CSV file.

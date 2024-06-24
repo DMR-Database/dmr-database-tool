@@ -1,4 +1,4 @@
-DMR Database Tool (public release)
+DMR Database Tool (public release soon)
 
 This script is designed to download a CSV file from a specified URL, process the data,
 and convert it into various formats suitable for different radio databases. It can also

@@ -29,7 +29,8 @@ Required Python Modules:
 - os: For file operations like checking if files exist.
 - sys: For command-line argument handling and displaying the progress bar.
 - shutil: For copying files.
-
+- time: For running time calculation
+  
 Application Information:
 - Name: DMR Database Tool
 - Version: v0.1

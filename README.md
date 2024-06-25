@@ -62,7 +62,7 @@ The DMR Database Tool provides a command-line interface (CLI) with various optio
 - - Displays a detailed help menu with descriptions of all available commands and their usage.
 - - Usage: ./dmr-database.py -h
 
-- Process Options:
+## Process Options:
 Converts the downloaded user.csv file into various formats suitable for different DMR radio models and systems:
 - -userat: For Anytone Mobile Radio databases.
 - -userhd: For Ailunce HD1 databases.

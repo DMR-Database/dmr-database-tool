@@ -1,4 +1,4 @@
-## DMR Database Tool
+DMR Database Tool
 
 Introduction
 ------------

@@ -18,6 +18,7 @@ Versatile Processing Options: Converts the downloaded CSV file into formats suit
 - -userbin: Generates data files for Tytera MD380/390 radios.
 - -usrbin: Formats data for Pi-Star SSH Helper databases.
 - -pistar: Converts data for Pi-Star systems.
+
 Comprehensive Cleaning Options: Allows for the removal of all downloaded files and associated metadata (count.txt), ensuring a clean workspace when needed (-c option).
 
 Convenient Help Functionality: Provides a clear and concise help menu (-h option) detailing all available commands and their usage.

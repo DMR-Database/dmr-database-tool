@@ -24,7 +24,7 @@ userbin_filename = 'user.bin'
 usrbin_filename = 'usr.bin'
 pistar_filename = 'DMRIds.dat'
 count_filename = 'count.txt'
-md5_filename = 'users.md5'
+md5_filename = 'user.md5'
 
 # Function to display progress bar
 def show_progress_bar(downloaded, total_size, bar_length=50):

@@ -12,12 +12,12 @@ Download Capability: Fetches the latest user data in CSV format from a specified
 
 Versatile Processing Options: Converts the downloaded CSV file into formats suitable for various DMR radio models and systems:
 
--userat: Formats data for Anytone Mobile Radio databases.
--userhd: Prepares data for Ailunce HD1 databases.
--usermd2017: Converts data for Tytera MD2017 databases.
--userbin: Generates data files for Tytera MD380/390 radios.
--usrbin: Formats data for Pi-Star SSH Helper databases.
--pistar: Converts data for Pi-Star systems.
+- -userat: Formats data for Anytone Mobile Radio databases.
+- -userhd: Prepares data for Ailunce HD1 databases.
+- -usermd2017: Converts data for Tytera MD2017 databases.
+- -userbin: Generates data files for Tytera MD380/390 radios.
+- -usrbin: Formats data for Pi-Star SSH Helper databases.
+- -pistar: Converts data for Pi-Star systems.
 Comprehensive Cleaning Options: Allows for the removal of all downloaded files and associated metadata (count.txt), ensuring a clean workspace when needed (-c option).
 
 Convenient Help Functionality: Provides a clear and concise help menu (-h option) detailing all available commands and their usage.
@@ -27,11 +27,9 @@ These features make the DMR Database Tool an indispensable utility for radio ent
 - **Additional Options**:
 In addition to its core functionalities, the DMR Database Tool offers optional features that enhance its utility and flexibility:
 
-Download Functionality: The -d option allows users to download the latest DMR user data in CSV format from a specified URL. This ensures that users can easily update their databases with the most current information available.
-
-Automatic Cleanup: With the -c option, users can automatically clean up all downloaded files (user.csv, userat.csv, etc.) and the metadata file (count.txt). This feature ensures a clutter-free workspace and simplifies maintenance tasks.
-
-Single-Command Operations: The -a option combines cleaning, downloading the latest user data, and processing it into all specified formats in one single command. This streamlined workflow saves time and effort for users needing to update and distribute DMR user databases across multiple platforms.
+- Download Functionality: The -d option allows users to download the latest DMR user data in CSV format from a specified URL. This ensures that users can easily update their databases with the most current information available.
+- Automatic Cleanup: With the -c option, users can automatically clean up all downloaded files (user.csv, userat.csv, etc.) and the metadata file (count.txt). This feature ensures a clutter-free workspace and simplifies maintenance tasks.
+- Single-Command Operations: The -a option combines cleaning, downloading the latest user data, and processing it into all specified formats in one single command. This streamlined workflow saves time and effort for users needing to update and distribute DMR user databases across multiple platforms.
 
 Detailed Help Menu: The -h option provides access to a detailed help menu, guiding users through all available commands, their descriptions, and usage examples. This feature ensures that users can quickly familiarize themselves with the tool's capabilities and leverage its full potential effectively.
 

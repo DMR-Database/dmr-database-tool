@@ -4,10 +4,11 @@ import csv
 import os
 import sys
 import shutil
+import hashlib
 import time
 
 # Application information
-APP_NAME = "DMR Database Tool"
+APP_NAME = "DMR Database Python Tool"
 APP_VERSION = "v0.1"
 APP_MAKER = "PD2EMC aka Einstein with help of ChatGPT"
 
@@ -23,6 +24,7 @@ userbin_filename = 'user.bin'
 usrbin_filename = 'usr.bin'
 pistar_filename = 'DMRIds.dat'
 count_filename = 'count.txt'
+md5_filename = 'users.md5'
 
 # Function to display progress bar
 def show_progress_bar(downloaded, total_size, bar_length=50):
@@ -31,6 +33,14 @@ def show_progress_bar(downloaded, total_size, bar_length=50):
     bar = "#" * block + "-" * (bar_length - block)
     sys.stdout.write(f"\r[{bar}] {progress * 100:.2f}%")
     sys.stdout.flush()
+
+# Function to calculate MD5 hash of a file
+def calculate_md5(file_path):
+    hash_md5 = hashlib.md5()
+    with open(file_path, "rb") as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            hash_md5.update(chunk)
+    return hash_md5.hexdigest()
 
 # Function to download the CSV file and handle count checking
 def download_csv():
@@ -53,28 +63,44 @@ def download_csv():
         print('Failed to download the CSV file completely.')
         exit(1)
 
-    # Step 2: Count the entries in the downloaded CSV file
-    with open(csv_filename, 'r') as file:
-        reader = csv.reader(file)
-        entry_count = sum(1 for row in reader) - 1  # Subtracting 1 to exclude header row
+    # Step 2: Calculate the MD5 hash of the downloaded CSV file
+    new_md5 = calculate_md5(csv_filename)
 
-    # Step 3: Check if count.txt exists and read the old count
-    old_count = None
-    if os.path.exists(count_filename):
-        with open(count_filename, 'r') as file:
-            old_count = int(file.read().strip())
+    # Step 3: Check if users.md5 exists and read the old MD5 hash
+    old_md5 = None
+    if os.path.exists(md5_filename):
+        with open(md5_filename, 'r') as file:
+            old_md5 = file.read().strip()
 
-    # Step 4: Compare counts and decide action
-    if old_count is not None and old_count == entry_count:
-        print('The count has not changed. Exiting.')
+    # Step 4: Compare MD5 hashes and decide action
+    if old_md5 is not None and old_md5 == new_md5:
+        print('The file has not changed.')
+        print(f'Old MD5: {old_md5}')
+        print(f'New MD5: {new_md5}')
     else:
+        with open(md5_filename, 'w') as file:
+            file.write(new_md5)
+
+        # Count the entries in the downloaded CSV file
+        entry_count = count_entries()
         with open(count_filename, 'w') as file:
             file.write(str(entry_count))
+
         print(f'Download completed. The count of entries is {entry_count}.')
+        print(f'New MD5 hash: {new_md5}')
+        if old_md5:
+            print(f'Old MD5 hash: {old_md5}')
 
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Elapsed time: {elapsed_time:.2f} seconds")
+
+# Function to count entries in user.csv
+def count_entries():
+    with open(csv_filename, 'r') as file:
+        reader = csv.reader(file)
+        entry_count = sum(1 for row in reader) - 1  # Subtracting 1 to exclude header row
+    return entry_count
 
 # Function to process user.csv to userat.csv for Anytone Mobile Radio database
 def process_to_userat():
@@ -140,7 +166,7 @@ def process_to_pistar():
 # Function to clean up downloaded files
 def clean_downloads():
     files_to_delete = [csv_filename, userat_filename, userhd_filename, usermd2017_filename,
-                       userbin_filename, usrbin_filename, pistar_filename, count_filename]
+                       userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename]
 
     for filename in files_to_delete:
         if os.path.exists(filename):

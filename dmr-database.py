@@ -8,7 +8,7 @@ import hashlib
 import time
 
 # Application information
-APP_NAME = "DMR Database Python Tool"
+APP_NAME = "DMR Database Tool"
 APP_VERSION = "v0.1"
 APP_MAKER = "PD2EMC aka Einstein with help of ChatGPT"
 

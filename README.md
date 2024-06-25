@@ -78,6 +78,6 @@ Usage: ./dmr-database.py -userat, ./dmr-database.py -userhd, etc.
 Ensure Python 3 and the required modules (requests, csv, os, sys, shutil, hashlib) are installed and accessible.
 The tool generates output files (userat.csv, userhd.csv, etc.) based on the processed data from user.csv.
 This usage guide provides a comprehensive overview of how to utilize the DMR Database Tool's functionalities effectively, catering to radio enthusiasts, system administrators, and developers working with DMR technology.
-````
-Author
-Author: PD2EMC aka Einstein with help of ChatGPT
+
+## Author
+PD2EMC aka Einstein with help of ChatGPT

@@ -41,24 +41,16 @@ Replace [option] with one of the available options (-d, -c, -a, -h, -userat, -us
 
 Examples
 Download the CSV file:
-
-bash
-Copy code
 python dmr-database.py -d
+
 Process to Anytone Mobile Radio database:
-
-bash
-Copy code
 python dmr-database.py -userat
+
 Clean all and process to all destinations:
-
-bash
-Copy code
 python dmr-database.py -a
-Display help:
 
-bash
-Copy code
+Display help:
 python dmr-database.py -h
+````
 Author
 Author: PD2EMC aka Einstein with help of ChatGPT

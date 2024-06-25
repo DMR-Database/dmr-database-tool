@@ -24,8 +24,7 @@ Requirements:
 
 Setup:
 1. Install Python 3: Download and install Python 3 from python.org/downloads/.
-2. Install Required Modules: Open a terminal or command prompt and install required modules:
-
+2. Install Required Modules: Open a terminal or command prompt and install required modules: requests, csv, os, sys, shutil and hashlib
 3. Download the Tool: Download the dmr-database.py script.
 
 Usage

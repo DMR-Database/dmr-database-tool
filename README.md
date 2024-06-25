@@ -46,7 +46,7 @@ The DMR Database Tool leverages several Python modules to provide its functional
 
 The DMR Database Tool provides a command-line interface (CLI) with various options to manage and process Digital Mobile Radio (DMR) user databases. Below are the available options and their usage:
 
-Clean Option (-c):
+- Clean Option (-c):
 Cleans up all downloaded files (user.csv, userat.csv, etc.) and the metadata file (count.txt).
 Usage: ./dmr-database.py -c
 
@@ -64,12 +64,12 @@ Usage: ./dmr-database.py -h
 
 Process Options:
 Converts the downloaded user.csv file into various formats suitable for different DMR radio models and systems:
--userat: For Anytone Mobile Radio databases.
--userhd: For Ailunce HD1 databases.
--usermd2017: For Tytera MD2017 databases.
--userbin: For Tytera MD380/390 radios.
--usrbin: For Pi-Star SSH Helper databases.
--pistar: For Pi-Star systems.
+- -userat: For Anytone Mobile Radio databases.
+- -userhd: For Ailunce HD1 databases.
+- -usermd2017: For Tytera MD2017 databases.
+- -userbin: For Tytera MD380/390 radios.
+- -usrbin: For Pi-Star SSH Helper databases.
+- -pistar: For Pi-Star systems.
 
 Usage: ./dmr-database.py -userat, ./dmr-database.py -userhd, etc.
 

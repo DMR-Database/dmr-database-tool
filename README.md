@@ -24,7 +24,7 @@ Convenient Help Functionality: Provides a clear and concise help menu (-h option
 
 These features make the DMR Database Tool an indispensable utility for radio enthusiasts, system administrators, and developers working with DMR technology, offering robust functionality and ease of use in managing and utilizing DMR user data.
 
-- **Additional Options**:
+## **Additional Options**:
 In addition to its core functionalities, the DMR Database Tool offers optional features that enhance its utility and flexibility:
 
 - Download Functionality: The -d option allows users to download the latest DMR user data in CSV format from a specified URL. This ensures that users can easily update their databases with the most current information available.

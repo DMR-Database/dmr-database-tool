@@ -48,19 +48,19 @@ The DMR Database Tool provides a command-line interface (CLI) with various optio
 
 - Clean Option (-c):
 - - Cleans up all downloaded files (user.csv, userat.csv, etc.) and the metadata file (count.txt).
-- - - Usage: ./dmr-database.py -c
+- - Usage: ./dmr-database.py -c
 
 - Download Option (-d):
-Downloads the latest user data in CSV format from a specified URL.
-Usage: ./dmr-database.py -d
+- - Downloads the latest user data in CSV format from a specified URL.
+- - Usage: ./dmr-database.py -d
 
 - Make all Option (-a):
-Combines cleaning, downloading the latest user data, and processing it into all formats in one command.
-Usage: ./dmr-database.py -a
+- - Combines cleaning, downloading the latest user data, and processing it into all formats in one command.
+- - Usage: ./dmr-database.py -a
 
 - Help Option (-h):
-Displays a detailed help menu with descriptions of all available commands and their usage.
-Usage: ./dmr-database.py -h
+- - Displays a detailed help menu with descriptions of all available commands and their usage.
+- - Usage: ./dmr-database.py -h
 
 - Process Options:
 Converts the downloaded user.csv file into various formats suitable for different DMR radio models and systems:

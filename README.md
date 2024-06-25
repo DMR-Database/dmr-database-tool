@@ -7,7 +7,7 @@ The DMR Database Tool is a command-line utility designed to manage and process D
 
 The DMR Database Tool supports converting data into formats suitable for the following DMR radio models or systems:
 
-- Anytone Mobile Radio
+- Anytone Radio
 - Ailunce HD1
 - Tytera MD2017
 - Tytera MD380/MD390

@@ -26,7 +26,7 @@ We believe this release will foster innovation and collaboration, benefiting the
 
 Introduction
 ------------
-The DMR Database Tool is a command-line utility designed to manage and process Digital Mobile Radio (DMR) user databases. It facilitates downloading the latest user data, cleaning up files and converting data into formats suitable for various DMR radio models and systems.
+The DMR Database Tool is a command-line utility designed to manage and process Digital Mobile Radio (DMR) user databases. It facilitates downloading the latest user data, cleaning it up and converting the data into formats suitable for various DMR radio models and systems.
 
 
 The DMR Database Tool supports converting data into formats suitable for the following DMR radio models or systems:

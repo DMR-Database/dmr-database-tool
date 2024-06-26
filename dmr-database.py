@@ -108,6 +108,7 @@ def count_entries():
 
 # Function to process user.csv to userat.csv for Anytone Mobile Radio database
 def process_to_userat():
+    print(f"=============================")
     print(f"Starting process {csv_filename} to {userat_filename}...")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
@@ -140,133 +141,70 @@ def process_to_userat():
         print(f"Failed to process {csv_filename} to {userat_filename}.")
         exit(1)
 
+# todo
 # Function to process user.csv to userhd.csv for Ailunce HD1 database
 def process_to_userhd():
-    print(f"Starting process {csv_filename} to {userhd_filename}...")
+    print(f"=============================")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
 
     if os.path.exists(csv_filename):
-        with open(csv_filename, 'r') as infile, open(userhd_filename, 'w', newline='') as outfile:
-            reader = csv.DictReader(infile)
-            fieldnames = ['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks']
-            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
-            writer.writeheader()
-
-            for row in reader:
-                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
-                writer.writerow({
-                    'Radio ID': row['RADIO_ID'],
-                    'Callsign': row['CALLSIGN'],
-                    'Name': name,
-                    'City': row['CITY'],
-                    'State': row['STATE'],
-                    'Country': row['COUNTRY'],
-                    'Remarks': ''
-                })
-        print(f"Processed {csv_filename} to {userhd_filename}")
-
+        shutil.copyfile(csv_filename, userhd_filename)
+        print(f"Copied {csv_filename} to {userhd_filename}")
     else:
-        print(f"Failed to process {csv_filename} to {userhd_filename}.")
+        print(f"Failed to copy {csv_filename} to {userhd_filename}.")
         exit(1)
 
+# todo
 # Function to process user.csv to usermd2017.csv for Tytera MD2017 database
 def process_to_usermd2017():
-    print(f"Starting process {csv_filename} to {usermd2017_filename}...")
+    print(f"=============================")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
 
     if os.path.exists(csv_filename):
-        with open(csv_filename, 'r') as infile, open(usermd2017_filename, 'w', newline='') as outfile:
-            reader = csv.DictReader(infile)
-            fieldnames = ['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks']
-            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
-            writer.writeheader()
-
-            for row in reader:
-                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
-                writer.writerow({
-                    'Radio ID': row['RADIO_ID'],
-                    'Callsign': row['CALLSIGN'],
-                    'Name': name,
-                    'City': row['CITY'],
-                    'State': row['STATE'],
-                    'Country': row['COUNTRY'],
-                    'Remarks': ''
-                })
-        print(f"Processed {csv_filename} to {usermd2017_filename}")
-
+        shutil.copyfile(csv_filename, usermd2017_filename)
+        print(f"Copied {csv_filename} to {usermd2017_filename}")
     else:
-        print(f"Failed to process {csv_filename} to {usermd2017_filename}.")
+        print(f"Failed to copy {csv_filename} to {usermd2017_filename}.")
         exit(1)
 
+# todo
 # Function to process user.csv to user.bin for Tytera MD380/390 database
 def process_to_userbin():
-    print(f"Starting process {csv_filename} to {userbin_filename}...")
+    print(f"=============================")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
 
     if os.path.exists(csv_filename):
-        with open(csv_filename, 'r') as infile, open(userbin_filename, 'w', newline='') as outfile:
-            reader = csv.DictReader(infile)
-            fieldnames = ['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks']
-            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
-            writer.writeheader()
-
-            for row in reader:
-                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
-                writer.writerow({
-                    'Radio ID': row['RADIO_ID'],
-                    'Callsign': row['CALLSIGN'],
-                    'Name': name,
-                    'City': row['CITY'],
-                    'State': row['STATE'],
-                    'Country': row['COUNTRY'],
-                    'Remarks': ''
-                })
-        print(f"Processed {csv_filename} to {userbin_filename}")
-
+        shutil.copyfile(csv_filename, userbin_filename)
+        print(f"Copied {csv_filename} to {userbin_filename}")
     else:
-        print(f"Failed to process {csv_filename} to {userbin_filename}.")
+        print(f"Failed to copy {csv_filename} to {userbin_filename}.")
         exit(1)
 
+# todo
 # Function to process user.csv to usr.bin for Motorola database
 def process_to_usrbin():
-    print(f"Starting process {csv_filename} to {usrbin_filename}...")
+    print(f"=============================")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
 
     if os.path.exists(csv_filename):
-        with open(csv_filename, 'r') as infile, open(usrbin_filename, 'w', newline='') as outfile:
-            reader = csv.DictReader(infile)
-            fieldnames = ['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks']
-            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
-            writer.writeheader()
-
-            for row in reader:
-                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
-                writer.writerow({
-                    'Radio ID': row['RADIO_ID'],
-                    'Callsign': row['CALLSIGN'],
-                    'Name': name,
-                    'City': row['CITY'],
-                    'State': row['STATE'],
-                    'Country': row['COUNTRY'],
-                    'Remarks': ''
-                })
-        print(f"Processed {csv_filename} to {usrbin_filename}")
-
+        shutil.copyfile(csv_filename, usrbin_filename)
+        print(f"Copied {csv_filename} to {usrbin_filename}")
     else:
-        print(f"Failed to process {csv_filename} to {usrbin_filename}.")
+        print(f"Failed to copy {csv_filename} to {usrbin_filename}.")
         exit(1)
 
 
 # Function to process user.csv to DMRIds.dat for Pi-Star database
 def process_to_pistar():
+    print(f"=============================")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()

@@ -48,7 +48,7 @@ Core Features:
 - Clean Up: Remove downloaded files and metadata for a clutter-free workspace.
 
 Optional Features:
-- Single-Command Operation: Combine download, cleaning, and processing in one command (-a option).
+- Single-Command Operation: Combine cleaning, download and processing in one command (-a option).
 - Detailed Help Menu: Access comprehensive command descriptions and usage (-h option).
 - MD5 Checksum Verification: Ensure data integrity by comparing MD5 hashes before processing.
 

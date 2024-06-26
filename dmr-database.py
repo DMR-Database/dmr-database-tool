@@ -84,7 +84,8 @@ def download_csv():
         with open(count_filename, 'w') as file:
             file.write(str(entry_count))
 
-        print(f'Download completed. The count of entries is {entry_count}.')
+        print(f'Download completed.')
+        print(f'The count of entries is {entry_count}.')
         print(f'New MD5 hash: {new_md5}')
         if old_md5:
             print(f'Old MD5 hash: {old_md5}')

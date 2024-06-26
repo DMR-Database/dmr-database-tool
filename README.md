@@ -2,11 +2,12 @@ DMR Database Tool
 
 About the DMR Database Tool
 ------------
-The DMR Database Tool is a versatile script designed to manage and update DMR user data for various radio models. Originally developed as a shell script (.sh), it has been transitioned (*work in progress*) to Python (.py) to leverage Python's robust data processing capabilities, readability, and cross-platform compatibility.
+The DMR Database Tool is a versatile script designed to manage and update DMR user data for various radio models. Originally developed as a shell script (.sh), it has been transitioned (*work in progress*) to Python (.py) to leverage Python's robust data processing capabilities, readability and cross-platform compatibility.
 
 Why the Change?
 ------------
-- Enhanced Functionality: Python provides more powerful libraries and tools for data processing and automation, allowing us to expand the script's features.
+- Enhanced Functionality:
+  Python provides more powerful libraries and tools for data processing and automation, allowing us to expand the script's features.
 - Improved Readability: Python's clear syntax makes the script easier to read, maintain, and extend, encouraging community contributions.
 - Cross-Platform Compatibility: Python ensures the script can run on different operating systems without modification.
 

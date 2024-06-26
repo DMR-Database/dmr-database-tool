@@ -31,7 +31,8 @@ def header():
     print(f"=== {APP_NAME} ===")
     print(f"Version: {APP_VERSION}")
     print(f"Made by: {APP_MAKER}")
-    print(f"Helped by: {APP_MAKERS}\n")
+    print(f"Helped by: {APP_MAKERS}")
+    print(f"==================")
     
 
 # Function to display progress bar

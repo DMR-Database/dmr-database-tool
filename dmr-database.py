@@ -118,7 +118,7 @@ def count_entries():
 
 # Function to process user.csv to userat.csv for Anytone Mobile Radio database
 def process_to_userat():
-    print(f"=============================")
+    print(f"{line}")
     print(f"Starting process {csv_filename} to {userat_filename}...")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
@@ -154,7 +154,7 @@ def process_to_userat():
 # todo
 # Function to process user.csv to userhd.csv for Ailunce HD1 database
 def process_to_userhd():
-    print(f"=============================")
+    print(f"{line}")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -169,7 +169,7 @@ def process_to_userhd():
 # todo
 # Function to process user.csv to usermd2017.csv for Tytera MD2017 database
 def process_to_usermd2017():
-    print(f"=============================")
+    print(f"{line}")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -184,7 +184,7 @@ def process_to_usermd2017():
 # todo
 # Function to process user.csv to user.bin for Tytera MD380/390 database
 def process_to_userbin():
-    print(f"=============================")
+    print(f"{line}")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -199,7 +199,7 @@ def process_to_userbin():
 # todo
 # Function to process user.csv to usr.bin for Motorola database
 def process_to_usrbin():
-    print(f"=============================")
+    print(f"{line}")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -214,7 +214,7 @@ def process_to_usrbin():
 
 # Function to process user.csv to DMRIds.dat for Pi-Star database
 def process_to_pistar():
-    print(f"=============================")
+    print(f"{line}")
     print(f"Starting process {csv_filename} to {pistar_filename}...")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
@@ -234,7 +234,7 @@ def process_to_pistar():
 
 # Function to clean up downloaded and generated files
 def clean_downloads():
-    print(f"=============================")
+    print(f"{line}")
     files_to_remove = [csv_filename, userat_filename, userhd_filename, usermd2017_filename, userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename]
     for filename in files_to_remove:
         if os.path.exists(filename):
@@ -245,7 +245,7 @@ def clean_downloads():
 
 # Function to display help message
 def display_help():
-    print(f"=============================")
+    print(f"{line}")
     print("Usage: dmr_tool.py [option]")
     print("Options:")
     print("  -d            Download the CSV file")
@@ -294,7 +294,7 @@ if __name__ == "__main__":
         process_to_userbin()
         process_to_usrbin()
         process_to_pistar()
-        print(f"=============================")
+        print(f"{line}")
         print("All operations completed.")
     else:
         print(f"Invalid option '{option}'. Use '-h' for help.")
@@ -302,5 +302,5 @@ if __name__ == "__main__":
 
     end_time = time.time()
     elapsed_time = end_time - start_time
-    print(f"=============================")
+    print(f"{line}")
     print(f"Elapsed time: {elapsed_time:.2f} seconds")

@@ -267,7 +267,6 @@ def process_to_usrbin():
 
 # Function to process user.csv to DMRIds.dat for Pi-Star database
 def process_to_pistar():
-    start_time = time.time()
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()

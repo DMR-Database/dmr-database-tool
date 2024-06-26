@@ -32,7 +32,7 @@ def header():
     print(f"Version: {APP_VERSION}")
     print(f"Made by: {APP_MAKER}")
     print(f"Helped by: {APP_MAKERS}")
-    print(f"============================")
+    print(f"=============================")
     
 
 # Function to display progress bar

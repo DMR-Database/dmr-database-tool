@@ -6,9 +6,9 @@ The DMR Database Tool is a versatile script designed to manage and update DMR us
 
 Why the Change?
 ------------
-Enhanced Functionality: Python provides more powerful libraries and tools for data processing and automation, allowing us to expand the script's features.
-Improved Readability: Python's clear syntax makes the script easier to read, maintain, and extend, encouraging community contributions.
-Cross-Platform Compatibility: Python ensures the script can run on different operating systems without modification.
+- Enhanced Functionality: Python provides more powerful libraries and tools for data processing and automation, allowing us to expand the script's features.
+- Improved Readability: Python's clear syntax makes the script easier to read, maintain, and extend, encouraging community contributions.
+- Cross-Platform Compatibility: Python ensures the script can run on different operating systems without modification.
 
 Why Release It Now?
 ------------

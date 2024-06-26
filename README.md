@@ -32,10 +32,10 @@ The DMR Database Tool is a command-line utility designed to manage and process D
 The DMR Database Tool supports converting data into formats suitable for the following DMR radio models or systems:
 
 - Anytone Radio **supported*
-- Ailunce HD1 **not yet**
-- Tytera MD2017 **not yet**
-- Tytera MD380/MD390 **not yet**
-- Pi-Star SSH Helper **not yet**
+- Ailunce HD1 **wip** 1% done
+- Tytera MD2017 **wip** 1% done
+- Tytera MD380/MD390 **wip** 1% done
+- Pi-Star SSH Helper **wip** 1% done
 - Pi-Star **supported*
 
 These are the specific formats into which the tool can process the downloaded DMR user data (user.csv). Each option (-userat, -userhd, -usermd2017, -userbin, -usrbin, -pistar) corresponds to converting the data into a format compatible with the respective radio model or system listed above.

@@ -10,6 +10,7 @@ import time
 APP_NAME = "DMR Database Tool"
 APP_VERSION = "v0.1"
 APP_MAKER = "PD2EMC aka Einstein with help of ChatGPT"
+APP_MAKERS = "ChatGPT"
 
 # URL of the CSV file
 url = 'https://radioid.net/static/user.csv'
@@ -29,7 +30,9 @@ md5_filename = 'user.md5'
 def header():
     print(f"=== {APP_NAME} ===")
     print(f"Version: {APP_VERSION}")
-    print(f"Made by: {APP_MAKER}\n")
+    print(f"Made by: {APP_MAKER}")
+    print(f"Helped by: {APP_MAKERS}\n")
+    
 
 # Function to display progress bar
 def show_progress_bar(downloaded, total_size, bar_length=50):
@@ -104,6 +107,7 @@ def count_entries():
 
 # Function to process user.csv to userat.csv for Anytone Mobile Radio database
 def process_to_userat():
+    print(f"Starting process {csv_filename} to {userat_filename}...")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -137,6 +141,7 @@ def process_to_userat():
 
 # Function to process user.csv to userhd.csv for Ailunce HD1 database
 def process_to_userhd():
+    print(f"Starting process {csv_filename} to {userhd_filename}...")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -144,20 +149,20 @@ def process_to_userhd():
     if os.path.exists(csv_filename):
         with open(csv_filename, 'r') as infile, open(userhd_filename, 'w', newline='') as outfile:
             reader = csv.DictReader(infile)
-            fieldnames = ['No.', 'Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country']
+            fieldnames = ['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks']
             writer = csv.DictWriter(outfile, fieldnames=fieldnames)
             writer.writeheader()
 
-            for i, row in enumerate(reader, start=1):
+            for row in reader:
                 name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
                 writer.writerow({
-                    'No.': i,
                     'Radio ID': row['RADIO_ID'],
                     'Callsign': row['CALLSIGN'],
                     'Name': name,
                     'City': row['CITY'],
                     'State': row['STATE'],
-                    'Country': row['COUNTRY']
+                    'Country': row['COUNTRY'],
+                    'Remarks': ''
                 })
         print(f"Processed {csv_filename} to {userhd_filename}")
 
@@ -167,6 +172,7 @@ def process_to_userhd():
 
 # Function to process user.csv to usermd2017.csv for Tytera MD2017 database
 def process_to_usermd2017():
+    print(f"Starting process {csv_filename} to {usermd2017_filename}...")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -174,20 +180,20 @@ def process_to_usermd2017():
     if os.path.exists(csv_filename):
         with open(csv_filename, 'r') as infile, open(usermd2017_filename, 'w', newline='') as outfile:
             reader = csv.DictReader(infile)
-            fieldnames = ['No.', 'Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country']
+            fieldnames = ['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks']
             writer = csv.DictWriter(outfile, fieldnames=fieldnames)
             writer.writeheader()
 
-            for i, row in enumerate(reader, start=1):
+            for row in reader:
                 name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
                 writer.writerow({
-                    'No.': i,
                     'Radio ID': row['RADIO_ID'],
                     'Callsign': row['CALLSIGN'],
                     'Name': name,
                     'City': row['CITY'],
                     'State': row['STATE'],
-                    'Country': row['COUNTRY']
+                    'Country': row['COUNTRY'],
+                    'Remarks': ''
                 })
         print(f"Processed {csv_filename} to {usermd2017_filename}")
 
@@ -197,44 +203,70 @@ def process_to_usermd2017():
 
 # Function to process user.csv to user.bin for Tytera MD380/390 database
 def process_to_userbin():
+    print(f"Starting process {csv_filename} to {userbin_filename}...")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
 
     if os.path.exists(csv_filename):
-        with open(csv_filename, 'r') as infile, open(userbin_filename, 'wb') as outfile:
+        with open(csv_filename, 'r') as infile, open(userbin_filename, 'w', newline='') as outfile:
             reader = csv.DictReader(infile)
+            fieldnames = ['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks']
+            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+            writer.writeheader()
+
             for row in reader:
                 name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
-                data = f"{row['RADIO_ID']}\t{row['CALLSIGN']}\t{name}\t{row['CITY']}\t{row['STATE']}\t{row['COUNTRY']}\n"
-                outfile.write(data.encode('utf-8'))
+                writer.writerow({
+                    'Radio ID': row['RADIO_ID'],
+                    'Callsign': row['CALLSIGN'],
+                    'Name': name,
+                    'City': row['CITY'],
+                    'State': row['STATE'],
+                    'Country': row['COUNTRY'],
+                    'Remarks': ''
+                })
         print(f"Processed {csv_filename} to {userbin_filename}")
 
     else:
         print(f"Failed to process {csv_filename} to {userbin_filename}.")
         exit(1)
 
-# Function to process user.csv to usr.bin for Pi-Star SSH Helper database
+# Function to process user.csv to usr.bin for Motorola database
 def process_to_usrbin():
+    print(f"Starting process {csv_filename} to {usrbin_filename}...")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
 
     if os.path.exists(csv_filename):
-        with open(csv_filename, 'r') as infile, open(usrbin_filename, 'wb') as outfile:
+        with open(csv_filename, 'r') as infile, open(usrbin_filename, 'w', newline='') as outfile:
             reader = csv.DictReader(infile)
+            fieldnames = ['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks']
+            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+            writer.writeheader()
+
             for row in reader:
                 name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
-                data = f"{row['RADIO_ID']}\t{row['CALLSIGN']}\t{name}\t{row['CITY']}\t{row['STATE']}\t{row['COUNTRY']}\n"
-                outfile.write(data.encode('utf-8'))
+                writer.writerow({
+                    'Radio ID': row['RADIO_ID'],
+                    'Callsign': row['CALLSIGN'],
+                    'Name': name,
+                    'City': row['CITY'],
+                    'State': row['STATE'],
+                    'Country': row['COUNTRY'],
+                    'Remarks': ''
+                })
         print(f"Processed {csv_filename} to {usrbin_filename}")
 
     else:
         print(f"Failed to process {csv_filename} to {usrbin_filename}.")
         exit(1)
 
+
 # Function to process user.csv to DMRIds.dat for Pi-Star database
 def process_to_pistar():
+    start_time = time.time()
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -251,32 +283,29 @@ def process_to_pistar():
         print(f"Failed to process {csv_filename} to {pistar_filename}.")
         exit(1)
 
-# Function to clean up downloaded files
+# Function to clean up downloaded and generated files
 def clean_downloads():
-    files_to_delete = [csv_filename, userat_filename, userhd_filename, usermd2017_filename,
-                       userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename]
-
-    for filename in files_to_delete:
+    files_to_remove = [csv_filename, userat_filename, userhd_filename, usermd2017_filename, userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename]
+    for filename in files_to_remove:
         if os.path.exists(filename):
             os.remove(filename)
-            print(f"Deleted {filename}")
+            print(f"Removed {filename}")
         else:
-            print(f"{filename} not found.")
+            print(f"{filename} not found")
 
-# Function to display help information
+# Function to display help message
 def display_help():
+    print("Usage: dmr_tool.py [option]")
     print("Options:")
-    print("-a : Clean all, then download, and process to all destinations.")
-    print("-d : Download the CSV file.")
-    print("-c : Clean all downloaded files and count.txt.")
-    print("-h : Display this help message.\n")
-    print("Processing Options:")
-    print("-userat : Process user.csv to userat.csv for Anytone Mobile Radio database.")
-    print("-userhd : Process user.csv to userhd.csv for Ailunce HD1 database.")
-    print("-usermd2017 : Process user.csv to usermd2017.csv for Tytera MD2017 database.")
-    print("-userbin : Process user.csv to user.bin for Tytera MD380/390 database.")
-    print("-usrbin : Process user.csv to usr.bin for Pi-Star SSH Helper database.")
-    print("-pistar : Process user.csv to DMRIds.dat for Pi-Star database.")
+    print("  -d            Download the CSV file")
+    print("  -userat       Process CSV to Anytone Mobile Radio database (userat.csv)")
+    print("  -userhd       Process CSV to Ailunce HD1 database (userhd.csv)")
+    print("  -usermd2017   Process CSV to Tytera MD2017 database (usermd2017.csv)")
+    print("  -userbin      Process CSV to Tytera MD380/390 database (user.bin)")
+    print("  -usrbin       Process CSV to Motorola database (usr.bin)")
+    print("  -pistar       Process CSV to Pi-Star database (DMRIds.dat)")
+    print("  -c            Clean all downloaded and generated files")
+    print("  -a            Perform all operations (download, process to all formats, and clean)")
 
 # Main function to handle user input
 if __name__ == "__main__":

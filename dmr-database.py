@@ -98,7 +98,8 @@ def download_csv():
         with open(md5_filename, 'w') as file:
             file.write(new_md5)
         entry_count = count_entries()
-        print(f'Download completed. The count of entries is {entry_count}.')
+        print(f"Download completed.")
+        print(f'The count of entries is {entry_count}.')
         print(f'New MD5 hash: {new_md5}')
         if old_md5:
             print(f'Old MD5 hash: {old_md5}')
@@ -127,32 +128,80 @@ def process_to_userat():
         download_csv()
 
     if os.path.exists(csv_filename):
-        try:
-            with open(csv_filename, 'r') as infile, open(userat_filename, 'w', newline='') as outfile:
-                reader = csv.DictReader(infile)
-                fieldnames = ['No.', 'Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks', 'Call Type', 'Call Alert']
-                writer = csv.DictWriter(outfile, fieldnames=fieldnames)
-                writer.writeheader()
+        # Step 1: Count total rows in user.csv
+        total_rows = count_entries()
+        current_row = 0
 
-                for i, row in enumerate(reader, start=1):
-                    name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
-                    writer.writerow({
-                        'No.': i,
-                        'Radio ID': row['RADIO_ID'],
-                        'Callsign': row['CALLSIGN'],
-                        'Name': name,
-                        'City': row['CITY'],
-                        'State': row['STATE'],
-                        'Country': row['COUNTRY'],
-                        'Remarks': '',
-                        'Call Type': 'Private Call',
-                        'Call Alert': 'None'
-                    })
-            print(f"Processed {csv_filename} to {userat_filename}")
-        except Exception as e:
-            print(f"Error processing to {userat_filename}: {e}")
+        with open(csv_filename, 'r') as infile, open(userat_filename, 'w', newline='') as outfile:
+            reader = csv.DictReader(infile)
+            fieldnames = ['No.', 'Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks', 'Call Type', 'Call Alert']
+            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+            writer.writeheader()
+
+            for i, row in enumerate(reader, start=1):
+                current_row += 1
+                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
+                writer.writerow({
+                    'No.': i,
+                    'Radio ID': row['RADIO_ID'],
+                    'Callsign': row['CALLSIGN'],
+                    'Name': name,
+                    'City': row['CITY'],
+                    'State': row['STATE'],
+                    'Country': row['COUNTRY'],
+                    'Remarks': '',
+                    'Call Type': 'Private Call',
+                    'Call Alert': 'None'
+                })
+
+                # Step 2: Update progress bar
+                progress = current_row / total_rows
+                bar_length = 50
+                block = int(bar_length * progress)
+                bar = "#" * block + "-" * (bar_length - block)
+                sys.stdout.write(f"\r[{bar}] {progress * 100:.2f}%")
+                sys.stdout.flush()
+
+        print()  # Move to the next line after the progress bar completes
+        print(f"Processed {csv_filename} to {userat_filename}")
+
     else:
         print(f"Failed to process {csv_filename} to {userat_filename}.")
+        exit(1)
+
+# Function to process user.csv to DMRIds.dat for Pi-Star database
+def process_to_pistar():
+    print(f"{line}")
+    print(f"Starting process {csv_filename} to {pistar_filename}...")
+    if not os.path.exists(csv_filename):
+        print(f"{csv_filename} not found. Downloading it first.")
+        download_csv()
+
+    if os.path.exists(csv_filename):
+        # Step 1: Count total rows in user.csv
+        total_rows = count_entries()
+        current_row = 0
+
+        with open(csv_filename, 'r') as infile, open(pistar_filename, 'w', newline='') as outfile:
+            reader = csv.DictReader(infile)
+            for row in reader:
+                current_row += 1
+                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
+                outfile.write(f"{row['RADIO_ID']}\t{row['CALLSIGN']}\t{name}\n")
+
+                # Step 2: Update progress bar
+                progress = current_row / total_rows
+                bar_length = 50
+                block = int(bar_length * progress)
+                bar = "#" * block + "-" * (bar_length - block)
+                sys.stdout.write(f"\r[{bar}] {progress * 100:.2f}%")
+                sys.stdout.flush()
+
+        print()  # Move to the next line after the progress bar completes
+        print(f"Processed {csv_filename} to {pistar_filename}")
+
+    else:
+        print(f"Failed to process {csv_filename} to {pistar_filename}.")
         exit(1)
 
 # Function to process user.csv to userhd.csv for Ailunce HD1 database
@@ -223,31 +272,11 @@ def process_to_usrbin():
         print(f"Failed to copy {csv_filename} to {usrbin_filename}.")
         exit(1)
 
-# Function to process user.csv to DMRIds.dat for Pi-Star database
-def process_to_pistar():
-    print(f"{line}")
-    print(f"Starting process {csv_filename} to {pistar_filename}...")
-    if not os.path.exists(csv_filename):
-        print(f"{csv_filename} not found. Downloading it first.")
-        download_csv()
-
-    if os.path.exists(csv_filename):
-        try:
-            with open(csv_filename, 'r') as infile, open(pistar_filename, 'w', newline='') as outfile:
-                reader = csv.DictReader(infile)
-                for row in reader:
-                    name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
-                    outfile.write(f"{row['RADIO_ID']}\t{row['CALLSIGN']}\t{name}\n")
-            print(f"Processed {csv_filename} to {pistar_filename}")
-        except Exception as e:
-            print(f"Error processing to {pistar_filename}: {e}")
-    else:
-        print(f"Failed to process {csv_filename} to {pistar_filename}.")
-        exit(1)
 
 # Function to clean up downloaded and generated files
 def clean_downloads():
     print(f"{line}")
+    print(f"Cleanup all downloaded an converted files.")
     files_to_remove = [csv_filename, userat_filename, userhd_filename, usermd2017_filename, userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename]
     for filename in files_to_remove:
         if os.path.exists(filename):
@@ -256,8 +285,8 @@ def clean_downloads():
                 print(f"Removed {filename}")
             except Exception as e:
                 print(f"Error removing {filename}: {e}")
-        else:
-            print(f"{filename} not found")
+#        else:
+#            print(f"{filename} not found")
 
 # Function to display help message
 def display_help():

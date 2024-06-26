@@ -9,7 +9,7 @@ import time
 # Application information
 APP_NAME = "DMR Database Tool"
 APP_VERSION = "v0.1"
-APP_MAKER = "PD2EMC aka Einstein with help of my friend ChatGPT"
+APP_MAKER = "PD2EMC aka Einstein with help of ChatGPT"
 
 # URL of the CSV file
 url = 'https://radioid.net/static/user.csv'
@@ -43,7 +43,6 @@ def calculate_md5(file_path):
 
 # Function to download the CSV file and handle count checking
 def download_csv():
-    start_time = time.time()
     # Step 1: Download the CSV file with a custom progress bar
     response = requests.get(url, stream=True)
     total_size = int(response.headers.get('content-length', 0))
@@ -90,10 +89,6 @@ def download_csv():
         if old_md5:
             print(f'Old MD5 hash: {old_md5}')
 
-    end_time = time.time()
-    elapsed_time = end_time - start_time
-    print(f"Elapsed time: {elapsed_time:.2f} seconds")
-
 # Function to count entries in user.csv
 def count_entries():
     with open(csv_filename, 'r') as file:
@@ -103,7 +98,6 @@ def count_entries():
 
 # Function to process user.csv to userat.csv for Anytone Mobile Radio database
 def process_to_userat():
-    start_time = time.time()
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -135,13 +129,8 @@ def process_to_userat():
         print(f"Failed to process {csv_filename} to {userat_filename}.")
         exit(1)
 
-    end_time = time.time()
-    elapsed_time = end_time - start_time
-    print(f"Elapsed time: {elapsed_time:.2f} seconds")
-
 # Function to process user.csv to userhd.csv for Ailunce HD1 database
 def process_to_userhd():
-    start_time = time.time()
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -170,13 +159,8 @@ def process_to_userhd():
         print(f"Failed to process {csv_filename} to {userhd_filename}.")
         exit(1)
 
-    end_time = time.time()
-    elapsed_time = end_time - start_time
-    print(f"Elapsed time: {elapsed_time:.2f} seconds")
-
 # Function to process user.csv to usermd2017.csv for Tytera MD2017 database
 def process_to_usermd2017():
-    start_time = time.time()
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -205,13 +189,8 @@ def process_to_usermd2017():
         print(f"Failed to process {csv_filename} to {usermd2017_filename}.")
         exit(1)
 
-    end_time = time.time()
-    elapsed_time = end_time - start_time
-    print(f"Elapsed time: {elapsed_time:.2f} seconds")
-
 # Function to process user.csv to user.bin for Tytera MD380/390 database
 def process_to_userbin():
-    start_time = time.time()
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -229,13 +208,8 @@ def process_to_userbin():
         print(f"Failed to process {csv_filename} to {userbin_filename}.")
         exit(1)
 
-    end_time = time.time()
-    elapsed_time = end_time - start_time
-    print(f"Elapsed time: {elapsed_time:.2f} seconds")
-
 # Function to process user.csv to usr.bin for Pi-Star SSH Helper database
 def process_to_usrbin():
-    start_time = time.time()
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -253,13 +227,8 @@ def process_to_usrbin():
         print(f"Failed to process {csv_filename} to {usrbin_filename}.")
         exit(1)
 
-    end_time = time.time()
-    elapsed_time = end_time - start_time
-    print(f"Elapsed time: {elapsed_time:.2f} seconds")
-
 # Function to process user.csv to DMRIds.dat for Pi-Star database
 def process_to_pistar():
-    start_time = time.time()
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -275,10 +244,6 @@ def process_to_pistar():
     else:
         print(f"Failed to process {csv_filename} to {pistar_filename}.")
         exit(1)
-
-    end_time = time.time()
-    elapsed_time = end_time - start_time
-    print(f"Elapsed time: {elapsed_time:.2f} seconds")
 
 # Function to clean up downloaded files
 def clean_downloads():
@@ -312,6 +277,8 @@ def display_help():
 
 # Main function to handle user input
 if __name__ == "__main__":
+    start_time = time.time()
+
     if len(sys.argv) != 2 or sys.argv[1] == "-h":
         display_help()
         exit(1)
@@ -347,3 +314,7 @@ if __name__ == "__main__":
     else:
         print(f"Invalid option '{option}'. Use '-h' for help.")
         exit(1)
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Elapsed time: {elapsed_time:.2f} seconds")

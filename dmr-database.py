@@ -33,7 +33,6 @@ def header():
     print(f"Version: {APP_VERSION}")
     print(f"Made by: {APP_MAKER}")
     print(f"Helped by: {APP_MAKERS}")
-    print(f"=============================")
     
 
 # Function to display progress bar
@@ -54,6 +53,8 @@ def calculate_md5(file_path):
 
 # Function to download the CSV file and handle count checking
 def download_csv():
+    print(f"=============================")
+    print(f"Download started from : {url}") 
     # Step 1: Download the CSV file with a custom progress bar
     response = requests.get(url, stream=True)
     total_size = int(response.headers.get('content-length', 0))
@@ -86,6 +87,13 @@ def download_csv():
         print('The file has not changed.')
         print(f'Old MD5: {old_md5}')
         print(f'New MD5: {new_md5}')
+        # Count the entries in the downloaded CSV file
+        entry_count = count_entries()
+        with open(count_filename, 'w') as file:
+            file.write(str(entry_count))
+                    
+        print(f'The count of entries is {entry_count}.')
+
     else:
         with open(md5_filename, 'w') as file:
             file.write(new_md5)
@@ -206,6 +214,7 @@ def process_to_usrbin():
 # Function to process user.csv to DMRIds.dat for Pi-Star database
 def process_to_pistar():
     print(f"=============================")
+    print(f"Starting process {csv_filename} to {pistar_filename}...")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
@@ -224,6 +233,7 @@ def process_to_pistar():
 
 # Function to clean up downloaded and generated files
 def clean_downloads():
+    print(f"=============================")
     files_to_remove = [csv_filename, userat_filename, userhd_filename, usermd2017_filename, userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename]
     for filename in files_to_remove:
         if os.path.exists(filename):
@@ -234,6 +244,7 @@ def clean_downloads():
 
 # Function to display help message
 def display_help():
+    print(f"=============================")
     print("Usage: dmr_tool.py [option]")
     print("Options:")
     print("  -d            Download the CSV file")
@@ -282,6 +293,7 @@ if __name__ == "__main__":
         process_to_userbin()
         process_to_usrbin()
         process_to_pistar()
+        print(f"=============================")
         print("All operations completed.")
     else:
         print(f"Invalid option '{option}'. Use '-h' for help.")
@@ -289,4 +301,5 @@ if __name__ == "__main__":
 
     end_time = time.time()
     elapsed_time = end_time - start_time
+    print(f"=============================")
     print(f"Elapsed time: {elapsed_time:.2f} seconds")

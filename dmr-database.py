@@ -9,7 +9,7 @@ import time
 # Application information
 APP_NAME = "DMR Database Tool"
 APP_VERSION = "v0.1"
-APP_MAKER = "PD2EMC aka Einstein with help of ChatGPT"
+APP_MAKER = "PD2EMC aka Einstein"
 APP_MAKERS = "ChatGPT"
 
 # URL of the CSV file

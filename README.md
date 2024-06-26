@@ -6,8 +6,7 @@ The DMR Database Tool is a versatile script designed to manage and update DMR us
 
 Why the Change?
 ------------
-- Enhanced Functionality:
-  Python provides more powerful libraries and tools for data processing and automation, allowing us to expand the script's features.
+- Enhanced Functionality: Python provides more powerful libraries and tools for data processing and automation, allowing us to expand the script's features.
 - Improved Readability: Python's clear syntax makes the script easier to read, maintain, and extend, encouraging community contributions.
 - Cross-Platform Compatibility: Python ensures the script can run on different operating systems without modification.
 
@@ -27,7 +26,7 @@ We believe this release will foster innovation and collaboration, benefiting the
 
 Introduction
 ------------
-The DMR Database Tool is a command-line utility designed to manage and process Digital Mobile Radio (DMR) user databases. It facilitates downloading the latest user data, cleaning up files, and converting data into formats suitable for various DMR radio models and systems.
+The DMR Database Tool is a command-line utility designed to manage and process Digital Mobile Radio (DMR) user databases. It facilitates downloading the latest user data, cleaning up files and converting data into formats suitable for various DMR radio models and systems.
 
 
 The DMR Database Tool supports converting data into formats suitable for the following DMR radio models or systems:
@@ -57,7 +56,7 @@ Installation
 ------------
 Requirements:
 - Python 3.x
-- Required Python modules: requests, csv, os, sys, shutil, hashlib
+- Required Python modules: requests, csv, os, sys, shutil and hashlib
 
 Setup:
 1. Install Python 3: Download and install Python 3 from python.org/downloads/.
@@ -78,7 +77,7 @@ Removes all downloaded files (user.csv, userat.csv, etc.) and metadata (count.tx
 Converts user.csv into specific formats for different DMR radio models/systems.
 
 - Single-Command Operation (-a)
-Cleans up, downloads the latest data, and processes it into all supported formats.
+Cleans up, downloads the latest data and processes it into all supported formats.
 
 - Help (-h)
 Displays a detailed help menu with command descriptions and examples.

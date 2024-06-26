@@ -3,14 +3,13 @@ import requests
 import csv
 import os
 import sys
-import shutil
 import hashlib
 import time
 
 # Application information
 APP_NAME = "DMR Database Tool"
 APP_VERSION = "v0.1"
-APP_MAKER = "PD2EMC aka Einstein with help of ChatGPT"
+APP_MAKER = "PD2EMC aka Einstein with help of my friend ChatGPT"
 
 # URL of the CSV file
 url = 'https://radioid.net/static/user.csv'
@@ -134,6 +133,124 @@ def process_to_userat():
 
     else:
         print(f"Failed to process {csv_filename} to {userat_filename}.")
+        exit(1)
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Elapsed time: {elapsed_time:.2f} seconds")
+
+# Function to process user.csv to userhd.csv for Ailunce HD1 database
+def process_to_userhd():
+    start_time = time.time()
+    if not os.path.exists(csv_filename):
+        print(f"{csv_filename} not found. Downloading it first.")
+        download_csv()
+
+    if os.path.exists(csv_filename):
+        with open(csv_filename, 'r') as infile, open(userhd_filename, 'w', newline='') as outfile:
+            reader = csv.DictReader(infile)
+            fieldnames = ['No.', 'Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country']
+            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+            writer.writeheader()
+
+            for i, row in enumerate(reader, start=1):
+                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
+                writer.writerow({
+                    'No.': i,
+                    'Radio ID': row['RADIO_ID'],
+                    'Callsign': row['CALLSIGN'],
+                    'Name': name,
+                    'City': row['CITY'],
+                    'State': row['STATE'],
+                    'Country': row['COUNTRY']
+                })
+        print(f"Processed {csv_filename} to {userhd_filename}")
+
+    else:
+        print(f"Failed to process {csv_filename} to {userhd_filename}.")
+        exit(1)
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Elapsed time: {elapsed_time:.2f} seconds")
+
+# Function to process user.csv to usermd2017.csv for Tytera MD2017 database
+def process_to_usermd2017():
+    start_time = time.time()
+    if not os.path.exists(csv_filename):
+        print(f"{csv_filename} not found. Downloading it first.")
+        download_csv()
+
+    if os.path.exists(csv_filename):
+        with open(csv_filename, 'r') as infile, open(usermd2017_filename, 'w', newline='') as outfile:
+            reader = csv.DictReader(infile)
+            fieldnames = ['No.', 'Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country']
+            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+            writer.writeheader()
+
+            for i, row in enumerate(reader, start=1):
+                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
+                writer.writerow({
+                    'No.': i,
+                    'Radio ID': row['RADIO_ID'],
+                    'Callsign': row['CALLSIGN'],
+                    'Name': name,
+                    'City': row['CITY'],
+                    'State': row['STATE'],
+                    'Country': row['COUNTRY']
+                })
+        print(f"Processed {csv_filename} to {usermd2017_filename}")
+
+    else:
+        print(f"Failed to process {csv_filename} to {usermd2017_filename}.")
+        exit(1)
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Elapsed time: {elapsed_time:.2f} seconds")
+
+# Function to process user.csv to user.bin for Tytera MD380/390 database
+def process_to_userbin():
+    start_time = time.time()
+    if not os.path.exists(csv_filename):
+        print(f"{csv_filename} not found. Downloading it first.")
+        download_csv()
+
+    if os.path.exists(csv_filename):
+        with open(csv_filename, 'r') as infile, open(userbin_filename, 'wb') as outfile:
+            reader = csv.DictReader(infile)
+            for row in reader:
+                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
+                data = f"{row['RADIO_ID']}\t{row['CALLSIGN']}\t{name}\t{row['CITY']}\t{row['STATE']}\t{row['COUNTRY']}\n"
+                outfile.write(data.encode('utf-8'))
+        print(f"Processed {csv_filename} to {userbin_filename}")
+
+    else:
+        print(f"Failed to process {csv_filename} to {userbin_filename}.")
+        exit(1)
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Elapsed time: {elapsed_time:.2f} seconds")
+
+# Function to process user.csv to usr.bin for Pi-Star SSH Helper database
+def process_to_usrbin():
+    start_time = time.time()
+    if not os.path.exists(csv_filename):
+        print(f"{csv_filename} not found. Downloading it first.")
+        download_csv()
+
+    if os.path.exists(csv_filename):
+        with open(csv_filename, 'r') as infile, open(usrbin_filename, 'wb') as outfile:
+            reader = csv.DictReader(infile)
+            for row in reader:
+                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
+                data = f"{row['RADIO_ID']}\t{row['CALLSIGN']}\t{name}\t{row['CITY']}\t{row['STATE']}\t{row['COUNTRY']}\n"
+                outfile.write(data.encode('utf-8'))
+        print(f"Processed {csv_filename} to {usrbin_filename}")
+
+    else:
+        print(f"Failed to process {csv_filename} to {usrbin_filename}.")
         exit(1)
 
     end_time = time.time()

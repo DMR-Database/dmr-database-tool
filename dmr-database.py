@@ -5,6 +5,7 @@ import os
 import sys
 import hashlib
 import time
+import shutil
 
 # Application information
 APP_NAME = "DMR Database Tool"

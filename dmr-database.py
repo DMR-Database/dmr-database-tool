@@ -11,10 +11,12 @@ import shutil
 APP_NAME = "DMR Database Tool"
 APP_VERSION = "v0.1"
 APP_MAKER = "PD2EMC aka Einstein"
-APP_MAKERS = "ChatGPT, and you ?"
+APP_MAKERS = "ChatGPT and maybe you ?"
 
 # URL of the CSV file
+#
 url = 'https://radioid.net/static/user.csv'
+#
 
 # Filenames
 csv_filename = 'user.csv'
@@ -276,13 +278,13 @@ def process_to_usrbin():
 # Function to clean up downloaded and generated files
 def clean_downloads():
     print(f"{line}")
-    print(f"Cleanup all downloaded an converted files.")
+    print(f"Cleaning files...")
     files_to_remove = [csv_filename, userat_filename, userhd_filename, usermd2017_filename, userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename]
     for filename in files_to_remove:
         if os.path.exists(filename):
             try:
                 os.remove(filename)
-                print(f"Removed {filename}")
+                print(f"Removed: {filename}")
             except Exception as e:
                 print(f"Error removing {filename}: {e}")
 #        else:

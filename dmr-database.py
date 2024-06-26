@@ -26,6 +26,7 @@ usrbin_filename = 'usr.bin'
 pistar_filename = 'DMRIds.dat'
 count_filename = 'count.txt'
 md5_filename = 'user.md5'
+line = "============================="
 
 # Function to display header information
 def header():
@@ -53,7 +54,7 @@ def calculate_md5(file_path):
 
 # Function to download the CSV file and handle count checking
 def download_csv():
-    print(f"=============================")
+    print(f"{line}")
     print(f"Download started from : {url}") 
     # Step 1: Download the CSV file with a custom progress bar
     response = requests.get(url, stream=True)

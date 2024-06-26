@@ -68,28 +68,18 @@ Usage
 Command Line Options:
 
 - Download Latest Data (-d)
-./dmr-database.py -d
 Downloads the latest user data in CSV format from a specified URL.
 
 - Clean Up Files (-c)
-./dmr-database.py -c
 Removes all downloaded files (user.csv, userat.csv, etc.) and metadata (count.txt).
 
 - Process Data (-userat, -userhd, etc.)
-./dmr-database.py -userat
-./dmr-database.py -userhd
-./dmr-database.py -usermd2017
-./dmr-database.py -userbin
-./dmr-database.py -usrbin
-./dmr-database.py -pistar
 Converts user.csv into specific formats for different DMR radio models/systems.
 
 - Single-Command Operation (-a)
-./dmr-database.py -a
 Cleans up, downloads the latest data, and processes it into all supported formats.
 
 - Help (-h)
-./dmr-database.py -h
 Displays a detailed help menu with command descriptions and examples.
 
 Examples:
@@ -100,7 +90,7 @@ Examples:
 - Clean Up All Files
 ./dmr-database.py -c
 
-- Download, Clean, and Process for All Formats
+- Clean, Download and Process for All Formats
 ./dmr-database.py -a
 
 Notes

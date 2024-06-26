@@ -14,10 +14,12 @@ Why Release It Now?
 ------------
 After five years of private development and refinement, we are releasing the DMR Database Tool to the public to:
 
-Share Our Work: Contribute a mature and stable tool to the DMR community.
-Encourage Collaboration: Invite feedback and enhancements from a broader audience.
-Support the Community: Help radio operators easily keep their devices updated with the latest user data.
+- Share Our Work: Contribute a mature and stable tool to the DMR community.
+- Encourage Collaboration: Invite feedback and enhancements from a broader audience.
+- Support the Community: Help radio operators easily keep their devices updated with the latest user data.
+
 Beta Status
+------------
 While transitioning from .sh to .py, the tool is currently in beta. This means it is functional but still undergoing testing and improvements. We appreciate your patience and welcome any feedback to make it better.
 
 We believe this release will foster innovation and collaboration, benefiting the entire DMR community.

@@ -25,6 +25,12 @@ pistar_filename = 'DMRIds.dat'
 count_filename = 'count.txt'
 md5_filename = 'user.md5'
 
+# Function to display header information
+def header():
+    print(f"=== {APP_NAME} ===")
+    print(f"Version: {APP_VERSION}")
+    print(f"Made by: {APP_MAKER}\n")
+
 # Function to display progress bar
 def show_progress_bar(downloaded, total_size, bar_length=50):
     progress = downloaded / total_size
@@ -84,8 +90,7 @@ def download_csv():
         with open(count_filename, 'w') as file:
             file.write(str(entry_count))
 
-        print(f'Download completed.')
-        print(f'The count of entries is {entry_count}.')
+        print(f'Download completed. The count of entries is {entry_count}.')
         print(f'New MD5 hash: {new_md5}')
         if old_md5:
             print(f'Old MD5 hash: {old_md5}')
@@ -260,9 +265,6 @@ def clean_downloads():
 
 # Function to display help information
 def display_help():
-    print(f"=== {APP_NAME} ===")
-    print(f"Version: {APP_VERSION}")
-    print(f"Made by: {APP_MAKER}\n")
     print("Options:")
     print("-a : Clean all, then download, and process to all destinations.")
     print("-d : Download the CSV file.")
@@ -278,6 +280,7 @@ def display_help():
 
 # Main function to handle user input
 if __name__ == "__main__":
+    header()
     start_time = time.time()
 
     if len(sys.argv) != 2 or sys.argv[1] == "-h":

@@ -28,11 +28,11 @@ md5_filename = 'user.md5'
 
 # Function to display header information
 def header():
-    print(f"=== {APP_NAME} ===")
+    print(f"===== {APP_NAME} =====")
     print(f"Version: {APP_VERSION}")
     print(f"Made by: {APP_MAKER}")
     print(f"Helped by: {APP_MAKERS}")
-    print(f"==================")
+    print(f"======================")
     
 
 # Function to display progress bar

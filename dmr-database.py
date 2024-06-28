@@ -35,7 +35,7 @@ def header():
     print(f"Made by: {APP_MAKER}")
     print(f"Helped by: {APP_MAKERS}")
 
-# Function to display progress bar
+# Function to display progress bar for downloading
 def show_progress_bar(downloaded, total_size, bar_length=50):
     progress = downloaded / total_size
     block = int(bar_length * progress)
@@ -73,6 +73,7 @@ def download_csv():
         downloaded = 0
         block_size = 1024  # 1 KB
 
+        # Download the file in chunks and show the progress bar
         with open(csv_filename, 'wb') as file:
             for data in response.iter_content(block_size):
                 downloaded += len(data)
@@ -88,6 +89,7 @@ def download_csv():
         print(f"Error downloading the CSV file: {e}")
         exit(1)
 
+    # Calculate the MD5 hash of the new file
     new_md5 = calculate_md5(csv_filename)
     if new_md5 is None:
         exit(1)
@@ -97,6 +99,7 @@ def download_csv():
         with open(md5_filename, 'r') as file:
             old_md5 = file.read().strip()
 
+    # Check if the file has changed by comparing MD5 hashes
     if old_md5 and old_md5 == new_md5:
         print('The file has not changed.')
         print(f'Old MD5: {old_md5}')
@@ -112,6 +115,7 @@ def download_csv():
         if old_md5:
             print(f'Old MD5 hash: {old_md5}')
 
+    # Write the count of entries to the count file
     with open(count_filename, 'w') as file:
         file.write(str(entry_count))
     print(f'The count of entries is {entry_count}.')
@@ -139,12 +143,14 @@ def process_to_userat():
         total_rows = count_entries()
         current_row = 0
 
+        # Open input and output files
         with open(csv_filename, 'r') as infile, open(userat_filename, 'w', newline='') as outfile:
             reader = csv.DictReader(infile)
             fieldnames = ['No.', 'Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks', 'Call Type', 'Call Alert']
             writer = csv.DictWriter(outfile, fieldnames=fieldnames)
             writer.writeheader()
 
+            # Process each row and write to the output file
             for i, row in enumerate(reader, start=1):
                 current_row += 1
                 name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''
@@ -161,6 +167,7 @@ def process_to_userat():
                     'Call Alert': 'None'
                 })
 
+                # Show row processing progress
                 show_row_progress(current_row, total_rows)
 
         print()  # Move to the next line after the progress bar completes
@@ -182,6 +189,7 @@ def process_to_pistar():
         total_rows = count_entries()
         current_row = 0
 
+        # Open input and output files
         with open(csv_filename, 'r') as infile, open(pistar_filename, 'w', newline='') as outfile:
             reader = csv.DictReader(infile)
             for row in reader:
@@ -189,6 +197,7 @@ def process_to_pistar():
                 name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''
                 outfile.write(f"{row['RADIO_ID']}\t{row['CALLSIGN']}\t{name}\n")
 
+                # Show row processing progress
                 show_row_progress(current_row, total_rows)
 
         print()  # Move to the next line after the progress bar completes
@@ -266,10 +275,11 @@ def process_to_usrbin():
         print(f"Failed to copy {csv_filename} to {usrbin_filename}.")
         exit(1)
 
+
 # Function to clean up downloaded and generated files
 def clean_downloads():
     print(f"{line}")
-    print("Cleanup all downloaded and converted files.")
+    print(f"Cleanup all downloaded an converted files.")
     files_to_remove = [csv_filename, userat_filename, userhd_filename, usermd2017_filename, userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename]
     for filename in files_to_remove:
         if os.path.exists(filename):

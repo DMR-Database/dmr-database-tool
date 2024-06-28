@@ -44,11 +44,9 @@ def show_progress_bar(downloaded, total_size, bar_length=50):
     sys.stdout.flush()
 
 # Function to show row processing progress
-def show_row_progress(current_row, total_rows, bar_length=50):
+def show_row_progress(current_row, total_rows, id='', callsign='', bar_length=50):
     progress = current_row / total_rows
-    block = int(bar_length * progress)
-    bar = "#" * block + "-" * (bar_length - block)
-    sys.stdout.write(f"\r[{bar}] {progress * 100:.2f}% ({current_row}/{total_rows} rows)")
+    sys.stdout.write(f"\rProcessing... {progress * 100:.2f}% ({current_row}/{total_rows} rows) - ID: {id} - Callsign: {callsign[:20]:<20}")
     sys.stdout.flush()
 
 # Function to calculate MD5 hash of a file
@@ -167,10 +165,10 @@ def process_to_userat():
                     'Call Alert': 'None'
                 })
 
-                # Show row processing progress
-                show_row_progress(current_row, total_rows)
+                # Show row processing progress with ID and callsign
+                show_row_progress(current_row, total_rows, row['RADIO_ID'], row['CALLSIGN'])
 
-        print()  # Move to the next line after the progress bar completes
+        print()  # Move to the next line after the progress completes
         print(f"Processed {csv_filename} to {userat_filename}")
 
     else:
@@ -194,13 +192,12 @@ def process_to_pistar():
             reader = csv.DictReader(infile)
             for row in reader:
                 current_row += 1
-                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''
-                outfile.write(f"{row['RADIO_ID']}\t{row['CALLSIGN']}\t{name}\n")
+                outfile.write(f"{row['RADIO_ID']}\t{row['CALLSIGN']}\n")
 
-                # Show row processing progress
-                show_row_progress(current_row, total_rows)
+                # Show row processing progress with ID and callsign
+                show_row_progress(current_row, total_rows, row['RADIO_ID'], row['CALLSIGN'])
 
-        print()  # Move to the next line after the progress bar completes
+        print()  # Move to the next line after the progress completes
         print(f"Processed {csv_filename} to {pistar_filename}")
 
     else:
@@ -274,7 +271,6 @@ def process_to_usrbin():
     else:
         print(f"Failed to copy {csv_filename} to {usrbin_filename}.")
         exit(1)
-
 
 # Function to clean up downloaded and generated files
 def clean_downloads():
@@ -350,3 +346,4 @@ if __name__ == "__main__":
     elapsed_time = end_time - start_time
     print(f"{line}")
     print(f"Elapsed time: {elapsed_time:.2f} seconds")
+

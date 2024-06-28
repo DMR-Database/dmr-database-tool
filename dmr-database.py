@@ -279,7 +279,7 @@ def process_to_usrbin():
 # Function to clean up downloaded and generated files
 def clean_downloads():
     print(f"{line}")
-    print(f"Cleanup all downloaded an converted files.")
+    print(f"Cleanup all downloaded and converted files.")
     files_to_remove = [csv_filename, userat_filename, userhd_filename, usermd2017_filename, userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename]
     for filename in files_to_remove:
         if os.path.exists(filename):

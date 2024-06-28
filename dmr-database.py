@@ -47,9 +47,10 @@ def show_progress_bar(downloaded, total_size, bar_length=50):
 def show_row_progress(current_row, total_rows, id='', callsign='', bar_length=50):
     progress = current_row / total_rows
     callsign_truncated = callsign[:7] if callsign else ''
-    sys.stdout.write(f"\rProcessing... {progress * 100:.2f}% ({current_row}/{total_rows} rows) - ID: {id} - Callsign: {callsign_truncated:<7}")
-    if current_row == total_rows:
-        sys.stdout.write(f" - {total_rows}")
+    if current_row < total_rows:
+        sys.stdout.write(f"\rProcessing... {progress * 100:.2f}% ({current_row}/{total_rows} rows) - ID: {id} - Callsign: {callsign_truncated:<6}")
+    else:
+        sys.stdout.write(f"\rProcessing... 100.00% ({total_rows}/{total_rows} rows)")
     sys.stdout.flush()
 
 # Function to calculate MD5 hash of a file

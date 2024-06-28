@@ -46,7 +46,8 @@ def show_progress_bar(downloaded, total_size, bar_length=50):
 # Function to show row processing progress
 def show_row_progress(current_row, total_rows, id='', callsign='', bar_length=50):
     progress = current_row / total_rows
-    sys.stdout.write(f"\rProcessing... {progress * 100:.2f}% ({current_row}/{total_rows} rows) - ID: {id} - Callsign: {callsign[:7]:<7}")
+    callsign_truncated = callsign[:7] if callsign else ''
+    sys.stdout.write(f"\rProcessing... {progress * 100:.2f}% ({current_row}/{total_rows} rows) - ID: {id} - Callsign: {callsign_truncated:<7}")
     if current_row == total_rows:
         sys.stdout.write(f" - {total_rows}")
     sys.stdout.flush()
@@ -157,7 +158,7 @@ def process_to_userat():
                 writer.writerow({
                     'No.': i,
                     'Radio ID': row['RADIO_ID'],
-                    'Callsign': row['CALLSIGN'][:7],  # Truncate callsign to max 7 characters
+                    'Callsign': row['CALLSIGN'],  # Keep full callsign
                     'Name': name,
                     'City': row['CITY'],
                     'State': row['STATE'],
@@ -167,8 +168,8 @@ def process_to_userat():
                     'Call Alert': 'None'
                 })
 
-                # Show row processing progress with ID and callsign
-                show_row_progress(current_row, total_rows, row['RADIO_ID'], row['CALLSIGN'][:7])
+                # Show row processing progress with ID and truncated callsign for output
+                show_row_progress(current_row, total_rows, row['RADIO_ID'], row['CALLSIGN'])
 
         print()  # Move to the next line after the progress completes
         print(f"Processed {csv_filename} to {userat_filename}")
@@ -194,10 +195,10 @@ def process_to_pistar():
             reader = csv.DictReader(infile)
             for row in reader:
                 current_row += 1
-                outfile.write(f"{row['RADIO_ID']}\t{row['CALLSIGN'][:7]}\n")  # Truncate callsign to max 7 characters
+                outfile.write(f"{row['RADIO_ID']}\t{row['CALLSIGN']}\n")  # Keep full callsign
 
-                # Show row processing progress with ID and callsign
-                show_row_progress(current_row, total_rows, row['RADIO_ID'], row['CALLSIGN'][:7])
+                # Show row processing progress with ID and truncated callsign for output
+                show_row_progress(current_row, total_rows, row['RADIO_ID'], row['CALLSIGN'])
 
         print()  # Move to the next line after the progress completes
         print(f"Processed {csv_filename} to {pistar_filename}")

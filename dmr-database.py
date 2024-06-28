@@ -350,4 +350,3 @@ if __name__ == "__main__":
     elapsed_time = end_time - start_time
     print(f"{line}")
     print(f"Elapsed time: {elapsed_time:.2f} seconds")
-

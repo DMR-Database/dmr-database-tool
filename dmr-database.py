@@ -294,15 +294,15 @@ def display_help():
     print(f"{line}")
     print("Usage: dmr_tool.py [option]")
     print("Options:")
-    print("  -d            Download the CSV file")
+    print("  -c            Clean all downloaded and generated files")
+    print("  -a            Perform all operations (download, process to all formats, and clean)")
+    print("  -d            Download the CSV file only")
     print("  -userat       Process CSV to Anytone Mobile Radio database (userat.csv)")
     print("  -userhd       Process CSV to Ailunce HD1 database (userhd.csv)")
     print("  -usermd2017   Process CSV to Tytera MD2017 database (usermd2017.csv)")
     print("  -userbin      Process CSV to Tytera MD380/390 database (user.bin)")
     print("  -usrbin       Process CSV to Motorola database (usr.bin)")
     print("  -pistar       Process CSV to Pi-Star database (DMRIds.dat)")
-    print("  -c            Clean all downloaded and generated files")
-    print("  -a            Perform all operations (download, process to all formats, and clean)")
 
 # Main function to handle user input
 if __name__ == "__main__":

@@ -14,9 +14,7 @@ APP_MAKER = "PD2EMC aka Einstein"
 APP_MAKERS = "ChatGPT and maybe you ?"
 
 # URL of the CSV file
-#
 url = 'https://radioid.net/static/user.csv'
-#
 
 # Filenames
 csv_filename = 'user.csv'
@@ -45,6 +43,14 @@ def show_progress_bar(downloaded, total_size, bar_length=50):
     sys.stdout.write(f"\r[{bar}] {progress * 100:.2f}%")
     sys.stdout.flush()
 
+# Function to show row processing progress
+def show_row_progress(current_row, total_rows, bar_length=50):
+    progress = current_row / total_rows
+    block = int(bar_length * progress)
+    bar = "#" * block + "-" * (bar_length - block)
+    sys.stdout.write(f"\r[{bar}] {progress * 100:.2f}% ({current_row}/{total_rows} rows)")
+    sys.stdout.flush()
+
 # Function to calculate MD5 hash of a file
 def calculate_md5(file_path):
     hash_md5 = hashlib.md5()
@@ -60,7 +66,7 @@ def calculate_md5(file_path):
 # Function to download the CSV file and handle count checking
 def download_csv():
     print(f"{line}")
-    print(f"Download started from : {url}") 
+    print(f"Download started from: {url}") 
     try:
         response = requests.get(url, stream=True)
         total_size = int(response.headers.get('content-length', 0))
@@ -100,7 +106,7 @@ def download_csv():
         with open(md5_filename, 'w') as file:
             file.write(new_md5)
         entry_count = count_entries()
-        print(f"Download completed.")
+        print("Download completed.")
         print(f'The count of entries is {entry_count}.')
         print(f'New MD5 hash: {new_md5}')
         if old_md5:
@@ -130,7 +136,6 @@ def process_to_userat():
         download_csv()
 
     if os.path.exists(csv_filename):
-        # Step 1: Count total rows in user.csv
         total_rows = count_entries()
         current_row = 0
 
@@ -142,7 +147,7 @@ def process_to_userat():
 
             for i, row in enumerate(reader, start=1):
                 current_row += 1
-                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
+                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''
                 writer.writerow({
                     'No.': i,
                     'Radio ID': row['RADIO_ID'],
@@ -156,13 +161,7 @@ def process_to_userat():
                     'Call Alert': 'None'
                 })
 
-                # Step 2: Update progress bar
-                progress = current_row / total_rows
-                bar_length = 50
-                block = int(bar_length * progress)
-                bar = "#" * block + "-" * (bar_length - block)
-                sys.stdout.write(f"\r[{bar}] {progress * 100:.2f}%")
-                sys.stdout.flush()
+                show_row_progress(current_row, total_rows)
 
         print()  # Move to the next line after the progress bar completes
         print(f"Processed {csv_filename} to {userat_filename}")
@@ -180,7 +179,6 @@ def process_to_pistar():
         download_csv()
 
     if os.path.exists(csv_filename):
-        # Step 1: Count total rows in user.csv
         total_rows = count_entries()
         current_row = 0
 
@@ -188,16 +186,10 @@ def process_to_pistar():
             reader = csv.DictReader(infile)
             for row in reader:
                 current_row += 1
-                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''  # Use only the first name
+                name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''
                 outfile.write(f"{row['RADIO_ID']}\t{row['CALLSIGN']}\t{name}\n")
 
-                # Step 2: Update progress bar
-                progress = current_row / total_rows
-                bar_length = 50
-                block = int(bar_length * progress)
-                bar = "#" * block + "-" * (bar_length - block)
-                sys.stdout.write(f"\r[{bar}] {progress * 100:.2f}%")
-                sys.stdout.flush()
+                show_row_progress(current_row, total_rows)
 
         print()  # Move to the next line after the progress bar completes
         print(f"Processed {csv_filename} to {pistar_filename}")
@@ -274,11 +266,10 @@ def process_to_usrbin():
         print(f"Failed to copy {csv_filename} to {usrbin_filename}.")
         exit(1)
 
-
 # Function to clean up downloaded and generated files
 def clean_downloads():
     print(f"{line}")
-    print(f"Cleanup all downloaded an converted files.")
+    print("Cleanup all downloaded and converted files.")
     files_to_remove = [csv_filename, userat_filename, userhd_filename, usermd2017_filename, userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename]
     for filename in files_to_remove:
         if os.path.exists(filename):
@@ -287,8 +278,6 @@ def clean_downloads():
                 print(f"Removed: {filename}")
             except Exception as e:
                 print(f"Error removing {filename}: {e}")
-#        else:
-#            print(f"{filename} not found")
 
 # Function to display help message
 def display_help():
@@ -351,4 +340,3 @@ if __name__ == "__main__":
     elapsed_time = end_time - start_time
     print(f"{line}")
     print(f"Elapsed time: {elapsed_time:.2f} seconds")
-

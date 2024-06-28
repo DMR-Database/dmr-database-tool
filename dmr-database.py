@@ -295,7 +295,7 @@ def display_help():
     print("Usage: dmr_tool.py [option]")
     print("Options:")
     print("  -c            Clean all downloaded and generated files")
-    print("  -a            Perform all operations (download, process to all formats, and clean)")
+    print("  -a            Perform all operations (clean, download and process to all formats)")
     print("  -d            Download the CSV file only")
     print("  -userat       Process CSV to Anytone Mobile Radio database (userat.csv)")
     print("  -userhd       Process CSV to Ailunce HD1 database (userhd.csv)")

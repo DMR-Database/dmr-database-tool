@@ -125,6 +125,7 @@ def download_csv():
     
 # Merge users_ext.csv into user.csv, overwriting data in user.csv.
 def merge_csv():
+    print(f"{line}")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()

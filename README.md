@@ -84,8 +84,8 @@ Displays a detailed help menu with command descriptions and examples.
 
 Examples:
 
-- Download and Process for Anytone Mobile Radio
-./dmr-database.py -d -userat
+- Process Files for Anytone Mobile Radio
+./dmr-database.py -userat
 
 - Clean Up All Files
 ./dmr-database.py -c

@@ -46,6 +46,7 @@ Core Features:
 - Download: Fetch the latest DMR user data from a specified URL.
 - Process: Convert downloaded data into different formats for specific DMR radio models.
 - Clean Up: Remove downloaded files and metadata for a clutter-free workspace.
+- Merge: Merge users_ext.csv into user.csv
 
 Optional Features:
 - Single-Command Operation: Combine cleaning, download and processing in one command (-a option).

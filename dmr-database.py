@@ -127,7 +127,7 @@ def download_csv():
 def merge_csv():
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
-        download_csv()  # You can define this function to download user.csv
+        download_csv()
 
     if os.path.exists(csv_filename) and os.path.exists(ext_filename):
         print(f"Merging {ext_filename} into {csv_filename}...")

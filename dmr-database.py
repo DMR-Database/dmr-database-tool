@@ -26,7 +26,7 @@ usrbin_filename = 'usr.bin'
 pistar_filename = 'DMRIds.dat'
 count_filename = 'count.txt'
 md5_filename = 'user.md5'
-ext_filename = 'users_ext.csv'
+ext_filename = 'user_ext.csv'
 line = "============================="
 
 # Display header information about the application.

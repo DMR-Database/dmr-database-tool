@@ -125,13 +125,13 @@ def download_csv():
     
 # Merge users_ext.csv into user.csv, overwriting data in user.csv.
 def merge_csv():
-    print(f"{line}")
-    print(f"Merging {ext_filename} into {csv_filename}...")
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
-        download_csv()
+        download_csv()  # You can define this function to download user.csv
 
-    if os.path.exists(csv_filename):
+    if os.path.exists(csv_filename) and os.path.exists(ext_filename):
+        print(f"Merging {ext_filename} into {csv_filename}...")
+        
         # Read user.csv into a dictionary keyed by RADIO_ID
         user_data = {}
         with open(csv_filename, 'r', newline='', encoding='utf-8') as user_file:
@@ -158,8 +158,10 @@ def merge_csv():
         print(f"Merged {merge_count} lines from {ext_filename} into {csv_filename}.")
 
     else:
-        print(f"Failed to merge {ext_filename} into {csv_filename}.")
-        exit(1)
+        if not os.path.exists(csv_filename):
+            print(f"Failed to merge {ext_filename} into {csv_filename}: {csv_filename} not found.")
+        if not os.path.exists(ext_filename):
+            print(f"Failed to merge {ext_filename} into {csv_filename}: {ext_filename} not found.")
 
 # Count the number of entries (rows) in the CSV file.
 def count_entries():

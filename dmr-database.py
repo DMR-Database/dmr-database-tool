@@ -9,7 +9,7 @@ import shutil
 
 # Application information
 APP_NAME = "DMR Database Tool"
-APP_VERSION = "v0.1"
+APP_VERSION = "v0.2"
 APP_MAKER = "PD2EMC aka Einstein"
 APP_MAKERS = "ChatGPT and maybe you ?"
 
@@ -26,16 +26,17 @@ usrbin_filename = 'usr.bin'
 pistar_filename = 'DMRIds.dat'
 count_filename = 'count.txt'
 md5_filename = 'user.md5'
+ext_filename = 'users_ext.csv'
 line = "============================="
 
-# Function to display header information
+# Display header information about the application.
 def header():
     print(f"===== {APP_NAME} =====")
     print(f"Version: {APP_VERSION}")
     print(f"Made by: {APP_MAKER}")
     print(f"Helped by: {APP_MAKERS}")
 
-# Function to display progress bar for downloading
+# Display a progress bar for file download.
 def show_progress_bar(downloaded, total_size, bar_length=50):
     progress = downloaded / total_size
     block = int(bar_length * progress)
@@ -43,7 +44,7 @@ def show_progress_bar(downloaded, total_size, bar_length=50):
     sys.stdout.write(f"\r[{bar}] {progress * 100:.2f}%")
     sys.stdout.flush()
 
-# Function to show row processing progress
+# Display progress of processing each row of data.
 def show_row_progress(current_row, total_rows, id='', callsign='', bar_length=50):
     progress = current_row / total_rows
     callsign_truncated = callsign[:7] if callsign else ''
@@ -53,7 +54,7 @@ def show_row_progress(current_row, total_rows, id='', callsign='', bar_length=50
         sys.stdout.write(f"\rProcessing... 100.00% ({total_rows}/{total_rows} rows)")
     sys.stdout.flush()
 
-# Function to calculate MD5 hash of a file
+# Calculate the MD5 hash of a file.
 def calculate_md5(file_path):
     hash_md5 = hashlib.md5()
     try:
@@ -65,7 +66,7 @@ def calculate_md5(file_path):
         return None
     return hash_md5.hexdigest()
 
-# Function to download the CSV file and handle count checking
+# Download the CSV file from a specified URL.
 def download_csv():
     print(f"{line}")
     print(f"Download started from: {url}") 
@@ -121,8 +122,46 @@ def download_csv():
     with open(count_filename, 'w') as file:
         file.write(str(entry_count))
     print(f'The count of entries is {entry_count}.')
+    
+# Merge users_ext.csv into user.csv, overwriting data in user.csv.
+def merge_csv():
+    print(f"{line}")
+    print(f"Merging {ext_filename} into {csv_filename}...")
+    if not os.path.exists(csv_filename):
+        print(f"{csv_filename} not found. Downloading it first.")
+        download_csv()
 
-# Function to count entries in user.csv
+    if os.path.exists(csv_filename):
+        # Read user.csv into a dictionary keyed by RADIO_ID
+        user_data = {}
+        with open(csv_filename, 'r', newline='', encoding='utf-8') as user_file:
+            user_reader = csv.DictReader(user_file)
+            for row in user_reader:
+                user_data[row['RADIO_ID']] = row
+
+        # Read users_ext.csv and overwrite user.csv data with it
+        merge_count = 0
+        with open(ext_filename, 'r', newline='', encoding='utf-8') as ext_file:
+            ext_reader = csv.DictReader(ext_file)
+            for row in ext_reader:
+                user_data[row['RADIO_ID']] = row
+                merge_count += 1
+
+        # Write the merged data back to user.csv
+        with open(csv_filename, 'w', newline='', encoding='utf-8') as user_file:
+            fieldnames = ext_reader.fieldnames  # Use the fieldnames from the extension file
+            user_writer = csv.DictWriter(user_file, fieldnames=fieldnames)
+            user_writer.writeheader()
+            for row in user_data.values():
+                user_writer.writerow(row)
+
+        print(f"Merged {merge_count} lines from {ext_filename} into {csv_filename}.")
+
+    else:
+        print(f"Failed to merge {ext_filename} into {csv_filename}.")
+        exit(1)
+
+# Count the number of entries (rows) in the CSV file.
 def count_entries():
     try:
         with open(csv_filename, 'r') as file:
@@ -133,7 +172,7 @@ def count_entries():
         return 0
     return entry_count
 
-# Function to process user.csv to userat.csv for Anytone Mobile Radio database
+# Process CSV to Anytone Mobile Radio database (userat.csv).
 def process_to_userat():
     print(f"{line}")
     print(f"Starting process {csv_filename} to {userat_filename}...")
@@ -149,7 +188,7 @@ def process_to_userat():
         with open(csv_filename, 'r') as infile, open(userat_filename, 'w', newline='') as outfile:
             reader = csv.DictReader(infile)
             fieldnames = ['No.', 'Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country', 'Remarks', 'Call Type', 'Call Alert']
-            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+            writer = csv.DictWriter(outfile, fieldnames=fieldnames, lineterminator='\n')  # Ensure consistent line endings
             writer.writeheader()
 
             # Process each row and write to the output file
@@ -179,7 +218,7 @@ def process_to_userat():
         print(f"Failed to process {csv_filename} to {userat_filename}.")
         exit(1)
 
-# Function to process user.csv to DMRIds.dat for Pi-Star database
+# Process CSV to Pi-Star database (DMRIds.dat).
 def process_to_pistar():
     print(f"{line}")
     print(f"Starting process {csv_filename} to {pistar_filename}...")
@@ -208,7 +247,7 @@ def process_to_pistar():
         print(f"Failed to process {csv_filename} to {pistar_filename}.")
         exit(1)
 
-# Function to process user.csv to userhd.csv for Ailunce HD1 database
+# Process CSV to Ailunce HD1 database (userhd.csv).
 def process_to_userhd():
     print(f"{line}")
     if not os.path.exists(csv_filename):
@@ -225,7 +264,7 @@ def process_to_userhd():
         print(f"Failed to copy {csv_filename} to {userhd_filename}.")
         exit(1)
 
-# Function to process user.csv to usermd2017.csv for Tytera MD2017 database
+# Process CSV to Tytera MD2017 database (usermd2017.csv).
 def process_to_usermd2017():
     print(f"{line}")
     if not os.path.exists(csv_filename):
@@ -242,7 +281,7 @@ def process_to_usermd2017():
         print(f"Failed to copy {csv_filename} to {usermd2017_filename}.")
         exit(1)
 
-# Function to process user.csv to user.bin for Tytera MD380/390 database
+# Process CSV to Tytera MD380/390 database (user.bin).
 def process_to_userbin():
     print(f"{line}")
     if not os.path.exists(csv_filename):
@@ -259,7 +298,7 @@ def process_to_userbin():
         print(f"Failed to copy {csv_filename} to {userbin_filename}.")
         exit(1)
 
-# Function to process user.csv to usr.bin for Motorola database
+# Process CSV to Motorola database (usr.bin).
 def process_to_usrbin():
     print(f"{line}")
     if not os.path.exists(csv_filename):
@@ -276,7 +315,7 @@ def process_to_usrbin():
         print(f"Failed to copy {csv_filename} to {usrbin_filename}.")
         exit(1)
 
-# Function to clean up downloaded and generated files
+# Cleanup all downloaded and converted files.
 def clean_downloads():
     print(f"{line}")
     print(f"Cleanup all downloaded and converted files.")
@@ -289,7 +328,7 @@ def clean_downloads():
             except Exception as e:
                 print(f"Error removing {filename}: {e}")
 
-# Function to display help message
+# Display usage instructions and available options.
 def display_help():
     print(f"{line}")
     print("Usage: dmr_tool.py [option]")
@@ -297,6 +336,7 @@ def display_help():
     print("  -c            Clean all downloaded and generated files")
     print("  -a            Perform all operations (clean, download and process to all formats)")
     print("  -d            Download the CSV file only")
+    print("  -m            Download and merge the CSV file with users_ext.csv")
     print("  -userat       Process CSV to Anytone Mobile Radio database (userat.csv)")
     print("  -userhd       Process CSV to Ailunce HD1 database (userhd.csv)")
     print("  -usermd2017   Process CSV to Tytera MD2017 database (usermd2017.csv)")
@@ -317,6 +357,8 @@ if __name__ == "__main__":
 
     if option == "-d":
         download_csv()
+    elif option == "-m":
+        merge_csv()
     elif option == "-userat":
         process_to_userat()
     elif option == "-userhd":
@@ -334,6 +376,7 @@ if __name__ == "__main__":
     elif option == "-a":
         clean_downloads()
         download_csv()
+        merge_csv()
         process_to_userat()
         process_to_userhd()
         process_to_usermd2017()

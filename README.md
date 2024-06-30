@@ -12,7 +12,7 @@ Why the Change?
 
 Why Release It Now?
 ------------
-After five years of private development and refinement, we are transitioning to python from shell scripts and releasing the DMR Database Tool (beta) to the public to:
+After years of private development and refinement, we are transitioning to python from shell scripts and releasing the DMR Database Tool (beta) to the public to:
 
 - Share Our Work: Contribute a mature and stable tool to the DMR community.
 - Encourage Collaboration: Invite feedback and enhancements from a broader audience.

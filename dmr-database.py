@@ -1,6 +1,4 @@
-## Please set your python path mac:
 #!/opt/homebrew/bin/python3.11
-## Please set your python path debian: 
 ##!/usr/bin/python3
 import requests
 import csv

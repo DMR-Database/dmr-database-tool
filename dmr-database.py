@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+#!/opt/homebrew/bin/python3.11
+##!/usr/bin/python3
 import requests
 import csv
 import os

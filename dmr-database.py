@@ -30,7 +30,7 @@ ext_filename = 'user_ext.csv'
 city_state_csv = 'citys_nl.csv'
 line = "============================="
 
-
+# Search for empty County in Dutch callsign and fill them
 def fill_empty_state():
     print(f"{line}")
     # Check if the necessary files exist
@@ -67,21 +67,26 @@ def fill_empty_state():
             print(f"Error: Expected headers 'CITY' and 'STATE' not found in {csv_filename}")
             return
         
-        for row in user_reader:
-            if row['STATE'] == '':
+        user_data = list(user_reader)
+        total_rows = len(user_data)
+        
+        for current_row, row in enumerate(user_data, start=1):
+            if row['STATE'] == '' and row['CALLSIGN'].startswith(('PA', 'PB', 'PC', 'PD', 'PE', 'PF', 'PG', 'PH', 'PI')):
                 city = row['CITY']
                 if city in city_state_map:
                     row['STATE'] = city_state_map[city]
-                    print(f"Updated STATE for CITY {city} to {city_state_map[city]}")
+                    #print(f"Updated STATE for CITY {city} to {city_state_map[city]}")
             updated_rows.append(row)
-
+            show_row_progress(current_row, total_rows, row['RADIO_ID'], row['CALLSIGN'])
+    
     # Write the updated data back to user.csv
     with open(csv_filename, 'w', newline='', encoding='utf-8') as user_file:
         user_writer = csv.DictWriter(user_file, fieldnames=fieldnames)
         user_writer.writeheader()
         user_writer.writerows(updated_rows)
+    
+    print(f"\nCompleted updating {csv_filename}")
 
-    print(f"Completed updating {csv_filename}")
 # Display header information about the application.
 def header():
     print(f"===== {APP_NAME} =====")

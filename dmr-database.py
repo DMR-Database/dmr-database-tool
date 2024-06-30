@@ -33,6 +33,7 @@ line = "============================="
 # Search for empty County in Dutch callsign and fill them
 def fill_empty_state():
     print(f"{line}")
+    print(f"Starting filling States from citys_nl.csv")
     # Check if the necessary files exist
     if not os.path.exists(csv_filename):
         print(f"Error: {csv_filename} not found.")
@@ -48,14 +49,14 @@ def fill_empty_state():
         
         # Debug: Print the headers to ensure they are correct
         headers = city_reader.fieldnames
-        print(f"Headers in {city_state_csv}: {headers}")
+        #print(f"Headers in {city_state_csv}: {headers}")
         
         if 'CITY' not in headers or 'STATE' not in headers:
             print(f"Error: Expected headers 'CITY' and 'STATE' not found in {city_state_csv}")
             return
         
         for row in city_reader:
-            city_state_map[row['CITY']] = row['STATE']
+            city_state_map[row['CITY'].strip().lower()] = row['STATE']
 
     # Read user.csv and update the STATE where it is empty
     updated_rows = []
@@ -72,10 +73,10 @@ def fill_empty_state():
         
         for current_row, row in enumerate(user_data, start=1):
             if row['STATE'] == '' and row['CALLSIGN'].startswith(('PA', 'PB', 'PC', 'PD', 'PE', 'PF', 'PG', 'PH', 'PI')):
-                city = row['CITY']
+                city = row['CITY'].strip().lower()  # Normalize city name to lowercase
                 if city in city_state_map:
                     row['STATE'] = city_state_map[city]
-                    #print(f"Updated STATE for CITY {city} to {city_state_map[city]}")
+        #            print(f"Updated STATE for CITY {row['CITY']} to {city_state_map[city]}")
             updated_rows.append(row)
             show_row_progress(current_row, total_rows, row['RADIO_ID'], row['CALLSIGN'])
     
@@ -393,7 +394,7 @@ def clean_downloads():
 # Display usage instructions and available options.
 def display_help():
     print(f"{line}")
-    print("Usage: dmr_tool.py [option]")
+    print("Usage: dmr-database.py [option]")
     print("Options:")
     print("  -c            Clean all downloaded and generated files")
     print("  -a            Perform all operations (clean, download and process to all formats)")

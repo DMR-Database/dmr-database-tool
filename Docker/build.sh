@@ -1,1 +1,1 @@
-docker build -t python-script-runner .
+docker build -t dmr-database-tool .

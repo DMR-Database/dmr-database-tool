@@ -21,7 +21,7 @@ os.makedirs(dest_dir, exist_ok=True)
 excluded_files = ["citys_nl.csv", "user_ext.csv"]
 
 # Copy all .csv and .bin files to the output directory, excluding specific files
-for file_pattern in ["*.csv", "*.bin"]:
+for file_pattern in ["*.csv", "*.bin", "*.dat"]:
     for file_path in glob.glob(os.path.join(src_dir, file_pattern)):
         if os.path.basename(file_path) not in excluded_files:
             shutil.copy(file_path, dest_dir)

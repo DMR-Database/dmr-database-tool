@@ -10,6 +10,8 @@ ADD https://raw.githubusercontent.com/DMR-Database/dmr-database-tool/main/citys_
 ADD https://raw.githubusercontent.com/DMR-Database/dmr-database-tool/main/user_ext.csv /usr/src/app
 COPY run_script.py /usr/src/app
 
+RUN pip install requests
+
 # Command to run the script
-CMD ["python", "./run_run.py"]
+CMD ["python", "./run_script.py"]
 

@@ -27,8 +27,61 @@ pistar_filename = 'DMRIds.dat'
 count_filename = 'count.txt'
 md5_filename = 'user.md5'
 ext_filename = 'user_ext.csv'
+city_state_csv = 'citys_nl.csv'
 line = "============================="
 
+
+def fill_empty_state():
+    print(f"{line}")
+    # Check if the necessary files exist
+    if not os.path.exists(csv_filename):
+        print(f"Error: {csv_filename} not found.")
+        return
+    if not os.path.exists(city_state_csv):
+        print(f"Error: {city_state_csv} not found.")
+        return
+
+    # Load city-state mapping from citys_nl.csv into a dictionary
+    city_state_map = {}
+    with open(city_state_csv, 'r', newline='', encoding='utf-8') as city_file:
+        city_reader = csv.DictReader(city_file)
+        
+        # Debug: Print the headers to ensure they are correct
+        headers = city_reader.fieldnames
+        print(f"Headers in {city_state_csv}: {headers}")
+        
+        if 'CITY' not in headers or 'STATE' not in headers:
+            print(f"Error: Expected headers 'CITY' and 'STATE' not found in {city_state_csv}")
+            return
+        
+        for row in city_reader:
+            city_state_map[row['CITY']] = row['STATE']
+
+    # Read user.csv and update the STATE where it is empty
+    updated_rows = []
+    with open(csv_filename, 'r', newline='', encoding='utf-8') as user_file:
+        user_reader = csv.DictReader(user_file)
+        fieldnames = user_reader.fieldnames
+        
+        if 'CITY' not in fieldnames or 'STATE' not in fieldnames:
+            print(f"Error: Expected headers 'CITY' and 'STATE' not found in {csv_filename}")
+            return
+        
+        for row in user_reader:
+            if row['STATE'] == '':
+                city = row['CITY']
+                if city in city_state_map:
+                    row['STATE'] = city_state_map[city]
+                    print(f"Updated STATE for CITY {city} to {city_state_map[city]}")
+            updated_rows.append(row)
+
+    # Write the updated data back to user.csv
+    with open(csv_filename, 'w', newline='', encoding='utf-8') as user_file:
+        user_writer = csv.DictWriter(user_file, fieldnames=fieldnames)
+        user_writer.writeheader()
+        user_writer.writerows(updated_rows)
+
+    print(f"Completed updating {csv_filename}")
 # Display header information about the application.
 def header():
     print(f"===== {APP_NAME} =====")
@@ -65,6 +118,7 @@ def calculate_md5(file_path):
         print(f"Error calculating MD5: {e}")
         return None
     return hash_md5.hexdigest()
+
 
 # Download the CSV file from a specified URL.
 def download_csv():
@@ -380,6 +434,7 @@ if __name__ == "__main__":
         clean_downloads()
         download_csv()
         merge_csv()
+        fill_empty_state()
         process_to_userat()
         process_to_userhd()
         process_to_usermd2017()

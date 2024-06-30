@@ -1,5 +1,6 @@
 #!/opt/homebrew/bin/python3.11
 ##!/usr/bin/python3
+##Please set your python path above
 import requests
 import csv
 import os

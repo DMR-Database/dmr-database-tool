@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 ADD https://raw.githubusercontent.com/DMR-Database/dmr-database-tool/main/dmr-database.py /usr/src/app 
 ADD https://raw.githubusercontent.com/DMR-Database/dmr-database-tool/main/citys_nl.csv /usr/src/app
 ADD https://raw.githubusercontent.com/DMR-Database/dmr-database-tool/main/user_ext.csv /usr/src/app
-COPY run_script.py /usr/src/app
+ADD https://raw.githubusercontent.com/DMR-Database/dmr-database-tool/main/Docker/run_script.py /usr/src/app
 
 RUN pip install --upgrade pip
 RUN pip install requests

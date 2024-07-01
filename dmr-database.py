@@ -359,7 +359,8 @@ def process_to_usermd2017():
         download_csv()
         merge_csv()
         fill_empty_state()
-        
+        print(f"{line}")
+
     # Load country and state mappings
     country_mapping = load_country_mapping()
     state_mapping = load_state_mapping()

@@ -1,6 +1,5 @@
 Device,OS,SubSystem,Memory,Cores,Speed with -a option (2 databases till now)
 mac mini M1,mac os,none,16,8,6.39
-tc620,debian,none,16,4,53.51
 tc620,microos,docker,16,2,140.86
 tc620,debian,none,16,4,53.51
 tc620,debian,none,8,4,55.05

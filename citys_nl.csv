@@ -35,7 +35,6 @@ CITY,STATE
 't Hoekske,Noord-Brabant
 't Hof,Noord-Brabant
 't Hof (?),Gelderland
-'t Hof (?),Gelderland
 't Jagertje,Zeeland
 't Kip,Gelderland
 't Kret,Groningen
@@ -51,11 +50,10 @@ CITY,STATE
 't Rolder,Gelderland
 't Rooth,Limburg
 't Stort,Groningen
-'t Veen,
+'t Veen,onbekend
 't Veld,Noord-Holland
 't Ven,Noord-Brabant
-'t Ven (?),
-'t Ven (?),
+'t Ven (?),onbekend
 't Villeken,Gelderland
 't Vlaandertje,Zeeland
 't Vlot,Gelderland
@@ -66,32 +64,21 @@ CITY,STATE
 't Woudt,Zuid-Holland
 't Wytfean,Friesland
 't Zand,Noord-Brabant
-'t Zand,Noord-Brabant
-'t Zand,Gelderland
 't Zand,Gelderland
 't Zand,Noord-Holland
-'t Zand,Noord-Brabant
 't Zandstervoorwerk,Groningen
 't Zandt,Groningen
 (De ?) Vleut,Noord-Brabant
-(De ?) Vleut,Noord-Brabant
-(De) Dingen,Groningen
 (De) Dingen,Groningen
 (De) Haspel,Groningen
-(De) Haspel,Groningen
-(De) Langstraat (?),Zuid-Holland
 (De) Langstraat (?),Zuid-Holland
 (De) Laren (?),Noord-Brabant
-(De) Laren (?),Noord-Brabant
 (De) Schifpot,Groningen
-(De) Schifpot,Groningen
-(De) Val (?),Zeeland
 (De) Val (?),Zeeland
 (De) Wippert,Gelderland
 (De) Wippert (?),Gelderland
 (Den) Broek (?),Limburg
-(Den) Broek (?),Limburg
-(It) Oranjewâld,
+(It) Oranjewâld,onbekend
 1e Exloërmond,Drenthe
 2e Exloërmond,Drenthe
 2e Exloermond,onbekend
@@ -108,12 +95,10 @@ Aalsmeer,Noord-Holland
 Aalsmeerderbrug,Noord-Holland
 Aalst,Gelderland
 Aalst,Noord-Brabant
-Aalst,Gelderland
 Aalsum,Groningen
 Aalsum,Friesland
 Aalten,Gelderland
 Aam,Gelderland
-Aan de Berg,Limburg
 Aan de Berg,Limburg
 Aan de Bergen,Limburg
 Aan de Maas,Limburg
@@ -131,14 +116,14 @@ Aartswoud,Noord-Holland
 Aasterberg,Limburg
 Abbega ,Friesland
 Abbegaasterketting,Friesland
-Abbegea,
-Abbegeasterkeatting,
+Abbegea,onbekend
+Abbegeasterkeatting,onbekend
 Abbekerk,Noord-Holland
 Abbekinderen,Zeeland
 Abbenbroek,Zuid-Holland
 Abbenes,Noord-Holland
 Abbengawier,Friesland
-Abbenwier,
+Abbenwier,onbekend
 Abbestede,Noord-Holland
 Abbeweer,Groningen
 Abcoude,Utrecht
@@ -153,7 +138,6 @@ Achter-Lindt,Zuid-Holland
 Achter-Thesinge,Groningen
 Achterberg,Utrecht
 Achterbos,Utrecht
-Achterbosch,Noord-Brabant
 Achterbosch,Noord-Brabant
 Achterbroek,Zuid-Holland
 Achterbroek,Noord-Brabant
@@ -206,24 +190,21 @@ Alblasserdam,Zuid-Holland
 Alblasserwaard,onbekend
 Ald Terp,Friesland
 Alde Leie,Friesland
-Alde Ouwer,
-Alde Skou,
-Aldeberkeap,
-Aldebiltsyl,
+Alde Ouwer,onbekend
+Alde Skou,onbekend
+Aldeberkeap,onbekend
+Aldebiltsyl,onbekend
 Aldeboarn,Friesland
-Aldeboarn,Friesland
-Aldegea,
-Aldegea,
-Aldegea,
-Aldehaske,
-Aldeholtpea,
-Aldeholtwâlde,
-Aldemardum,
-Aldetrine,
-Aldeweisterfeart,
-Aldhoarne,
-Aldlemmer,
-Aldskoat,
+Aldegea,onbekend
+Aldehaske,onbekend
+Aldeholtpea,onbekend
+Aldeholtwâlde,onbekend
+Aldemardum,onbekend
+Aldetrine,onbekend
+Aldeweisterfeart,onbekend
+Aldhoarne,onbekend
+Aldlemmer,onbekend
+Aldskoat,onbekend
 Aldtsjerk,Friesland
 Aldwâld,Friesland
 Aldwâldmersyl,Friesland
@@ -249,8 +230,6 @@ Alphen,Gelderland
 Alphen aan den Rijn,Zuid-Holland
 Alphen-Oosterwijk,Noord-Brabant
 Altena,Drenthe
-Alteveer,Drenthe
-Alteveer,Drenthe
 Alteveer,Drenthe
 Alteveer,Groningen
 Alteveer gem Hoogeveen,Drenthe
@@ -300,12 +279,11 @@ Annerveenschekanaal,Drenthe
 Anneville,Noord-Brabant
 Anreep,Drenthe
 Ansen,Drenthe
-Ansen,Drenthe
 Apeldoorn,Gelderland
 Apenhuizen,Overijssel
 Appel,Gelderland
 Appelscha,Friesland
-Appelskea,
+Appelskea,onbekend
 Appeltern,Gelderland
 Appen,Gelderland
 Appingedam,Groningen
@@ -344,9 +322,9 @@ Avest,Gelderland
 Axel,Zeeland
 Azelo,Overijssel
 Azewijn,Gelderland
-Bûtenpost,
-Bûtenstfallaat,
-Baaidúnen,
+Bûtenpost,onbekend
+Bûtenstfallaat,onbekend
+Baaidúnen,onbekend
 Baaiduinen,Friesland
 Baaium,Friesland
 Baak,Gelderland
@@ -360,18 +338,15 @@ Baambrugse Zuwe,Utrecht
 Baamsum,Groningen
 Baanhoek (?),Zuid-Holland
 Baard,Friesland
-Baardbuorren,
+Baardbuorren,onbekend
 Baarderburen,Friesland
 Baarland,Zeeland
 Baarle Nassau,onbekend
 Baarle-Nassau,Noord-Brabant
 Baarlo,Limburg
 Baarlo,Overijssel
-Baarlo,Overijssel
 Baarn,Utrecht
 Baars,Overijssel
-Baarschot,Noord-Brabant
-Baarschot,Noord-Brabant
 Baarschot,Noord-Brabant
 Baarsdorp,Zeeland
 Baarstraat,Limburg
@@ -380,19 +355,19 @@ Baburen,Friesland
 Babyloniënbroek,Noord-Brabant
 Bad Nieuweschans,Groningen
 Badhoevedorp,Noord-Holland
-Baerd,
+Baerd,onbekend
 Baexem,Limburg
 Baflo,Groningen
 Bahr,Gelderland
-Baijum,
+Baijum,onbekend
 Bakel,Noord-Brabant
 Bakelsebrug,Noord-Brabant
 Bakendorp,Zeeland
 Bakertand,Noord-Brabant
-Bakhúzen,
+Bakhúzen,onbekend
 Bakhuisbos,Gelderland
 Bakhuizen,Friesland
-Bakkefean,
+Bakkefean,onbekend
 Bakkerom,Groningen
 Bakkersdam,Zeeland
 Bakkeveen,Friesland
@@ -403,7 +378,7 @@ Balk,Friesland
 Balkbrug,Overijssel
 Ballast,Drenthe
 Balleman,Noord-Brabant
-Ballingbuer,
+Ballingbuer,onbekend
 Ballingbuur,Friesland
 Balloo,Drenthe
 Ballum,Friesland
@@ -413,7 +388,7 @@ Banholt,Limburg
 Bankert,Noord-Brabant
 Bant,Flevoland
 Bantega,Friesland
-Bantegea,
+Bantegea,onbekend
 Barchem,Gelderland
 Barendrecht,Zuid-Holland
 Barendrechtse Veer,Zuid-Holland
@@ -431,9 +406,6 @@ Barnflair,Groningen
 Barrier,Limburg
 Barsbeek,Overijssel
 Barsingerhorn,Noord-Holland
-Bartlehiem,Friesland
-Bartlehiem,Friesland
-Bartlehiem,Friesland
 Bartlehiem,Friesland
 Barwoutswaarder,Utrecht
 Basse,Overijssel
@@ -453,8 +425,6 @@ Bedum,Groningen
 Beegden,Limburg
 Beek,Limburg
 Beek,Gelderland
-Beek,Gelderland
-Beek,Limburg
 Beek en Donk,Noord-Brabant
 BEEK GEM BERG EN DAL,onbekend
 Beek Lb,onbekend
@@ -467,7 +437,7 @@ Beemdkant,Noord-Brabant
 Beemte,Gelderland
 Beemte Broekland,Gelderland
 Beerenplaat,Zuid-Holland
-Beers,
+Beers,onbekend
 Beers,Noord-Brabant
 Beers NB,Noord-Brabant
 Beers NB,onbekend
@@ -479,10 +449,10 @@ Beerze,Overijssel
 Beerzerveld,Overijssel
 Beesd,Gelderland
 Beesel,Limburg
-Beetgum,
-Beetgumermolen,
+Beetgum,onbekend
+Beetgumermolen,onbekend
 Beets,Noord-Holland
-Beetstersweach,
+Beetstersweach,onbekend
 Beetsterzwaag,Friesland
 Behelp,Noord-Brabant
 Beilen,Drenthe
@@ -525,8 +495,6 @@ Benzenrade,Limburg
 Berenbroek,Noord-Brabant
 Berg,Noord-Brabant
 Berg,Limburg
-Berg,Limburg
-Berg,Limburg
 Berg (?),Limburg
 Berg en Dal,Gelderland
 Berg en Terblijt,Limburg
@@ -549,12 +517,11 @@ Berghem,Limburg
 Berghem,Noord-Brabant
 Berghuizen,Drenthe
 Berghuizen,Gelderland
-Berghuizen,Gelderland
 Berghum,Overijssel
 Bergsche Heide,Limburg
 Bergschenhoek,Zuid-Holland
 Bergstoep,Zuid-Holland
-Bergum,
+Bergum,onbekend
 Berik,Limburg
 Beringe,Limburg
 Berkeind,Noord-Brabant
@@ -565,12 +532,9 @@ Berkel-Enschot,Noord-Brabant
 Berkelaar,Limburg
 Berkenwoude,Zuid-Holland
 Berkhoek,Noord-Brabant
-Berkhoek,Noord-Brabant
 Berkhout,Noord-Holland
 Berkt,Noord-Brabant
-Berkt,Noord-Brabant
 Berlicum,Noord-Brabant
-Berlikum,
 Berlikum,onbekend
 Berlikum,onbekend
 Berltsum,Friesland
@@ -598,7 +562,6 @@ Beverwijk,Noord-Holland
 Biddinghuizen,Flevoland
 Biert,Zuid-Holland
 Bierum,Groningen
-Biervliet,Zeeland
 Biervliet,Zeeland
 Biesstraat,Limburg
 Biessum,Groningen
@@ -633,11 +596,10 @@ Blaker,Zuid-Holland
 Blankenberg,Gelderland
 Blankenham,Overijssel
 Blaricum,Noord-Holland
-Blauforlaet,
-Blauhûs,
+Blauforlaet,onbekend
+Blauhûs,onbekend
 Blauw,Groningen
 Blauwe Hand,Overijssel
-Blauwe Sluis,Noord-Brabant
 Blauwe Sluis,Noord-Brabant
 Blauwenhoek,Noord-Brabant
 Blauwesluis,Gelderland
@@ -653,7 +615,7 @@ Blekslage,Groningen
 Blenkert,Limburg
 Blerick,Limburg
 Blesdijke,Friesland
-Blesdike,
+Blesdike,onbekend
 Bleskensgraaf,Zuid-Holland
 Bleskensgraaf ca,Zuid-Holland
 Blessum,Friesland
@@ -668,10 +630,10 @@ Blokland,Utrecht
 Blokland,Zuid-Holland
 Blokum,Groningen
 Blokzijl,Overijssel
-Boalsert,
-Boarnburgum,
-Boarnsweach,
-Boarnsweach Oer de Wielen,
+Boalsert,onbekend
+Boarnburgum,onbekend
+Boarnsweach,onbekend
+Boarnsweach Oer de Wielen,onbekend
 Boarnwert,Friesland
 Boarnwerthuzen,Friesland
 Boatebuorren,Friesland
@@ -688,7 +650,7 @@ Boekelte,Friesland
 Boekend,Limburg
 Boekhorst,Friesland
 Boelenslaan,Friesland
-Boelensloane,
+Boelensloane,onbekend
 Boer,Friesland
 Boerakker,Groningen
 Boerdonk,Noord-Brabant
@@ -706,7 +668,6 @@ Boksheide,Noord-Brabant
 Boksum,Friesland
 Bokt,Noord-Brabant
 Bolberg,Noord-Brabant
-Bolberg,Noord-Brabant
 Bolenberg,Limburg
 Bollingwier,Friesland
 Bolnes,Zuid-Holland
@@ -716,8 +677,7 @@ Bolsward,Friesland
 Bommelskous,Zuid-Holland
 Bommerig,Limburg
 Bong,Limburg
-Bong,Limburg
-Bonkwerd,
+Bonkwerd,onbekend
 Bonkwert,Friesland
 Bonnerveen,Drenthe
 Bonrepas,Zuid-Holland
@@ -733,7 +693,6 @@ Boornzwaag,Friesland
 Boornzwaag over de Wielen,Friesland
 Borculo,Gelderland
 Borger,Drenthe
-Borgercompagnie,Groningen
 Borgercompagnie,Groningen
 Borgertange,Groningen
 Borgerveld,Groningen
@@ -754,11 +713,9 @@ Bosch en Duin,Utrecht
 Boscheind,Noord-Brabant
 Boschheurne,Gelderland
 Boschhoven,Noord-Brabant
-Boschhoven,Noord-Brabant
 Boschkens,Noord-Brabant
 Boschoord,Drenthe
 Boshoek,Gelderland
-Boshoven,Noord-Brabant
 Boshoven,Noord-Brabant
 Boshoven,Limburg
 Boshuizen,Limburg
@@ -782,7 +739,7 @@ Bouchauterhaven,Zeeland
 Boudewijnskerke,Zeeland
 Boukoul,Limburg
 Bourtange,Groningen
-Bouwekleaster,
+Bouwekleaster,onbekend
 Bouwerschap,Groningen
 Boven Pekela,Groningen
 Boven Veensloot,Groningen
@@ -799,14 +756,14 @@ Bovenrijge,Groningen
 Bovensluis,Noord-Brabant
 Bovensmilde,Drenthe
 Bovenstad,Zuid-Holland
-Bovenste Huis (?),
+Bovenste Huis (?),onbekend
 Bovenstehuis,Noord-Brabant
 Bovenstreek,Drenthe
 Bovenstreek,Groningen
 Boxmeer,Noord-Brabant
 Boxtel,Noord-Brabant
-Boyl,
-Bozum,
+Boyl,onbekend
+Bozum,onbekend
 Braakhoek,Noord-Brabant
 Braamberg,Overijssel
 Braamberg,Groningen
@@ -852,17 +809,13 @@ Brillerij,Groningen
 Briltil,Groningen
 Brinkmanshoek,Gelderland
 Britsum,Friesland
-Britswerd,
+Britswerd,onbekend
 Britswert,Friesland
 Broek,Groningen
 Broek,Friesland
 Broek,Limburg
-Broek,Limburg
 Broek,Noord-Brabant
-Broek,Limburg
-Broek,Limburg
 Broek,Utrecht
-Broek,Friesland
 Broek in Waterland,Noord-Holland
 Broek op Langedijk,Noord-Holland
 Broekeind,Limburg
@@ -873,18 +826,13 @@ Broekhoven,Limburg
 Broekhuizen,Overijssel
 Broekhuizen,Drenthe
 Broekhuizen,Limburg
-Broekhuizen,Drenthe
 Broekhuizenvorst,Limburg
-Broekkant,Noord-Brabant
-Broekkant,Noord-Brabant
-Broekkant,Noord-Brabant
 Broekkant,Noord-Brabant
 Broekland,Overijssel
 Broeksterwâld,Friesland
-Broeksterwoude,
+Broeksterwoude,onbekend
 Broekzijde,Noord-Brabant
 Broerdijk,Noord-Holland
-Brommelen,Limburg
 Brommelen,Limburg
 Bronkhorst,Gelderland
 Bronneger,Drenthe
@@ -908,7 +856,7 @@ Buchten,Limburg
 Budel,Noord-Brabant
 Budel-Dorplein,Noord-Brabant
 Budel-Schoot,Noord-Brabant
-Bueren,
+Bueren,onbekend
 Buggenum,Limburg
 Buinen,Drenthe
 Buinerveen,Drenthe
@@ -924,13 +872,12 @@ Bunde,Limburg
 Bunne,Drenthe
 Bunnik,Utrecht
 Bunschoten-Spakenburg,Utrecht
-Burchwert,
+Burchwert,onbekend
 Burdaard,Friesland
 Buren,Gelderland
 Buren,Friesland
 Burgemeester Beinsdorp,Groningen
 Burgerbrug,Noord-Holland
-Burgersdijk,Zuid-Holland
 Burgersdijk,Zuid-Holland
 Burgerveen,Noord-Holland
 Burgervlotbrug,Noord-Holland
@@ -940,9 +887,8 @@ Burghsluis,Zeeland
 Burgt,Noord-Brabant
 Burgum,Friesland
 Burgwerd,Friesland
-Burstum,
+Burstum,onbekend
 Burum,Friesland
-Bus,Noord-Brabant
 Bus,Noord-Brabant
 Bussel,Noord-Brabant
 Busselte,Drenthe
@@ -951,7 +897,6 @@ Bussloo,Gelderland
 Bussum,Noord-Holland
 Buttinga,Friesland
 Buttinge,Zeeland
-Buurmalsen,Gelderland
 Buurmalsen,Gelderland
 Buurse,Overijssel
 Buurtje,Noord-Brabant
@@ -981,7 +926,7 @@ Castert,Limburg
 Castricum,Noord-Holland
 Catsop,Limburg
 Cattenbroek,Utrecht
-Cauwelaer (?),
+Cauwelaer (?),onbekend
 Cellemuiden,Overijssel
 Ceresdorp,Groningen
 Chaam,Noord-Brabant
@@ -995,7 +940,7 @@ Collendoornerveen,Overijssel
 Colmont,Limburg
 Colmschate,Overijssel
 Commissiepolle,Friesland
-Cornjum,
+Cornjum,onbekend
 Cornjum,onbekend
 Cornwerd,Friesland
 Cortenoever,Gelderland
@@ -1032,15 +977,15 @@ Dallingeweer,Groningen
 Dalmsholte,Overijssel
 Dam,Limburg
 Damwâld,Friesland
-Damwoude,
+Damwoude,onbekend
 Daniken,Limburg
 Darp,Drenthe
 Darthuizen,Utrecht
 Dassemus,Noord-Brabant
-De (Drachtster) Kompenije,
+De (Drachtster) Kompenije,onbekend
 De Aa,Noord-Brabant
 De Baan,Noord-Brabant
-De Bargebek,
+De Bargebek,onbekend
 De Beek,Noord-Brabant
 De Beek,Gelderland
 De Belt,Overijssel
@@ -1062,13 +1007,12 @@ De Bolt,Noord-Brabant
 De Bosjes,Gelderland
 De Bree,Zuid-Holland
 De Bree,Utrecht
-De Broek (Broek-Noord),
+De Broek (Broek-Noord),onbekend
 De Bruil,Gelderland
 De Bruil,Groningen
 De Buis,Noord-Brabant
 De Bult,Groningen
 De Bult,Overijssel
-De Bus,Noord-Brabant
 De Bus,Noord-Brabant
 De Buurt,Noord-Holland
 De Cocksdorp,Noord-Holland
@@ -1081,17 +1025,17 @@ De Elft,Noord-Brabant
 De Eng,Gelderland
 De Engel,Zuid-Holland
 De Falom,Friesland
-De Feanhoop,
-De Fochtel,
+De Feanhoop,onbekend
+De Fochtel,onbekend
 De Gaasten,Friesland
-De Gaastmar,
+De Gaastmar,onbekend
 De Gagel,Noord-Brabant
-De Galhoek (?),
+De Galhoek (?),onbekend
 De Ginkel,Gelderland
 De Glind,Gelderland
 De Goorn,Noord-Holland
-De Gordyk,
-De Gracht,
+De Gordyk,onbekend
+De Gracht,onbekend
 De Grits,Friesland
 De Groe,Zeeland
 De Groep,Utrecht
@@ -1099,20 +1043,17 @@ De Groeve,Drenthe
 De Haandrik,Overijssel
 De Haar,Drenthe
 De Haar,Gelderland
-De Haar,Drenthe
 De Haar,Overijssel
-De Haar,Drenthe
 De Haar,Groningen
 De Haere,Gelderland
-De Harkema,
-De Haule,
+De Harkema,onbekend
+De Haule,onbekend
 De Heen,Noord-Brabant
 De Hees,Noord-Brabant
 De Hees,Limburg
 De Heiberg,Noord-Brabant
 De Heide,Limburg
 De Hel,Friesland
-De Hem,Zuid-Holland
 De Hem,Zuid-Holland
 De Hem,Friesland
 De Heul,Utrecht
@@ -1121,33 +1062,28 @@ De Heuvel,Gelderland
 De Heuvel,Noord-Brabant
 De Heuvels,Overijssel
 De Hilte,Drenthe
-De Him,
-De Himrik,
+De Him,onbekend
+De Himrik,onbekend
 De Hoef,Utrecht
-De Hoef,Noord-Brabant
-De Hoef,Noord-Brabant
-De Hoef,Noord-Brabant
-De Hoef,Noord-Brabant
 De Hoef,Noord-Brabant
 De Hoek,Noord-Brabant
 De Hoeve,Friesland
 De Hoeven,Noord-Brabant
 De Hogert,Noord-Brabant
 De Holm,Groningen
-De Hommerts,
+De Hommerts,onbekend
 De Hooge Wegen,Overijssel
 De Horck,Limburg
 De Horst,Gelderland
-De Horst,Gelderland
 De Horst,Drenthe
 De Horst,Limburg
-De Houtigehage,
+De Houtigehage,onbekend
 De Houw,Groningen
 De Hut,Limburg
 De Hutten,Noord-Brabant
 De Jammer,Groningen
 De Jouwer,Groningen
-De Jouwer,
+De Jouwer,onbekend
 De Kade,Gelderland
 De Kapel,Noord-Brabant
 De Kar,Gelderland
@@ -1175,9 +1111,9 @@ De Krim,Overijssel
 De Krosselt,Limburg
 De Kwakel,Noord-Holland
 De Laan,Noord-Brabant
-De Langelille,
+De Langelille,onbekend
 De Leijen,Overijssel
-De Lemmer,
+De Lemmer,onbekend
 De Lent,Noord-Brabant
 De Lethe,Groningen
 De Leuke,Gelderland
@@ -1187,8 +1123,7 @@ De Loo,Noord-Brabant
 De Loofaert,Noord-Brabant
 De Looi,Limburg
 de Lutte,Overijssel
-De Lutte,Overijssel
-De Lytse Gaastmar,
+De Lytse Gaastmar,onbekend
 De Maat,Overijssel
 De Mars,Gelderland
 De Mars,Drenthe
@@ -1209,13 +1144,11 @@ De Overval,Noord-Brabant
 De Paauwen,Groningen
 De Pan,Noord-Brabant
 De Pas,Gelderland
-De Pas,Gelderland
-De Pein,
+De Pein,onbekend
 De Plaats,Noord-Brabant
 De Poffert,Groningen
 De Pol,Overijssel
 De Pol,Drenthe
-De Pol,Overijssel
 De Polle,Drenthe
 De Pollen,Overijssel
 De Posthoorn,Noord-Brabant
@@ -1255,10 +1188,10 @@ De Tike,Friesland
 De Tippe,Drenthe
 De Trieme,Friesland
 De Tuut,Gelderland
-De Tynje,
-De Ulesprong,
+De Tynje,onbekend
+De Ulesprong,onbekend
 De Valk,Gelderland
-De Valom,
+De Valom,onbekend
 De Vecht,Gelderland
 De Veenhoop,Friesland
 De Veenhuis,Gelderland
@@ -1269,12 +1202,11 @@ De Voort,Limburg
 De Vorst,Noord-Brabant
 De Vorst,Limburg
 De Waal,Noord-Holland
-De Weel (?),
+De Weel (?),onbekend
 De Weerd,Limburg
 De Weere,Noord-Holland
-De Weere,Noord-Holland
 De Weijer,Noord-Brabant
-De Weper,
+De Weper,onbekend
 De Westereen,onbekend
 De Westereen ,onbekend
 De Wielse Hoeven,Noord-Brabant
@@ -1285,8 +1217,7 @@ De Wilp,Groningen
 De Wolfsputten,Noord-Brabant
 De Wopereis,Gelderland
 de Woude,Noord-Holland
-De Woude,Noord-Holland
-De Wylgen,
+De Wylgen,onbekend
 De Zak,Zeeland
 De Zande,Overijssel
 De Zandput,Zeeland
@@ -1294,7 +1225,7 @@ De Zilk,Zuid-Holland
 Dearsum,Friesland
 Dedemsvaart,Overijssel
 Dedgum,Friesland
-Dedzjum,
+Dedzjum,onbekend
 Deelen,Gelderland
 Deelse Kampen,Noord-Brabant
 Deelshurk,Noord-Brabant
@@ -1304,7 +1235,7 @@ Deil,Gelderland
 Deinum,Friesland
 Dekeshorst,Limburg
 Dekkershuizen,Groningen
-Delbuorren,
+Delbuorren,onbekend
 Delburen,Friesland
 Delden,Gelderland
 Delden,Overijssel
@@ -1321,10 +1252,7 @@ Den Akker,Gelderland
 Den Andel,Groningen
 Den Berg,Noord-Brabant
 Den Bommel,Zuid-Holland
-Den bosch,onbekend
-Den Bosch,onbekend
-Den Bosch,onbekend
-Den Bosch,onbekend
+Den Bosch,Noord-Brabant
 Den Braam,Overijssel
 Den Burg,Noord-Holland
 Den Deijl,Zuid-Holland
@@ -1334,7 +1262,6 @@ Den Dungen,Noord-Brabant
 Den Haag,Zuid-Holland
 Den Ham,Groningen
 Den Ham,Overijssel
-Den Ham,Groningen
 Den Helder,Noord-Holland
 Den Hoef,Gelderland
 Den Hoek,Noord-Brabant
@@ -1359,7 +1286,6 @@ Den Westerhuis,Overijssel
 Denekamp,Overijssel
 Denemarken,Groningen
 Deurne,Noord-Brabant
-Deurningen,Overijssel
 Deurningen,Overijssel
 Deursen-Dennenburg,Noord-Brabant
 Deurze,Drenthe
@@ -1386,8 +1312,6 @@ Dieverbrug,Drenthe
 Diffelen,Overijssel
 Dijk,Noord-Brabant
 Dijk,Limburg
-Dijk,Limburg
-Dijk,Noord-Brabant
 Dijken,Friesland
 Dijkerhoek,Overijssel
 Dijkerstraat,Limburg
@@ -1397,7 +1321,7 @@ Dijkhuizen,Gelderland
 Dijksterburen,Friesland
 Dijkwel,Zeeland
 Dikbroeken,Drenthe
-Diken,
+Diken,onbekend
 Dinteloord,Noord-Brabant
 Dintelsas,Noord-Brabant
 Dinther,Noord-Brabant
@@ -1410,8 +1334,8 @@ Dirksland,Zuid-Holland
 Dishoek,Zeeland
 Distelberg,Noord-Brabant
 Diunt,Noord-Brabant
-Doaium,
-Doanjum,
+Doaium,onbekend
+Doanjum,onbekend
 Dodewaard,Gelderland
 Doenrade,Limburg
 Doesburg,Gelderland
@@ -1436,7 +1360,6 @@ Doniaburen,Friesland
 Doniaga,Friesland
 Donk,Noord-Brabant
 Donk,Limburg
-Donk,Limburg
 Donkerbroek,Friesland
 Donkereind,Utrecht
 Donkersvoort,Noord-Brabant
@@ -1445,7 +1368,6 @@ Doodstil,Groningen
 Doonheide,Noord-Brabant
 Doorn,Utrecht
 Doornenburg,Gelderland
-Doornhoek,Noord-Brabant
 Doornhoek,Noord-Brabant
 Doornik,Gelderland
 Doorning,Gelderland
@@ -1466,7 +1388,7 @@ Draaisterhuizen,Friesland
 Drachten,Friesland
 Drachten-Azeven,Friesland
 Drachtstercompagnie,Friesland
-Draeisterhuzen,
+Draeisterhuzen,onbekend
 Dreischor,Zeeland
 Drempt,Gelderland
 Dreumel,Gelderland
@@ -1475,24 +1397,15 @@ Drie Hoefijzers,Zeeland
 Drie Hoefijzers,Noord-Brabant
 Drieënhuizen,Gelderland
 Driebergen,onbekend
-Driebergen,onbekend
-Driebergen,onbekend
 Driebergen-Rijsenburg,Utrecht
 Drieborg,Groningen
 Driebruggen,Zuid-Holland
 Driedorp,Gelderland
 Driehoek,Noord-Brabant
-Driehoek,Noord-Brabant
-Driehoek,Noord-Brabant
-Driehoek,Noord-Brabant
-Driehoek,Noord-Brabant
 Driehuis,Noord-Brabant
 Driehuis,Noord-Holland
 Driehuis NH,Noord-Holland
 Driehuizen,Noord-Holland
-Driehuizen,Noord-Brabant
-Driehuizen,Noord-Brabant
-Driehuizen,Noord-Brabant
 Driehuizen,Noord-Brabant
 Driel,Gelderland
 Driemond,Noord-Holland
@@ -1500,18 +1413,17 @@ Driene,Overijssel
 Dries,Limburg
 Drieschouwen,Zeeland
 Driesprong,Gelderland
-Driesum,
-Driewegen,Zeeland
+Driesum,onbekend
 Driewegen,Zeeland
 Driezum,Friesland
 Drijber,Drenthe
 Drimmelen,Noord-Brabant
-Droegeham,
+Droegeham,onbekend
 Drogeham,Friesland
 Drogt,Drenthe
 Drogteropslagen,Drenthe
 Drongelen,Noord-Brabant
-Dronrijp,
+Dronrijp,onbekend
 Dronrijp,onbekend
 Dronryp,Friesland
 Dronten,Flevoland
@@ -1521,10 +1433,9 @@ Drouwenerveen,Drenthe
 Druisdijk,Noord-Brabant
 Drunen,Noord-Brabant
 Druten,Gelderland
-Drylts,
+Drylts,onbekend
 Dubbroek,Limburg
 Dublin,onbekend
-Duifhuis,Noord-Brabant
 Duifhuis,Noord-Brabant
 Duiksehoef,Noord-Brabant
 Duinen,Gelderland
@@ -1536,7 +1447,7 @@ Duizel,Noord-Brabant
 Duizend Morgen,Noord-Brabant
 Dulder,Overijssel
 Dun,Noord-Brabant
-Dunegea,
+Dunegea,onbekend
 Dunsborg,Gelderland
 Durgerdam,Noord-Holland
 Dussen,Noord-Brabant
@@ -1548,25 +1459,25 @@ Dwarsdijk,Utrecht
 Dwarsgracht,Overijssel
 Dwingeloo,Drenthe
 Dykshoarne,Friesland
-Dyksterbuorren,
+Dyksterbuorren,onbekend
 Eagmaryp,Friesland
 Eagum,Friesland
-Ealahúzen,
+Ealahúzen,onbekend
 Eanjum,Friesland
 Earnewâld,Friesland
-East-Flylân,
-Easterbierrum,
-Easterboarn,
+East-Flylân,onbekend
+Easterbierrum,onbekend
+Easterboarn,onbekend
 Easterein,Friesland
-Easterein,
+Easterein,onbekend
 Easterlittens,Friesland
 Eastermar,Friesland
 Easternijtsjerk,Friesland
-Eastersee,
-Eastersee-Buorren,
-Easterwâlde,
+Eastersee,onbekend
+Eastersee-Buorren,onbekend
+Easterwâlde,onbekend
 Easterwierrum,Friesland
-Easthim,
+Easthim,onbekend
 Eastrum,Friesland
 Ebbenbroek,Overijssel
 Echt,Limburg
@@ -1579,7 +1490,7 @@ Eck en Wiel,Gelderland
 Eckelrade,Limburg
 Edam,Noord-Holland
 Ede,Gelderland
-Edens,
+Edens,onbekend
 Ederveen,Gelderland
 Eede,Zeeland
 Eefde,Gelderland
@@ -1607,7 +1518,7 @@ Eenum,Groningen
 Eerbeek,Gelderland
 Eerde,Overijssel
 Eerde,Noord-Brabant
-Eernewoude,
+Eernewoude,onbekend
 Eersel,Noord-Brabant
 Eerste Dwarsdiep,Drenthe
 Ees,Drenthe
@@ -1615,7 +1526,7 @@ Eese,Overijssel
 Eesergroen,Drenthe
 Eeserveen,Drenthe
 Eesterga,Friesland
-Eestrum,
+Eestrum,onbekend
 Eesveen,Overijssel
 Eethen,Noord-Brabant
 Eext,Drenthe
@@ -1641,13 +1552,10 @@ Eikelenbosch,Limburg
 Eikelhof,Overijssel
 Eikenheuvel,Noord-Brabant
 Eiland,Limburg
-Eiland,Limburg
 Eiland,Noord-Brabant
 Eimeren,Gelderland
 Eind,Noord-Brabant
 Eind,Limburg
-Eind,Limburg
-Eind,Noord-Brabant
 Eind van Den Hout,Noord-Brabant
 Einde,Limburg
 Eindewege,Zeeland
@@ -1656,8 +1564,8 @@ Eindje,Noord-Brabant
 Einighausen,Limburg
 Ekamp,Groningen
 Ekehaar,Drenthe
-Eksmoarre,
-Eksmoarresyl,
+Eksmoarre,onbekend
+Eksmoarresyl,onbekend
 Elahuizen,Friesland
 Elburg,Gelderland
 Elde,Noord-Brabant
@@ -1683,7 +1591,7 @@ Elsenerbroek,Overijssel
 Elshof,Overijssel
 Elshout,Noord-Brabant
 Elshout,Limburg
-Elslo,
+Elslo,onbekend
 Elsloo,Limburg
 Elsloo,Friesland
 Elspeet,Gelderland
@@ -1710,10 +1618,9 @@ Engbergen,Gelderland
 Engeland,Gelderland
 Engeland,Overijssel
 Engeland,Drenthe
-Engeland,Overijssel
 Engelbert,Groningen
 Engelen,Noord-Brabant
-Engelum,
+Engelum,onbekend
 Englum,Groningen
 Engwegen,Limburg
 Engwerd,Friesland
@@ -1762,8 +1669,6 @@ Europoort,Zuid-Holland
 Europoort Rotterdam,Zuid-Holland
 Eursing,Drenthe
 Eursinge,Drenthe
-Eursinge,Drenthe
-Eursinge,Drenthe
 Euvelwegen,Noord-Brabant
 Euverem,Limburg
 Evenheuvel,Noord-Brabant
@@ -1774,7 +1679,6 @@ Eversdijk,Zeeland
 Everse,Noord-Brabant
 Evertsoord,Limburg
 Ewer,Groningen
-Ewijk,Gelderland
 Ewijk,Gelderland
 Ewinkel,Noord-Brabant
 Exel,Gelderland
@@ -1800,40 +1704,40 @@ Feanwâldsterwâl,Friesland
 Feerwerd,Groningen
 Feinsum,Friesland
 Felland,Groningen
-Fenekoaten,
-Ferwâlde,
+Fenekoaten,onbekend
+Ferwâlde,onbekend
 Ferwert,Friesland
 Ferwoude,Friesland
 Feytebuorren,Friesland
 Fiemel,Groningen
 Fiifhuzen,Friesland
-Fijfhûs,
+Fijfhûs,onbekend
 Fijnaart,Noord-Brabant
-Finkebuorren,
+Finkebuorren,onbekend
 Finkeburen,Friesland
-Finkegea,
-Finkum,
+Finkegea,onbekend
+Finkum,onbekend
 Finsterwolde,Groningen
 Finsterwolderhamrik,Groningen
 Firdgum,Friesland
 Fiskbuorren,Friesland
-Fiskersbuorren,
-Fjouwerhûs,
-Flânsum,
+Fiskersbuorren,onbekend
+Fjouwerhûs,onbekend
+Flânsum,onbekend
 Flansum,Friesland
 Fleringen,Overijssel
 Flieren,Gelderland
 Fluitenberg,Drenthe
-Flylân,
-Foarryp,
+Flylân,onbekend
+Foarryp,onbekend
 Fochteloo,Friesland
 Fokkershoek,Noord-Brabant
 Follega,Friesland
-Follegea,
+Follegea,onbekend
 Folsgare,Friesland
-Folsgeare,
-Fons,
-Formearum,
+Folsgeare,onbekend
+Fons,onbekend
+Formearum,onbekend
 Formerum,Friesland
 Fort,Drenthe
 Fortmond,Overijssel
@@ -1844,20 +1748,20 @@ Foxwolde,Drenthe
 Fraamklap,Groningen
 Franeker,Friesland
 Franschehoef,Noord-Brabant
-Franse Hoef (?),
+Franse Hoef (?),onbekend
 Fransum,Groningen
 Frederiksoord,Drenthe
 Friens,Friesland
 Frieschepalen,Friesland
 Friesland,Gelderland
 Frieswijk,Overijssel
-Frjentsjer,
+Frjentsjer,onbekend
 Fromberg,Limburg
 Froombosch,Groningen
-Froubuorren,
-Fryske Peallen,
+Froubuorren,onbekend
+Fryske Peallen,onbekend
 Frytum,Groningen
-Furdgum,
+Furdgum,onbekend
 Gaag,Zuid-Holland
 Gaanderen,Gelderland
 Gaarkeuken,Groningen
@@ -1875,7 +1779,7 @@ Ganzert,Gelderland
 Gapinge,Zeeland
 Garderbroek,Gelderland
 Garderen,Gelderland
-Garijp,
+Garijp,onbekend
 Garmerwolde,Groningen
 Garminge,Drenthe
 Garnwerd,Groningen
@@ -1893,16 +1797,14 @@ Gastel,Noord-Brabant
 Gastelsveer,Noord-Brabant
 Gasteren,Drenthe
 Gasthuis,Limburg
-Gau,
+Gau,onbekend
 Gauw,Friesland
 Gawege,Zeeland
 Gebergte,Noord-Brabant
 Gebroek,Limburg
-Gebroek,Limburg
 Geefsweer,Groningen
 Geelbroek,Drenthe
 Geeneind,Noord-Brabant
-Geer,Utrecht
 Geer,Utrecht
 Geerdijk,Overijssel
 Geersbroek,Noord-Brabant
@@ -1947,10 +1849,10 @@ Gennep,Limburg
 Genoenhuis,Noord-Brabant
 Genooi,Limburg
 Gerheggen,Limburg
-Gerkeskleaster,
+Gerkeskleaster,onbekend
 Gerkesklooster,Friesland
 Gerner,Overijssel
-Gersleat,
+Gersleat,onbekend
 Gersloot,Friesland
 Gerven,Gelderland
 Gerverscop,Utrecht
@@ -1961,8 +1863,8 @@ Geulle aan de Maas,Limburg
 Gever,Noord-Brabant
 Geverik,Limburg
 Gewande,Noord-Brabant
-Giekerk,
-Giekerkerhoek,
+Giekerk,onbekend
+Giekerkerhoek,onbekend
 Gieltjesdorp,Utrecht
 Giersbergen,Noord-Brabant
 Giesbeek,Gelderland
@@ -1982,7 +1884,6 @@ Gijzel,Noord-Brabant
 Gijzenrooi,Noord-Brabant
 Gilze,Noord-Brabant
 Ginderdoor,Noord-Brabant
-Ginderdoor,Noord-Brabant
 Ginnum,Friesland
 Glane,Overijssel
 Glane-Beekhoek,Overijssel
@@ -1990,9 +1891,9 @@ Glanerbrug,Overijssel
 Glimmen,Groningen
 Goënga,Friesland
 Goëngahuizen,Friesland
-Goaiïngaryp,
-Goaiïngea,
-Goaijingahuzen,
+Goaiïngaryp,onbekend
+Goaiïngea,onbekend
+Goaijingahuzen,onbekend
 Godlinze,Groningen
 Goeda,onbekend
 Goedereede,Zuid-Holland
@@ -2039,7 +1940,6 @@ Grazen,Noord-Brabant
 Greffeling,Gelderland
 Greffelkamp,Gelderland
 Greonterp,Friesland
-Greup,Zuid-Holland
 Greup,Zuid-Holland
 Grevenberg,Drenthe
 Grevenbicht,Limburg
@@ -2097,7 +1997,7 @@ Grootwijngaarden,Friesland
 Grote Voort,Noord-Brabant
 Grote Wiske,Friesland
 Grotel,Noord-Brabant
-Grou,
+Grou,onbekend
 Grou,onbekend
 Grouw,Friesland
 Grubbenvorst,Limburg
@@ -2122,7 +2022,6 @@ Haamstede,Zeeland
 Haanwijk,Noord-Brabant
 Haaren,Noord-Brabant
 Haarle,Overijssel
-Haarle,Overijssel
 Haarlem,Noord-Holland
 Haarlemmerliede,Noord-Holland
 Haarlo,Gelderland
@@ -2146,12 +2045,10 @@ Halfmijl,Noord-Brabant
 Halfweg,Noord-Holland
 Halfweg,Friesland
 Halfweg,Zuid-Holland
-Halfweg,Zuid-Holland
 Halfweg,Overijssel
 Hall,Gelderland
 Halle,Gelderland
 Halle-Heide,Gelderland
-Halle-Nijman,Gelderland
 Halle-Nijman,Gelderland
 Hallerhoek,Overijssel
 Hallum,Friesland
@@ -2160,18 +2057,16 @@ Halsteren,Noord-Brabant
 Halte,Noord-Brabant
 Halvinkhuizen,Gelderland
 Ham,Noord-Brabant
-Ham,Noord-Brabant
 Hamdijk,Groningen
 Hamingen,Overijssel
 Hammelsberg,Gelderland
 Hamrik,Groningen
-Hamsherne,
+Hamsherne,onbekend
 Hamshorn,Friesland
 Handel,Noord-Brabant
 Haneburen,Friesland
 Hanenberg,Noord-Brabant
 Hanendorp,Gelderland
-Hank,Noord-Brabant
 Hank,Noord-Brabant
 Hankate,Overijssel
 Hansweert,Zeeland
@@ -2183,11 +2078,10 @@ Hapert,Noord-Brabant
 Haps,Noord-Brabant
 Harbrinkhoek,Overijssel
 Harculo,Overijssel
-Hardegarijp,
+Hardegarijp,onbekend
 Hardenberg,Overijssel
 Harderwijk,Gelderland
 Hardeweer,Groningen
-Hardinxveld,onbekend
 Hardinxveld,onbekend
 HARDINXVELD GIESSENDAM,onbekend
 Hardinxveld-Giessend,onbekend
@@ -2195,7 +2089,7 @@ Hardinxveld-Giessendam,Zuid-Holland
 Haren,Groningen
 Haren,Noord-Brabant
 Harendermolen,Groningen
-Harenermolen (?),
+Harenermolen (?),onbekend
 Harfsen,Gelderland
 Harich,Friesland
 Harich Westerend,Friesland
@@ -2204,25 +2098,24 @@ Haringhuizen,Noord-Holland
 Harkema,Friesland
 Harkezijl,Friesland
 Harkstede,Groningen
-Harkstede,Groningen
 Harkstede GN,Groningen
 Harles,Limburg
 Harlingen,Friesland
 Harmöle,Overijssel
 Harmelen,Utrecht
 Harmelerwaard,Utrecht
-Harns,
+Harns,onbekend
 Harpel,Groningen
 Harreveld,Gelderland
 Harselaar,Gelderland
 Harskamp,Gelderland
 Harssens,Groningen
 Hartwerd,Friesland
-Hartwert,
+Hartwert,onbekend
 Hasjesstraat,Zeeland
 Haskerdijken,Friesland
-Haskerdiken,
-Haskerhoarne,
+Haskerdiken,onbekend
+Haskerhoarne,onbekend
 Haskerhorne,Friesland
 Haspel,Utrecht
 Hasselt,Limburg
@@ -2233,7 +2126,7 @@ Hattem,Gelderland
 Hattemerbroek,Gelderland
 Haule,Friesland
 Haulerwijk,Friesland
-Haulerwyk,
+Haulerwyk,onbekend
 Hauwert,Noord-Holland
 Havelt,Noord-Brabant
 Havelte,Drenthe
@@ -2248,14 +2141,14 @@ Hazennest,Noord-Brabant
 Hazerswoude,onbekend
 Hazerswoude-Dorp,Zuid-Holland
 Hazerswoude-Rijndijk,Zuid-Holland
-Heaburgen,
+Heaburgen,onbekend
 Hebrecht,Groningen
 Hedel,Gelderland
 Hedel,Noord-Brabant
 Hedikhuizen,Noord-Brabant
 Hee,Friesland
-Heech,
-Heech-Duerswâld,
+Heech,onbekend
+Heech-Duerswâld,onbekend
 Heeg,Friesland
 Heegherhoek,Gelderland
 Heek,Limburg
@@ -2304,28 +2197,19 @@ Hegelsom,Limburg
 Hegge,Gelderland
 Hegge,Limburg
 Hei,Limburg
-Hei,Limburg
-Hei,Limburg
 Hei- en Boeicop,Utrecht
 Hei-Oostenrijk,Limburg
 Heiakker,Limburg
 Heibloem,Limburg
 Heide,Friesland
 Heide,Limburg
-Heide,Limburg
-Heide,Limburg
-Heide,Limburg
 Heide,Gelderland
-Heide,Limburg
-Heide,Limburg
 Heide (?),Gelderland
 Heidehuizen,Friesland
 Heidekant,Gelderland
 Heidenhoek,Gelderland
 Heiderschoor,Noord-Brabant
 Heidveld,Noord-Brabant
-Heieind,Noord-Brabant
-Heieind,Noord-Brabant
 Heieind,Noord-Brabant
 Heiereind,Noord-Brabant
 Heierhoeve,Limburg
@@ -2336,33 +2220,14 @@ Heijen,Limburg
 Heijenrath,Limburg
 Heijningen,Noord-Brabant
 Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
 Heikant,Zeeland
-Heikant,Noord-Brabant
 Heikant,Limburg
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
-Heikant,Noord-Brabant
 Heikantse Hoeve,Noord-Brabant
 Heilig Landstichting,Gelderland
 Heiligeboom,Noord-Brabant
 Heiligerlee,Groningen
 Heille,Zeeland
 Heiloo,Noord-Holland
-Heimolen,Noord-Brabant
 Heimolen,Noord-Brabant
 Heineburen,Groningen
 Heinenoord,Zuid-Holland
@@ -2371,7 +2236,6 @@ Heino,Overijssel
 Heioord,Limburg
 Heische Wal,Noord-Brabant
 Heisterbrug,Limburg
-Heistraat,Noord-Brabant
 Heistraat,Noord-Brabant
 Heitrak,Noord-Brabant
 Heiveld,Gelderland
@@ -2387,7 +2251,6 @@ Helhoek,Zuid-Holland
 Helhuizen,Overijssel
 Helkant,Noord-Brabant
 Hell,Gelderland
-Helle,Limburg
 Helle,Limburg
 Hellebroek,Limburg
 Hellegat,Noord-Brabant
@@ -2405,17 +2268,13 @@ Helwijk,Noord-Brabant
 Hem,Noord-Holland
 Hemelum,Friesland
 Hemert,Groningen
-Hemert,
+Hemert,onbekend
 Hemmen,Gelderland
 Hempens,Friesland
 Hemrik,Friesland
 Hemrikerverlaat,Friesland
 Hendrik ido amabacht,onbekend
 Hendrik Ido Ambacht,onbekend
-Hendrik Ido Ambacht,onbekend
-Hendrik Ido Ambacht,onbekend
-Hendrik Ido Ambacht,onbekend
-Hendrik ido ambacht,onbekend
 Hendrik-Ido-Ambacht,Zuid-Holland
 Hengeland,Limburg
 Hengelo,Gelderland
@@ -2426,7 +2285,7 @@ Hengevelde,Overijssel
 Hengforden,Overijssel
 Hengstdijk,Zeeland
 Hengstheuvel,Noord-Brabant
-Hennaard,
+Hennaard,onbekend
 Hensbroek,Noord-Holland
 Herbaijum,Friesland
 Herfte,Overijssel
@@ -2452,8 +2311,7 @@ Herxen,Overijssel
 Hesens,Friesland
 Hespelaar,Noord-Brabant
 Hessum,Overijssel
-Het,
-Het,
+Het,onbekend
 Het Beggelder,Gelderland
 Het Beijersche,Zuid-Holland
 Het Bosch,Noord-Brabant
@@ -2467,7 +2325,6 @@ Het Laar,Noord-Brabant
 Het Loo,Overijssel
 Het Moer,Drenthe
 Het Oosteind,Noord-Brabant
-Het Oudeland,Zeeland
 Het Oudeland,Zeeland
 Het Reidland,Groningen
 Het Sas,Noord-Brabant
@@ -2488,11 +2345,7 @@ Heult,Noord-Brabant
 Heumen,Gelderland
 Heure,Gelderland
 Heurne,Gelderland
-Heurne,Gelderland
 Heusden,Noord-Brabant
-Heusden,Noord-Brabant
-Heuvel,Noord-Brabant
-Heuvel,Noord-Brabant
 Heuvel,Noord-Brabant
 Heuvelberg,Noord-Brabant
 Heuvelstraat,Noord-Brabant
@@ -2501,7 +2354,6 @@ Heuven,Gelderland
 Heveadorp,Gelderland
 Hexel,Overijssel
 Heythuysen,Limburg
-Hezelaar,Noord-Brabant
 Hezelaar,Noord-Brabant
 Hezingen,Overijssel
 Hiaure,Friesland
@@ -2512,7 +2364,7 @@ Hierden,Gelderland
 Hieslum,Friesland
 Hijken,Drenthe
 Hijkersmilde,Drenthe
-Hijlaard,
+Hijlaard,onbekend
 Hijum,Friesland
 Hilaard,Friesland
 Hilakker,Noord-Brabant
@@ -2524,21 +2376,21 @@ Hilvarenbeek,Noord-Brabant
 Hilversum,Noord-Holland
 Hilversumse Meent,Noord-Holland
 Himert,Friesland
-Himmelum,
-Himpens,
-Himrikerfallaat,
+Himmelum,onbekend
+Himpens,onbekend
+Himrikerfallaat,onbekend
 Hindeloopen,Friesland
 Hingen,Limburg
 Hinnaard,Friesland
 Hintham,Noord-Brabant
 Hippolytushoef,Noord-Holland
 Hitsertse Kade,Zuid-Holland
-Hitsum,
+Hitsum,onbekend
 Hitzum,Friesland
-Hjerbeam,
+Hjerbeam,onbekend
 Ho(o)gebiezen (?),Noord-Brabant
-Hoarne,
-Hoarnstersweach,
+Hoarne,onbekend
+Hoarnstersweach,onbekend
 Hobbelrade,Limburg
 Hobrede,Noord-Holland
 Hodenpijl,Zuid-Holland
@@ -2551,8 +2403,6 @@ Hoek,Friesland
 Hoek,Limburg
 Hoek,Noord-Brabant
 Hoek,Zeeland
-Hoek,Noord-Brabant
-Hoek,Noord-Brabant
 Hoek van de Dijk,Zeeland
 Hoek van Holland,Zuid-Holland
 Hoekdries,Noord-Brabant
@@ -2563,20 +2413,16 @@ Hoekje,Groningen
 Hoekske,Noord-Brabant
 Hoeksmeer,Groningen
 Hoenderloo,Gelderland
-Hoenderloo,Gelderland
 Hoenkoop,Utrecht
 Hoensbroek,Limburg
 Hoenzadriel,Gelderland
 Hoetmansmeer,Groningen
 Hoeve,Limburg
 Hoeve,Gelderland
-Hoeve,Gelderland
 Hoeve,Noord-Brabant
 Hoevelaken,Gelderland
 Hoeven,Noord-Brabant
-Hoeven,Noord-Brabant
 Hoeven,Limburg
-Hoeven,Noord-Brabant
 Hoeves,Noord-Brabant
 Hoevestein,Noord-Brabant
 Hof,Limburg
@@ -2601,20 +2447,16 @@ Holst,Limburg
 Holt,Overijssel
 Holte,Groningen
 Holten,Overijssel
-Holten,Overijssel
 Holterhoek,Gelderland
 Holthe,Drenthe
 Holthees,Noord-Brabant
 Holtheme,Overijssel
 Holthone,Overijssel
 Holthuizen,Gelderland
-Holthuizen,Gelderland
 Holtien,Drenthe
 Holtinge,Drenthe
 Holtland,Drenthe
 Holtum,Limburg
-Holwerd,onbekend
-Holwerd,onbekend
 Holwerd,onbekend
 Holwert,Friesland
 Holwierde,Groningen
@@ -2622,7 +2464,6 @@ Holwinde,Groningen
 Holysloot,Noord-Holland
 Homberg,Limburg
 Hommelse Hoeven,Noord-Brabant
-Hommert,Limburg
 Hommert,Limburg
 Hommerts,Friesland
 Homoet,Gelderland
@@ -2646,7 +2487,6 @@ Hoog-Caestert,Limburg
 Hoog-Keppel,Gelderland
 Hoogblokland,Zuid-Holland
 Hoogbroek,Gelderland
-Hoogbroek,Gelderland
 Hoogcasteren,Noord-Brabant
 Hoogcruts,Limburg
 Hooge Aard,Noord-Brabant
@@ -2659,18 +2499,13 @@ Hoogedijk,Zeeland
 Hoogeduurswoude,Friesland
 Hoogehaar,Drenthe
 Hoogeind,Noord-Brabant
-Hoogeind,Noord-Brabant
-Hoogeind,Noord-Brabant
-Hoogeind,Noord-Brabant
 Hoogeind,Utrecht
-Hoogeind,Noord-Brabant
 Hoogelande,Zeeland
 Hoogeloon,Noord-Brabant
 Hoogen-Aarle,Noord-Brabant
 Hoogengraven,Overijssel
 Hoogenweg,Overijssel
 Hoogerheide,Noord-Brabant
-Hoogersmilde,Drenthe
 Hoogersmilde,Drenthe
 Hoogeveen,Drenthe
 Hoogeweg,Zeeland
@@ -2691,7 +2526,7 @@ Hoogvliet,Zuid-Holland
 Hoogvliet Rotterdam,Zuid-Holland
 Hoogwatum,Groningen
 Hoogwoud,Noord-Holland
-Hoogzand-Oostermeer,
+Hoogzand-Oostermeer,onbekend
 Hooibergen,Friesland
 Hooidonk,Noord-Brabant
 Hook of Holland,onbekend
@@ -2742,7 +2577,7 @@ Huijbergen,Noord-Brabant
 Huinen,Gelderland
 Huinerbroek,Gelderland
 Huinerwal,Gelderland
-Huins,
+Huins,onbekend
 Huis ter Heide,Utrecht
 Huis ter Heide,Drenthe
 Huisduinen,Noord-Holland
@@ -2761,7 +2596,6 @@ Hulsdonk,Noord-Brabant
 Hulsel,Noord-Brabant
 Hulsen,Overijssel
 Hulsen,Limburg
-Hulsen,Limburg
 Hulshorst,Gelderland
 Hulst,Zeeland
 Hulten,Noord-Brabant
@@ -2779,15 +2613,15 @@ Hushoven,Limburg
 Hussenberg,Limburg
 Huurne,Overijssel
 Huygevoort,Noord-Brabant
-Hylpen,
+Hylpen,onbekend
 Idaard,Friesland
-Idaerd,
+Idaerd,onbekend
 Idsegahuizum,Friesland
 Idserdaburen,Friesland
 Idskenhuizen,Friesland
 Idzega,Friesland
-Idzegea,
-Idzerdabuorren,
+Idzegea,onbekend
+Idzerdabuorren,onbekend
 Ie,Friesland
 Iens,Friesland
 Iezumasyl,Friesland
@@ -2810,12 +2644,12 @@ Ilpendam,Noord-Holland
 Imstenrade,Limburg
 In de Hoeven,Limburg
 Indijk,Friesland
-Indijk,
+Indijk,onbekend
 Indoornik,Gelderland
 Ingber,Limburg
 Ingelum,Friesland
 Ingen,Gelderland
-Ingwert,
+Ingwert,onbekend
 Ingwierrum,Friesland
 Iniaheide,Friesland
 Invercargill,onbekend
@@ -2823,7 +2657,7 @@ Irnsum,Friesland
 Isabellahaven,Zeeland
 Istanbul Turkey,onbekend
 It Fliet,Friesland
-It Hearrenfean,
+It Hearrenfean,onbekend
 It Heechsân,Friesland
 It Heidenskip,Friesland
 Itens,Friesland
@@ -2832,7 +2666,7 @@ Ittervoort,Limburg
 Jaarsveld,Utrecht
 Jabeek,Limburg
 Jagerswijk,Groningen
-Janderum of,
+Janderum of,onbekend
 Jannendorp,Utrecht
 Jannum,Friesland
 Jellum,Friesland
@@ -2843,22 +2677,22 @@ Jipsingboermussel,Groningen
 Jipsingboertange,Groningen
 Jipsinghuizen,Groningen
 Jirnsum,onbekend
-Jiskenhuzen,
+Jiskenhuzen,onbekend
 Jislum,Friesland
 Jisp,Noord-Holland
-Jistergea,
+Jistergea,onbekend
 Jistrum,Friesland
 Jo22Kq,onbekend
-Jobbegea,
+Jobbegea,onbekend
 Jonas,Gelderland
 Jonen,Overijssel
 Jonkershuizen,Friesland
 Jonkerslân,Friesland
-Jonkersland,
+Jonkersland,onbekend
 Jonkersvaart,Groningen
 Joossesweg,Zeeland
 Joppe,Gelderland
-Jorwerd,
+Jorwerd,onbekend
 Jorwert,Friesland
 Joure,Friesland
 Jousterp,Friesland
@@ -2870,16 +2704,16 @@ Jukwerd,Groningen
 Julianadorp,Noord-Holland
 Junne,Overijssel
 Jutrijp,Friesland
-Jutryp,
+Jutryp,onbekend
 Kûbaard,Friesland
-Kûfurderrige,
-Kûkherne,
+Kûfurderrige,onbekend
+Kûkherne,onbekend
 Kûkherne,Friesland
 Kaag,Zuid-Holland
 Kaakhorn,Groningen
 Kaard,Friesland
 Kaarschot,Noord-Brabant
-Kaart,
+Kaart,onbekend
 Kaathoven,Noord-Brabant
 Kaatsheuvel,Noord-Brabant
 Kade,Noord-Brabant
@@ -2895,7 +2729,6 @@ Kalteren,Drenthe
 Kalverdijk,Noord-Holland
 Kameren,Noord-Brabant
 Kamerik,Utrecht
-Kamp,Limburg
 Kamp,Limburg
 Kampen,Zeeland
 Kampen,Overijssel
@@ -2915,9 +2748,7 @@ Kapel,Noord-Holland
 Kapel,Gelderland
 Kapel Avezaath,Gelderland
 Kapel-Avezaath,Gelderland
-Kapel-Avezaath,Gelderland
 Kapeleind,Noord-Brabant
-Kapelle,Zeeland
 Kapelle,Zeeland
 Kapellebrug,Zeeland
 Kapolder,Limburg
@@ -2952,12 +2783,11 @@ Keent,Limburg
 Keersop,Noord-Brabant
 Keiendorp,Overijssel
 Keijenborg,Gelderland
-Keimpetille,
+Keimpetille,onbekend
 Keinsmerbrug,Noord-Holland
 Keizerrijk,Zeeland
 Keizersdijk,Zuid-Holland
 Keizershoek,Noord-Brabant
-Keizersveer,Noord-Brabant
 Keizersveer,Noord-Brabant
 Kekerdom,Gelderland
 Keldonk,Noord-Brabant
@@ -2967,13 +2797,10 @@ Kelpen-Oler,Limburg
 Kerk Avezaath,Gelderland
 Kerk Avezaath,onbekend
 Kerk-Avezaath,Gelderland
-Kerk-Avezaath,Gelderland
 Kerkbuurt,Noord-Holland
 Kerkbuurt,Zuid-Holland
 Kerkdorp,Gelderland
 Kerkdriel,Gelderland
-Kerkeind,Noord-Brabant
-Kerkeind,Noord-Brabant
 Kerkeind,Noord-Brabant
 Kerkeinde,Noord-Brabant
 Kerkenveld,Drenthe
@@ -2988,7 +2815,7 @@ Kessel,Limburg
 Kesseleik,Limburg
 Kesteren,Gelderland
 Ketelhaven,Flevoland
-Ketlik,
+Ketlik,onbekend
 Keulse Kamp,Gelderland
 Keunenhoek,Noord-Brabant
 Keuningswijk,Groningen
@@ -2999,7 +2826,7 @@ Kibbelgaarn,Groningen
 Kibbelveen,Drenthe
 Kie,Friesland
 Kiel-Windeweer,Groningen
-Kiestersyl,
+Kiestersyl,onbekend
 Kiesterzijl,Friesland
 Kievitsdel,Gelderland
 Kievitshaar,Overijssel
@@ -3012,13 +2839,13 @@ Kijkuit,Zeeland
 Kilder,Gelderland
 Kille,Noord-Brabant
 Kimswerd,Friesland
-Kimswert,
+Kimswert,onbekend
 Kinderbos,Noord-Brabant
 Kinderdijk,Zuid-Holland
 Kingmatille,Friesland
 Kinkhoven,Limburg
 Kinnum,Friesland
-Kinum (?),
+Kinum (?),onbekend
 Kippereind,Noord-Brabant
 Kivitsbraak,Noord-Brabant
 Klössehoek,Overijssel
@@ -3026,11 +2853,10 @@ Klaarstraat,Limburg
 Klaaswaal,Zuid-Holland
 Kladde,Noord-Brabant
 Klarenbeek,Gelderland
-Klarenbeek,Gelderland
 Klatering,Drenthe
 Klazienaveen,Drenthe
 Klazienaveen-Noord,Drenthe
-Kleaster-Lidlum,
+Kleaster-Lidlum,onbekend
 Kleeberg,Limburg
 Klef,Noord-Brabant
 Klei,Groningen
@@ -3046,7 +2872,7 @@ Klein Hitland,Zuid-Holland
 Klein Leger,Groningen
 Klein Loo,Noord-Brabant
 Klein Mariekerke,Zeeland
-Klein Ulsda,
+Klein Ulsda,onbekend
 Klein Wetsinge,Groningen
 Klein Zundert,Noord-Brabant
 Klein-Azewijn,Gelderland
@@ -3067,7 +2893,7 @@ Kleindorp,Gelderland
 Kleindorp,Limburg
 Kleine Bottel,Noord-Brabant
 Kleine Gaastmeer,Friesland
-Kleine Geest,
+Kleine Geest,onbekend
 Kleine Horst,Limburg
 Kleine Huisjes,Groningen
 Kleine Koolwijk,Noord-Brabant
@@ -3085,13 +2911,11 @@ Klimmen,Limburg
 Klinkenberg,Gelderland
 Klispoel,Gelderland
 Kloetinge,Zeeland
-Kloetinge,Zeeland
 Klooster,Noord-Brabant
 Klooster,Drenthe
 Klooster Lidlum,Friesland
 Kloosterburen,Groningen
 Kloostereind,Noord-Brabant
-Kloosterhaar,Overijssel
 Kloosterhaar,Overijssel
 Kloosterveen,Drenthe
 Kloosterzande,Zeeland
@@ -3101,18 +2925,17 @@ Knaphof,Zeeland
 Knegsel,Noord-Brabant
 Knikkerdorp,Limburg
 Knuitershoek,Zeeland
-Koaldum,
+Koaldum,onbekend
 Koarnjum,Friesland
-Koarnwert,
-Koartehimmen,
-Koartsweagen,
-Koartwâld,
-Koatstertille,
+Koarnwert,onbekend
+Koartehimmen,onbekend
+Koartsweagen,onbekend
+Koartwâld,onbekend
+Koatstertille,onbekend
 Kockengen,Utrecht
 Koedijk,Noord-Holland
-Koedijk,Noord-Holland
 Koedood,Zuid-Holland
-Koehoal,
+Koehoal,onbekend
 Koehool,Friesland
 Koekange,Drenthe
 Koekangerveld,Drenthe
@@ -3120,13 +2943,12 @@ Koekoek,Limburg
 Koekoek,Zeeland
 Koelveen,Drenthe
 Koevering,Noord-Brabant
-Koevering,Noord-Brabant
 Koewacht,Zeeland
 Koggenland,onbekend
 Kokkelert,Limburg
 Kolderveen,Drenthe
 Kolderveense Bovenboer,Drenthe
-Kolderwâlde,
+Kolderwâlde,onbekend
 Kolderwolde,Friesland
 Kolham,Groningen
 Kolhol,Groningen
@@ -3155,11 +2977,9 @@ Kop van 't Land,Zuid-Holland
 Kopaf,Groningen
 Kopstukken,Groningen
 Korengarst,Groningen
-Korengarst,Groningen
 Korhorn,Groningen
 Korn,Noord-Brabant
 Kornhorn,Groningen
-Kornwerderzand,Friesland
 Kornwerderzand,Friesland
 Korte Akkers,Groningen
 Korte Heide,Limburg
@@ -3198,7 +3018,6 @@ Krabbenhoek,Zeeland
 Krachtighuizen,Gelderland
 Kraggenburg,Flevoland
 Kraloo,Drenthe
-Kraloo,Drenthe
 Kranenbroek,Noord-Brabant
 Kranenburg,Gelderland
 Kranendijk,Zuid-Holland
@@ -3224,7 +3043,7 @@ Krommenie,Noord-Holland
 Kromwijk,Utrecht
 Kronenberg,Limburg
 Kropswolde,Groningen
-Krosselt (?),
+Krosselt (?),onbekend
 Kruiningen,Zeeland
 Kruiningergors,Zuid-Holland
 Kruisberg,Limburg
@@ -3236,14 +3055,11 @@ Kruisland,Noord-Brabant
 Kruispolderhaven,Zeeland
 Kruispunt,Noord-Brabant
 Kruisstraat,Noord-Brabant
-Kruisstraat,Noord-Brabant
-Kruisstraat,Noord-Brabant
-Kruisstraat,Noord-Brabant
 Kruisweg,Groningen
 Kruisweg,Zuid-Holland
 Kudelstaart,Noord-Holland
 Kuikhorne,Friesland
-Kuikhorne,
+Kuikhorne,onbekend
 Kuiksche Heide,Noord-Brabant
 Kuikseind,Noord-Brabant
 Kuilenrode,Noord-Brabant
@@ -3267,8 +3083,8 @@ Kwartier,Gelderland
 Kwintshel,onbekend
 Kwintsheul,Zuid-Holland
 l'Air Pur,Noord-Brabant
-Lúkswâld,
-Lúnbert,
+Lúkswâld,onbekend
+Lúnbert,onbekend
 Laag Spul,Noord-Brabant
 Laag Zuthem,Overijssel
 Laag-Caestert,Limburg
@@ -3283,14 +3099,8 @@ Laagheide,Limburg
 Laagnieuwkoop,Utrecht
 Laagriebroek,Limburg
 Laagstraat,Noord-Brabant
-Laagstraat,Noord-Brabant
 Laak,Gelderland
-Laaksum,
-Laar,Noord-Brabant
-Laar,Noord-Brabant
-Laar,Noord-Brabant
-Laar,Limburg
-Laar,Limburg
+Laaksum,onbekend
 Laar,Noord-Brabant
 Laar,Limburg
 Laarbroek,Noord-Brabant
@@ -3302,15 +3112,13 @@ Lage Berkt,Noord-Brabant
 Lage Bijssel,Gelderland
 Lage Mierde,Noord-Brabant
 Lage Vuursche,Utrecht
-Lage Weg (?),
+Lage Weg (?),onbekend
 Lage Wijst,Noord-Brabant
 Lage Zwaluwe,Noord-Brabant
 Lagebiezen,Noord-Brabant
 Lagebroek,Utrecht
 Lagekant,Noord-Brabant
 Lageland,Groningen
-Lageland,Groningen
-Lageland GN,Groningen
 Lageland GN,Groningen
 Lagenheuvel,Noord-Brabant
 Lageweg,Zuid-Holland
@@ -3337,13 +3145,12 @@ Lange Linschoten,Utrecht
 Langedijk,onbekend
 Langedijke,onbekend
 Langedijke(n),Friesland
-Langedike (?),
+Langedike (?),onbekend
 Langelille,Friesland
 Langelo,Overijssel
 Langelo,Drenthe
 Langenberg,Noord-Brabant
 Langenboom,Noord-Brabant
-Langendijk,Noord-Brabant
 Langendijk,Noord-Brabant
 Langenholte,Overijssel
 Langeraar,Zuid-Holland
@@ -3359,8 +3166,8 @@ Langeweide,Zuid-Holland
 Langezwaag,Friesland
 Langlaar,Noord-Brabant
 Langstraat,Limburg
-Langsweagen,
-Langwar,
+Langsweagen,onbekend
+Langwar,onbekend
 Langweer,Friesland
 Lankes,Noord-Brabant
 Lankhorst,Overijssel
@@ -3377,7 +3184,7 @@ Lauwersoog,Groningen
 Lauwerzijl,Groningen
 Lede en Oudewaard,Gelderland
 Ledeacker,Noord-Brabant
-Leech-Duerswâld,
+Leech-Duerswâld,onbekend
 Leegkerk,Groningen
 Leegte,Friesland
 Leek,Groningen
@@ -3398,7 +3205,7 @@ Leeuwerik,Limburg
 Leeuwte,Drenthe
 Leeuwte,Overijssel
 Leg,Noord-Brabant
-Legemar,
+Legemar,onbekend
 Legemeer,Friesland
 Legert,Limburg
 Leggeloo,Drenthe
@@ -3432,7 +3239,6 @@ Leur,Gelderland
 Leusden,Utrecht
 Leusden-Zuid,Utrecht
 Leutes,Gelderland
-Leutes,Gelderland
 Leuth,Gelderland
 Leutingewolde,Drenthe
 Leuven,Gelderland
@@ -3451,7 +3257,6 @@ Lichtmis,Overijssel
 Liderdorp,onbekend
 Liefkenshoek,Noord-Brabant
 Liempde,Noord-Brabant
-Lienden,Gelderland
 Lienden,Gelderland
 Lierderholthuis,Overijssel
 Lieren,Gelderland
@@ -3476,7 +3281,6 @@ Limmen,Noord-Holland
 Linde,Gelderland
 Linde,Drenthe
 Linde,Overijssel
-Linde,Overijssel
 Linden,Noord-Brabant
 Lingen,onbekend
 Lingsfort,Limburg
@@ -3484,24 +3288,23 @@ Linne,Limburg
 Linschoten,Utrecht
 Lintelo,Gelderland
 Lintvelde,Gelderland
-Lions,
+Lions,onbekend
 Lippenhuizen,Friesland
-Lippenhuzen,
+Lippenhuzen,onbekend
 Lippenwoude,Friesland
 Lisse,Zuid-Holland
 Lisserbroek,Noord-Holland
 Lith,Noord-Brabant
 Lithoijen,Noord-Brabant
-Ljanderum (?),
-Ljouwert,
+Ljanderum (?),onbekend
+Ljouwert,onbekend
 Ljussens,Friesland
 Loënga,Friesland
-Loaiïngea,
+Loaiïngea,onbekend
 Lobith,Gelderland
 Lochem,Gelderland
 Locht,Noord-Brabant
 Lochuizen,Gelderland
-Loenen,Gelderland
 Loenen,Gelderland
 Loenen aan de Vecht,Utrecht
 Loenersloot,Utrecht
@@ -3511,18 +3314,13 @@ Loete,Zuid-Holland
 Loil,Gelderland
 Lollum,Friesland
 Lomm,Limburg
-Longerhou,
+Longerhou,onbekend
 Longerhouw,Friesland
 Lonneker,Overijssel
 Loo,Noord-Brabant
 Loo,Gelderland
-Loo,Gelderland
-Loo,Gelderland
-Loo,Noord-Brabant
 Loo,Overijssel
 Loo,Limburg
-Loo,Noord-Brabant
-Loo Gld,Gelderland
 Loo Gld,Gelderland
 Loobeek,Limburg
 Loobrink,Gelderland
@@ -3541,7 +3339,6 @@ Loosbroek,Noord-Brabant
 Loosdorp,Utrecht
 Loosdrecht,Noord-Holland
 Loosduinen,onbekend
-Loosduinen,onbekend
 Looveer,Gelderland
 Loozen,Overijssel
 Lopik,Utrecht
@@ -3551,8 +3348,6 @@ Losdorp,Groningen
 Losser,Overijssel
 Lottum,Limburg
 Lovendaal,Limburg
-Loveren,Noord-Brabant
-Loveren,Noord-Brabant
 Loveren,Noord-Brabant
 Lubbinge,Drenthe
 Lucaswolde,Groningen
@@ -3577,8 +3372,8 @@ Lutjewijtwerd,Groningen
 Lutjewinkel,Noord-Holland
 Lutjewolde,Groningen
 Lutkepost,Friesland
-Lutkewierum,
-Lutsjelollum (?),
+Lutkewierum,onbekend
+Lutsjelollum (?),onbekend
 Luttelgeest,Flevoland
 Luttelherpt,Noord-Brabant
 Lutten,Overijssel
@@ -3590,9 +3385,9 @@ Luxwoude,Friesland
 Luyksgestel,Noord-Brabant
 Lyts Midhuzen,Friesland
 Lytse Geast,Friesland
-Lytsepost,
+Lytsepost,onbekend
 Lytsewierrum,Friesland
-Lytshuzen,
+Lytshuzen,onbekend
 Mûnein,Friesland
 Maagd van Gent,Zeeland
 Maaidijk,Zeeland
@@ -3613,7 +3408,6 @@ Maasbracht,Limburg
 Maasbree,Limburg
 Maasdam,Zuid-Holland
 Maasdijk,Zuid-Holland
-Maasdijk,Zuid-Holland
 Maashees,Noord-Brabant
 Maaskant,Noord-Brabant
 Maaskantje,Noord-Brabant
@@ -3629,10 +3423,9 @@ Made,Noord-Brabant
 Magele,Overijssel
 Magrette,Zeeland
 Makkinga,Friesland
-Makkingea,
+Makkingea,onbekend
 Makkum,Friesland
 Makkum,Drenthe
-Makkum,Friesland
 Malden,Gelderland
 Malland,Zeeland
 Mallem,Gelderland
@@ -3652,9 +3445,8 @@ Mariënvelde,Gelderland
 Maria Hoop,Limburg
 Maria-Heide,Noord-Brabant
 Mariadorp,Limburg
-Mariaheide (?),
+Mariaheide (?),onbekend
 Mariahout,Noord-Brabant
-Mariaparochie,Overijssel
 Mariaparochie,Overijssel
 Marienberg,onbekend
 Marijenkampen,Overijssel
@@ -3666,17 +3458,15 @@ Markluiden,Gelderland
 Marknesse,Flevoland
 Markvelde,Overijssel
 Marle,Overijssel
-Marle,Overijssel
 Marolleput,Zeeland
 Marrum,Friesland
-Marssum,
+Marssum,onbekend
 Marssum,onbekend
 Marsum,Groningen
 Marsum,Friesland
 Martenshoek,Groningen
 Marum,Groningen
 Marwijksoord,Drenthe
-Mastenbroek,Overijssel
 Mastenbroek,Overijssel
 Mastwijk,Utrecht
 Mataram,Overijssel
@@ -3712,12 +3502,11 @@ Megchelen,Gelderland
 Megelsum,Limburg
 Megen,Noord-Brabant
 Meije,Zuid-Holland
-Meije,Zuid-Holland
 Meije,Utrecht
 Meijel,Limburg
 Meijldoorn,Noord-Brabant
 Meijsberg,Noord-Brabant
-Meilahuizen,
+Meilahuizen,onbekend
 Meilahuzen,Friesland
 Mekkelhorst,Overijssel
 Melderslo,Limburg
@@ -3726,7 +3515,7 @@ Meliskerke,Zeeland
 Melissant,Zuid-Holland
 Melleschet,Limburg
 Menaam,Friesland
-Menaldum,
+Menaldum,onbekend
 Mennonietenbuurt,Noord-Holland
 Mensingeweer,Groningen
 Menzel,Noord-Brabant
@@ -3762,25 +3551,23 @@ Middelstum,Groningen
 Middelveen,Drenthe
 Middenbeemster,Noord-Holland
 Middendorp,Drenthe
-Middendorp,Drenthe
 Middenhof,Zeeland
 Middenmeer,Noord-Holland
 Midlaren,Drenthe
 Midlum,Friesland
-Midslân,
-Midslân oan See,
+Midslân,onbekend
+Midslân oan See,onbekend
 Midsland,Friesland
 Midsland aan Zee,Friesland
 Midwolda,Groningen
 Midwolde,Groningen
 Midwoud,Noord-Holland
 Miedum,Friesland
-Miedum,Friesland
 Mierlo,Noord-Brabant
 Mijdrecht,Utrecht
 Mijnden,Utrecht
 Mijnsheerenland,Zuid-Holland
-Mildaam,
+Mildaam,onbekend
 Mildam,Friesland
 Mildert,Limburg
 Milheeze,Noord-Brabant
@@ -3791,10 +3578,9 @@ Milsbeek,Limburg
 Milschot,Noord-Brabant
 Milt,Gelderland
 Mingersberg,Limburg
-Mingersberg,Limburg
 Minkeloos,Zuid-Holland
 Minnertsga,Friesland
-Minnertsgea,
+Minnertsgea,onbekend
 Mirns,Friesland
 Mispeleind,Noord-Brabant
 Mitselwier,Friesland
@@ -3817,18 +3603,13 @@ Molenbelt,Overijssel
 Molenbuurt,Utrecht
 Moleneind,Noord-Brabant
 Moleneind,Limburg
-Moleneind,Noord-Brabant
-Moleneind,Noord-Brabant
 Moleneind,Gelderland
-Molenend,
+Molenend,onbekend
 Molengat,Noord-Brabant
-Molenhoek,Gelderland
-Molenhoek,Gelderland
 Molenhoek,Gelderland
 Molenhoek,Zeeland
 Molenhoek,Limburg
 Molenhoek,Overijssel
-Molenhoek,Limburg
 Molenhof,Noord-Brabant
 Molenhuizen,Limburg
 Molenperk,Zeeland
@@ -3837,11 +3618,10 @@ Molenrij,Groningen
 Molenschot,Noord-Brabant
 Molenstad,Drenthe
 Molenstraat,Noord-Brabant
-Molenstraat,Noord-Brabant
 Molenveld,Noord-Brabant
 Molenvliet,Zeeland
 Molenwijk,Noord-Brabant
-Molkwar,
+Molkwar,onbekend
 Molkwerum,Friesland
 Molsberg,Limburg
 Monnickendam,Noord-Holland
@@ -3864,7 +3644,6 @@ Mosbulten,Noord-Brabant
 Mosik,Noord-Brabant
 Moskou,Friesland
 Mossel,Gelderland
-Mossel,Gelderland
 Mosselaar,Noord-Brabant
 Mosselhoek,Zeeland
 Most,Limburg
@@ -3878,19 +3657,18 @@ Muiden,Noord-Holland
 Muiderberg,Noord-Holland
 Muizenhol,Noord-Brabant
 Mullegen,Gelderland
-Mullum,
+Mullum,onbekend
 Mun,Noord-Brabant
-Munnekebuorren,
+Munnekebuorren,onbekend
 Munnekeburen,Friesland
 Munnekemoer,Groningen
-Munnekens-Vinkel,Noord-Brabant
 Munnekens-Vinkel,Noord-Brabant
 Munnekezijl,Friesland
 Munnikenheide,Noord-Brabant
 Munstergeleen,Limburg
 Munsterscheveld,Drenthe
 Muntendam,Groningen
-Murns,
+Murns,onbekend
 Musschendorp,Utrecht
 Mussel,Groningen
 Musselkanaal,Groningen
@@ -3937,8 +3715,6 @@ Nergena,Noord-Brabant
 Nergena,Gelderland
 Nerhoven,Noord-Brabant
 Nes,Friesland
-Nes,Friesland
-Nes,Friesland
 Nes aan de Amstel,Noord-Holland
 Nessersluis,Utrecht
 Netersel,Noord-Brabant
@@ -3947,7 +3723,6 @@ Netterden,Gelderland
 Nibbixwoud,Noord-Holland
 Niebert,Groningen
 Niehove,Groningen
-Niekerk,Groningen
 Niekerk,Groningen
 Niemeskant,Noord-Brabant
 Nierhoven,Limburg
@@ -3962,7 +3737,6 @@ Nieuw Beerta,Groningen
 Nieuw Heeten,Overijssel
 Nieuw Milligen,Gelderland
 Nieuw Namen,Zeeland
-Nieuw Scheemda,Groningen
 Nieuw Scheemda,Groningen
 Nieuw Schoonebeek,onbekend
 Nieuw Wehl,Gelderland
@@ -4029,7 +3803,6 @@ Nieuwerkerk aan den IJssel,Zuid-Holland
 Nieuwerkerk ad ijssel,onbekend
 Nieuwerkerke (Schutje),Zeeland
 Nieuweroord,Drenthe
-Nieuweroord,Drenthe
 Nieuwersluis,Utrecht
 Nieuweschans,Groningen
 Nieuweschoot,Friesland
@@ -4042,7 +3815,6 @@ Nieuwkuijk,Noord-Brabant
 Nieuwland,Zeeland
 Nieuwland,Utrecht
 Nieuwland,Friesland
-Nieuwlande,Drenthe
 Nieuwlande,Drenthe
 Nieuwlande Coevorden,Drenthe
 Nieuwlandse Molen,Zeeland
@@ -4060,47 +3832,46 @@ Niezijl,Groningen
 Niftrik,Gelderland
 Nigtevecht,Utrecht
 Nij Altoenae,Friesland
-Nij Amerika,
+Nij Amerika,onbekend
 Nij Beets,Friesland
-Nijbrêge,
+Nijbrêge,onbekend
 Nijbroek,Gelderland
 Nijbuorren,Friesland
-Nije-Syl,
-Nijeberkeap,
+Nije-Syl,onbekend
+Nijeberkeap,onbekend
 Nijeberkoop,Friesland
 Nijega,Friesland
 Nijehaske,Friesland
 Nijeholtpade,Friesland
-Nijeholtpea,
-Nijeholtwâlde,
+Nijeholtpea,onbekend
+Nijeholtwâlde,onbekend
 Nijeholtwolde,Friesland
 Nijelamer,Friesland
-Nijelemmer,
-Nijemardum,
+Nijelemmer,onbekend
+Nijemardum,onbekend
 Nijemirdum,Friesland
 Nijenklooster,Groningen
-Nijenklooster,Groningen
 Nijensleek,Drenthe
-Nijesyl,
+Nijesyl,onbekend
 Nijetrijne,Friesland
-Nijetrine,
+Nijetrine,onbekend
 Nijeveen,Drenthe
 Nijeveense Bovenboer,Drenthe
 Nijewier,Friesland
 Nijezijl,Friesland
-Nijhoarne,
+Nijhoarne,onbekend
 Nijhoven,Noord-Brabant
 Nijhuizum,Friesland
-Nijhuzum,
+Nijhuzum,onbekend
 Nijken,Limburg
 Nijkerk,Gelderland
 Nijkerkerveen,Gelderland
-Nijlân,
+Nijlân,onbekend
 Nijland,Friesland
 Nijlande,Drenthe
 Nijmegen,Gelderland
 Nijnsel,Noord-Brabant
-Nijskoat,
+Nijskoat,onbekend
 Nijstad,Drenthe
 Nijswiller,Limburg
 Nijvelaar,Noord-Brabant
@@ -4111,14 +3882,13 @@ Nispense Achterhoek,Noord-Brabant
 Nisse,Zeeland
 Nistelrode,Noord-Brabant
 Noardburgum,Friesland
-Noardein,
-Noardwâlde,
-Noardwâlde-Súd,
+Noardein,onbekend
+Noardwâlde,onbekend
+Noardwâlde-Súd,onbekend
 Noenes,Noord-Brabant
 Noetsele,Overijssel
 Nolde,Drenthe
 NoName,onbekend
-None,onbekend
 None,onbekend
 Nooitgedacht,Drenthe
 Nooitgedacht,Groningen
@@ -4134,7 +3904,7 @@ Noord-Stegeren,Overijssel
 Noordbarge,Drenthe
 Noordbeemster,Noord-Holland
 Noordbergum,onbekend
-Noordbergum-dorp,
+Noordbergum-dorp,onbekend
 Noordbroek,Groningen
 Noordbroeksterhamrik,Groningen
 Noorddijk,Groningen
@@ -4151,7 +3921,6 @@ Noorderburen,Groningen
 Noorderhoogebrug,Groningen
 Noorderkolonie,Groningen
 Noordgouwe,Zeeland
-Noordhoek,Noord-Brabant
 Noordhoek,Noord-Brabant
 Noordhorn,Groningen
 Noordhornerga,Groningen
@@ -4197,16 +3966,15 @@ Nunhem,Limburg
 Nunspeet,Gelderland
 Nuth,Limburg
 Nutter,Overijssel
-Nyegea,
+Nyegea,onbekend
 Nykleaster,Friesland
-Nylân,
+Nylân,onbekend
 Obbicht,Limburg
 Obdam,Noord-Holland
 Ochten,Gelderland
 Ockhuizen,Utrecht
 Odijk,Utrecht
 Odiliapeel,Noord-Brabant
-Odoorn,Drenthe
 Odoorn,Drenthe
 Oeffelt,Noord-Brabant
 Oegstgeest,Zuid-Holland
@@ -4215,17 +3983,16 @@ Oekel,Noord-Brabant
 Oeken,Gelderland
 Oele,Overijssel
 Oene,Gelderland
-Oenkerk,
-Oensel,Gelderland
+Oenkerk,onbekend
 Oensel,Gelderland
 Oensel,Limburg
 Oentsjerk,Friesland
 Oerle,Noord-Brabant
-Oerterp,
+Oerterp,onbekend
 Oestgeest,onbekend
 Oetelaar,Noord-Brabant
 Oevereind,Limburg
-Offenwier,
+Offenwier,onbekend
 Offingawier,Friesland
 Ofwegen,Zuid-Holland
 Ohé en Laak,Limburg
@@ -4255,10 +4022,8 @@ Oldenhave,Drenthe
 Oldenklooster,Groningen
 Oldenzaal,Overijssel
 Oldenzijl,Groningen
-Oldenzijl,Groningen
 Oldeouwer,Friesland
 Oldetrijne,Friesland
-Olen,Noord-Brabant
 Olen,Noord-Brabant
 Oler,Limburg
 Oling,Groningen
@@ -4280,7 +4045,6 @@ Onnen,Groningen
 Onsenoort,Noord-Brabant
 Onstwedde,Groningen
 Ooij,Gelderland
-Ooij,Gelderland
 Ooijen,Limburg
 Ool,Limburg
 Oolde,Gelderland
@@ -4300,7 +4064,6 @@ Oostdijk,Zuid-Holland
 Oostdijk,Zeeland
 Oosteind,Noord-Brabant
 Oosteind,Zuid-Holland
-Oosteind,Noord-Brabant
 Oosteinde,Noord-Holland
 Oosteinde,Drenthe
 Oosteinde,Groningen
@@ -4315,10 +4078,9 @@ Oosterblokker,Noord-Holland
 Oosterboorn,Friesland
 Oosterbroek,Drenthe
 Oostereinde,Groningen
-Oosterend,
+Oosterend,onbekend
 Oosterend,Friesland
 Oosterend,Noord-Holland
-Oosterend,Friesland
 Oosterens,Noord-Brabant
 Oosterhesselen,Drenthe
 Oosterhof,Gelderland
@@ -4330,12 +4092,12 @@ Oosterhuizen,Gelderland
 Oosterik,Noord-Brabant
 Oosterland,Zeeland
 Oosterleek,Noord-Holland
-Oosterlittens,
-Oostermeer,
+Oosterlittens,onbekend
+Oostermeer,onbekend
 Oosternieland,Groningen
 Oosterse Bos,Drenthe
 Oosterstreek,Friesland
-Oosterwierum,
+Oosterwierum,onbekend
 Oosterwijk,Gelderland
 Oosterwijk,Utrecht
 Oosterwijtwerd,Groningen
@@ -4344,7 +4106,6 @@ Oosterwolde,Friesland
 Oosterzand,Groningen
 Oosterzee,Friesland
 Oosterzee Buren,Friesland
-Oosthem,Friesland
 Oosthem,Friesland
 Oosthoek,Zuid-Holland
 Oosthuizen,Noord-Holland
@@ -4356,7 +4117,6 @@ Oostrum,Limburg
 Oostum,Groningen
 Oostvoorne,Zuid-Holland
 Oostwold,Groningen
-Oostwold,Groningen
 Oostwolderpolder,Groningen
 Oostwoud,Noord-Holland
 Oostzaan,Noord-Holland
@@ -4366,14 +4126,12 @@ Op de Bies,Limburg
 Op de Bos,Limburg
 Op de Hoven,Limburg
 Op den Bosch,Noord-Brabant
-Op den Bosch,Noord-Brabant
 Op den Hering,Limburg
 Opeinde,Friesland
 Opende,Groningen
-Ophûs,
+Ophûs,onbekend
 Ophemert,Gelderland
 Opheusden,Gelderland
-Ophoven,Limburg
 Ophoven,Limburg
 Ophuis,Friesland
 Opijnen,Gelderland
@@ -4394,7 +4152,7 @@ Orvelte,Drenthe
 Osen,Limburg
 Oshaar,Drenthe
 Osingahuizen,Friesland
-Osingahuzen,
+Osingahuzen,onbekend
 Ospel,Limburg
 Ospeldijk,Limburg
 Oss,Noord-Brabant
@@ -4466,15 +4224,11 @@ Oude Tonge,onbekend
 Oude Waranda,Noord-Brabant
 Oude Wetering,Zuid-Holland
 Oude Wetering,Overijssel
-Oude Wetering,Overijssel
-Oude Wetering,Overijssel
 Oude Willem,Drenthe
 Oude-Niedorp,Noord-Holland
 Oude-Tonge,Zuid-Holland
 Oudedijk,Groningen
 Oudedorp,Zeeland
-Oudega,Friesland
-Oudega,Friesland
 Oudega,Friesland
 Oudehaske,Friesland
 Oudehorne,Friesland
@@ -4488,11 +4242,9 @@ Oudemolen,Drenthe
 Oudenbosch,Noord-Brabant
 Oudendijk,Noord-Holland
 Oudendijk,Zuid-Holland
-Oudendijk,Zuid-Holland
 Oudendijk,Noord-Brabant
 Oudenhoorn,Zuid-Holland
 Oudenmolen,Noord-Brabant
-Ouderkerk aan de Amstel,Noord-Holland
 Ouderkerk aan de Amstel,Noord-Holland
 Ouderkerk aan den IJssel,Zuid-Holland
 Oudeschans,Groningen
@@ -4506,14 +4258,13 @@ Oudewegstervaart,Friesland
 Oudezijl,Groningen
 Oudheusden,Noord-Brabant
 Oudkarspel,Noord-Holland
-Oudkarspel,Noord-Holland
 Oudkerk,Friesland
 Oudleusen,Overijssel
 Oudorp,Noord-Holland
 Oukoop,Zuid-Holland
 Oukoop,Utrecht
-Ousterhaule,
-Ousternijegea,
+Ousterhaule,onbekend
+Ousternijegea,onbekend
 Ouwendorp,Gelderland
 Ouwerkerk,Zeeland
 Ouwster-Nijega,Friesland
@@ -4571,7 +4322,7 @@ Papenvoort,Drenthe
 Papenvoort,Noord-Brabant
 Park,Noord-Brabant
 Parrega,Friesland
-Parregea,
+Parregea,onbekend
 Partij,Limburg
 Pasop,Groningen
 Passewaaij,Gelderland
@@ -4583,9 +4334,8 @@ Peazens,Friesland
 Peebos,Groningen
 Peeldijk,Noord-Brabant
 Peelkant,Noord-Brabant
-Peelse Huis (?),
+Peelse Huis (?),onbekend
 Peelsehuis,Noord-Brabant
-Peelstraat,Noord-Brabant
 Peelstraat,Noord-Brabant
 Peerenboom,Noord-Brabant
 Peest,Drenthe
@@ -4598,15 +4348,14 @@ Peizerweg,Groningen
 Peizerwold,Drenthe
 Pelikaan,Noord-Brabant
 Pelsendijk,Noord-Brabant
-Penjum,
+Penjum,onbekend
 Peperga,Friesland
-Pepergea,
+Pepergea,onbekend
 Pepinusbrug,Limburg
 Pernis,Zuid-Holland
 Pernis Rotterdam,Zuid-Holland
 Persingen,Gelderland
 Pesaken,Limburg
-Pesse,Drenthe
 Pesse,Drenthe
 Petersburg,Friesland
 Petten,Noord-Holland
@@ -4622,13 +4371,12 @@ Pietersbierum,Friesland
 Pieterzijl,Groningen
 Pijnacker,Zuid-Holland
 Pijnenburg,Utrecht
-Pikesyl,
+Pikesyl,onbekend
 Piksen,Overijssel
 Pikveld,Drenthe
 Pingjum,Friesland
 Pinke(n)veer (?),Zuid-Holland
-Pinke(n)veer (?),Zuid-Holland
-Pitersbierrum,
+Pitersbierrum,onbekend
 Pitteperk,Zeeland
 Plaat,Limburg
 Plaatsluis,Noord-Brabant
@@ -4659,7 +4407,7 @@ Poortugaal,Zuid-Holland
 Poortvliet,Zeeland
 Poppendamme,Zeeland
 Poppenhuizen,Friesland
-Poppenhuzen,
+Poppenhuzen,onbekend
 Poppenwier,Friesland
 Portengen,Utrecht
 Portengense Brug,Utrecht
@@ -4675,7 +4423,6 @@ Prinsenkamp,Gelderland
 Puiflijk,Gelderland
 Punthorst,Overijssel
 Purmer,Noord-Holland
-Purmer,Noord-Holland
 Purmerbuurt,Noord-Holland
 Purmerend,Noord-Holland
 Purmerland,Noord-Holland
@@ -4689,7 +4436,7 @@ Pyramide,Zeeland
 Quatre Bras,Gelderland
 Quatrebras,Friesland
 Quirijnstok,Noord-Brabant
-Rûgehúzen,
+Rûgehúzen,onbekend
 Raaieind,Limburg
 Raakeind,Noord-Brabant
 Raalte,Overijssel
@@ -4702,7 +4449,6 @@ Raard,Friesland
 Raayen,Gelderland
 Radewijk,Overijssel
 Radio Kootwijk,Gelderland
-Raerd,Friesland
 Raerd,Friesland
 Rafelder,Gelderland
 Rakens,Noord-Brabant
@@ -4717,26 +4463,25 @@ Raren,Limburg
 Rasquert,Groningen
 Ravensgat,Noord-Brabant
 Ravenstein,Noord-Brabant
-Ravenswâld,
+Ravenswâld,onbekend
 Ravenswaaij,Gelderland
 Ravenswoud,Friesland
 Readtsjerk,Friesland
 Reahûs,Friesland
-Reahel,
-Reahel,
-Reaskuorre,
+Reahel,onbekend
+Reaskuorre,onbekend
 Rechteren,Overijssel
 Rectum,Overijssel
 Reduzum,onbekend
-Reduzum (?),
+Reduzum (?),onbekend
 Reedijk,Zuid-Holland
 Reek,Noord-Brabant
 Reeth,Gelderland
 Reeuwijk,Zuid-Holland
 Reeuwijk-Brug,Zuid-Holland
 Reeuwijk-Dorp,Zuid-Holland
-Reeuwijkse Brug,
-Reeuwijksebrug (?),
+Reeuwijkse Brug,onbekend
+Reeuwijksebrug (?),onbekend
 Reeve,Overijssel
 Reidswâl,Friesland
 Reijerscop,Utrecht
@@ -4761,7 +4506,7 @@ Reutje,Limburg
 Reutum,Overijssel
 Reuver,Limburg
 Reuzenhoek,Zeeland
-Rewerd,
+Rewerd,onbekend
 Rewert,Friesland
 Rha,Gelderland
 Rhaan,Overijssel
@@ -4780,9 +4525,8 @@ RHON,onbekend
 Rhoon,Zuid-Holland
 Ridderbuurt,Zuid-Holland
 Ridderkerk,Zuid-Holland
-Rie,
+Rie,onbekend
 Ried,Friesland
-Riel,Noord-Brabant
 Riel,Noord-Brabant
 Rien,Friesland
 Rietbroek,Limburg
@@ -4790,11 +4534,9 @@ Riethorst,Limburg
 Riethoven,Noord-Brabant
 Rietmolen,Gelderland
 Rietveld,Zuid-Holland
-Rietveld,Zuid-Holland
 Rietveld,Utrecht
 Rietven,Noord-Brabant
-Rietven,Noord-Brabant
-Riis,
+Riis,onbekend
 Rijckholt,Limburg
 Rijen,Noord-Brabant
 Rijkebuurt,Zeeland
@@ -4806,7 +4548,7 @@ Rijksdorp,Zuid-Holland
 Rijnsaterwoude,Zuid-Holland
 Rijnsburg,Zuid-Holland
 Rijpelberg,Noord-Brabant
-Rijperkerk,
+Rijperkerk,onbekend
 Rijpwetering,Zuid-Holland
 Rijs,Friesland
 Rijsbergen,Noord-Brabant
@@ -4818,7 +4560,6 @@ Rijssen,Overijssel
 Rijswijk,Gelderland
 Rijswijk,Zuid-Holland
 Rijswijk,Noord-Brabant
-Rijswijk,Gelderland
 Rijswijk (GLD),Gelderland
 Rijswijk (NB),Noord-Brabant
 Rijt,Noord-Brabant
@@ -4829,10 +4570,10 @@ Rimpelt,Limburg
 Rinkesfort,Limburg
 Rinkveld,Noord-Brabant
 Rinsumageast,Friesland
-Rinsumageest,
+Rinsumageest,onbekend
 Rith,Noord-Brabant
 Ritsumasyl,Friesland
-Ritsumazijl,
+Ritsumazijl,onbekend
 Ritthem,Zeeland
 Rockanje,Zuid-Holland
 Rode Sluis,Zeeland
@@ -4851,7 +4592,6 @@ Rogat,Drenthe
 Roggel,Limburg
 Roggelsedijk,Limburg
 Rohel,Friesland
-Rohel,Friesland
 Rolaf,Noord-Brabant
 Rolde,Drenthe
 Roligt,Limburg
@@ -4865,15 +4605,15 @@ Roodenhoek,Zeeland
 Roodeschool,Groningen
 Roodeschuur,Friesland
 Roodewijk,Zeeland
-Roodhuis,
-Roodkerk,
+Roodhuis,onbekend
+Roodkerk,onbekend
 Roond,Noord-Brabant
 Roordahuizum,Friesland
 Roosberg,Noord-Brabant
 Roosendaal,Noord-Brabant
 Roosteren,Limburg
 Rooth,Limburg
-Roptasyl,
+Roptasyl,onbekend
 Roptazijl,Friesland
 Rosengaarde,Overijssel
 Roskam,Limburg
@@ -4884,11 +4624,10 @@ Roswinkel,Drenthe
 Rothem,Limburg
 Rothenbach,Limburg
 Rotstergaast,Friesland
-Rotstergast,
+Rotstergast,onbekend
 Rotsterhaule,Friesland
 Rott,Limburg
-Rottefalle,
-Rotterdam,Zuid-Holland
+Rottefalle,onbekend
 Rotterdam,Zuid-Holland
 Rotterdam-Albrandswaard,Zuid-Holland
 Rottevalle,Friesland
@@ -4909,7 +4648,6 @@ Ruigezand,Groningen
 Ruigoord,Noord-Holland
 Ruimel,Noord-Brabant
 Ruinen,Drenthe
-Ruinen,Drenthe
 Ruinerweide,Drenthe
 Ruinerwold,Drenthe
 Ruischendegat,Zeeland
@@ -4925,31 +4663,25 @@ Rutbeek,Overijssel
 Rutten,Flevoland
 Ruurlo,Gelderland
 Ryptsjerk,Friesland
-Rysberkamp,
-Rytseterp,
+Rysberkamp,onbekend
+Rytseterp,onbekend
 S Heer Arendskerke,onbekend
 S- Hertogenbosch,onbekend
 S-Gravendeel,onbekend
 S-Gravenzande,onbekend
 S-Heer Arendskerke,onbekend
 S-Heerenberg,onbekend
-s-Heerenberg,onbekend
 S-Heerenhoek,onbekend
 S-Hertogenbosch,onbekend
-S-HERTOGENBOSCH,onbekend
-S-Hertogenbosch,onbekend
-S-Hertogenbosch,onbekend
-S-Hertogenbosch,onbekend
-S-Hertogenbosch,onbekend
-Súdhorn,
+Súdhorn,onbekend
 Sânbulten,Friesland
-Sânfurd,
-Sânhuzen,
+Sânfurd,onbekend
+Sânhuzen,onbekend
 Saaksum,Groningen
 Saasveld,Overijssel
 Saaxumhuizen,Groningen
 Salverd,Friesland
-Salvert,
+Salvert,onbekend
 Sambeek,Noord-Brabant
 Sandebuur,Drenthe
 Sandfirden,Friesland
@@ -4982,9 +4714,7 @@ Schalsum,Friesland
 Schaluinen,Noord-Brabant
 Schandelo,Limburg
 Schans,Noord-Brabant
-Schans,Noord-Brabant
 Schans,Limburg
-Schans,Noord-Brabant
 Schans,Gelderland
 Schapenbout,Zeeland
 Schapershoek,Zeeland
@@ -5029,16 +4759,14 @@ Schieven,Drenthe
 Schijf,Noord-Brabant
 Schijndel,Noord-Brabant
 Schilberg,Limburg
-Schilberg,Limburg
-Schilberg,Limburg
 Schildwolde,Groningen
-Schillaard,
+Schillaard,onbekend
 Schillersheide,Limburg
 Schilligeham,Groningen
 Schimmelarij,Drenthe
 Schimmert,Limburg
 Schin op Geul,Limburg
-Schingen,
+Schingen,onbekend
 Schinnen,Limburg
 Schinveld,Limburg
 Schipborg,Drenthe
@@ -5061,7 +4789,6 @@ Schoonouwen,Zuid-Holland
 Schoonrewoerd,Utrecht
 Schoor,Limburg
 Schoor,Noord-Brabant
-Schoor,Limburg
 Schoordijk,Noord-Brabant
 Schoorl,Noord-Holland
 Schoorldam,Noord-Holland
@@ -5080,11 +4807,10 @@ Schouwerzijl,Groningen
 Schraard,Friesland
 Schrapveen,Drenthe
 Schreierswijk,Drenthe
-Schrins,
-Schuddebeurs,Zeeland
+Schrins,onbekend
 Schuddebeurs,Zeeland
 Schuilenburg,Overijssel
-Schuilenburg,
+Schuilenburg,onbekend
 Schuinesloot,Overijssel
 Schurenberg,Limburg
 Schuring,Zuid-Holland
@@ -5094,34 +4820,30 @@ Schuwacht,Zuid-Holland
 Schweiberg,Limburg
 Sebaldeburen,Groningen
 Seerijp,Friesland
-Seeryp,
-Seisbierrum,
+Seeryp,onbekend
+Seisbierrum,onbekend
 Sellingen,Groningen
 Sellingerbeetse,Groningen
 Selmien,Friesland
 Selwerd,Groningen
-Selwerd,Groningen
 Sengelsbroek,Noord-Brabant
-Serooskerke,Zeeland
 Serooskerke,Zeeland
 Seters,Noord-Brabant
 Sevenum,Limburg
 Sexbierum,Friesland
 Sibbe,Limburg
 Sibculo,Overijssel
-Sibculo,Overijssel
 Siberië,Drenthe
-Sibrandabuorren,Friesland
 Sibrandabuorren,Friesland
 Sibrandahûs,Friesland
 Siddeburen,Groningen
 Siebengewald,Limburg
 Siegerswoude,Friesland
-Siegerswoude,
-Sigerswâld,
+Siegerswoude,onbekend
+Sigerswâld,onbekend
 Sigerswâld,Friesland
 Sijbekarspel,Noord-Holland
-Sijbrandahuis,
+Sijbrandahuis,onbekend
 Silvolde,Gelderland
 Simonshaven,Zuid-Holland
 Simpelveld,Limburg
@@ -5139,8 +4861,8 @@ Sint Antoniusbank,Limburg
 Sint Geertruid,Limburg
 Sint Hubert,Noord-Brabant
 Sint Isidorushoeve,Overijssel
-Sint Jabik,
-Sint Jansgea,
+Sint Jabik,onbekend
+Sint Jansgea,onbekend
 Sint Janskerke,Zeeland
 Sint Jansklooster,Overijssel
 Sint Jansteen,Zeeland
@@ -5152,17 +4874,14 @@ Sint Maartensbrug,Noord-Holland
 Sint Maartensvlotbrug,Noord-Holland
 Sint Maartenszee,Noord-Holland
 Sint Nicolaasga,Friesland
-Sint Nyk,
+Sint Nyk,onbekend
 Sint Odiliënberg,Limburg
-Sint Oedenrode,onbekend
-Sint Oedenrode,onbekend
 Sint Oedenrode,onbekend
 Sint Pancras,Noord-Holland
 Sint Vitusholt,Groningen
 Sint Willebrord,onbekend
 Sint-Annaland,Zeeland
-Sint-Annaland,Zeeland
-Sint-Anne,
+Sint-Anne,onbekend
 Sint-Maartensdijk,Zeeland
 Sint-Michielsgestel,Noord-Brabant
 Sint-Oedenrode,Noord-Brabant
@@ -5172,29 +4891,29 @@ Sion,Zuid-Holland
 Sirjansland,Zeeland
 Sittard,Limburg
 Sjungadijk,Friesland
-Sjungadyk,
+Sjungadyk,onbekend
 Skûlenboarch,Friesland
-Skalsum,
-Skarl,
-Skarsterbrêge,
-Skearnegoutum,
-Skerpenseel,
-Skettens,
-Skiermûntseach,
+Skalsum,onbekend
+Skarl,onbekend
+Skarsterbrêge,onbekend
+Skearnegoutum,onbekend
+Skerpenseel,onbekend
+Skettens,onbekend
+Skiermûntseach,onbekend
 Skillaerd,Friesland
 Skingen,Friesland
 Skoar,Friesland
-Skoattersyl,
-Skou,
-Skraard,
+Skoattersyl,onbekend
+Skou,onbekend
+Skraard,onbekend
 Skrins,Friesland
-Skuzum,
+Skuzum,onbekend
 Skyldum,Friesland
 Slabroek,Noord-Brabant
 Slagharen,Overijssel
 Slaperstil,Groningen
 Slappeterp,Friesland
-Sleat,
+Sleat,onbekend
 Sleeburg,Gelderland
 Sleen,Drenthe
 Sleeuwijk,Noord-Brabant
@@ -5209,7 +4928,7 @@ Slijk-Ewijk,Gelderland
 Slijkenburg,Friesland
 Slijkplaat,Zeeland
 Slijkwell,Gelderland
-Slikenboarch,
+Slikenboarch,onbekend
 Slikkenburg,Noord-Brabant
 Slikkenburg,Zeeland
 Slikkendam,Zuid-Holland
@@ -5219,8 +4938,6 @@ Sloot,Noord-Brabant
 Slootdorp,Noord-Holland
 Sloten,Friesland
 Sluipwijk,Zuid-Holland
-Sluis,Zeeland
-Sluis,Zeeland
 Sluis,Zeeland
 Sluis,Utrecht
 Sluis 13,Noord-Brabant
@@ -5232,19 +4949,17 @@ Sluiskil,Zeeland
 Smakt,Limburg
 Smal,Limburg
 Smalbroek,Drenthe
-Smalbroek,Drenthe
-Smalbroek,Drenthe
 Smalle Ee,Friesland
 Smallebrugge,Friesland
 Smedekensbrugge,Zeeland
 Smeerling,Groningen
-Smelbrêge,
+Smelbrêge,onbekend
 Smele,Limburg
-Smelle Ie,
+Smelle Ie,onbekend
 Smidstraat,Limburg
 Smilde,Drenthe
 Smitshoek,Zuid-Holland
-Snakkerbuorren,
+Snakkerbuorren,onbekend
 Snakkerburen,Friesland
 Sneek,Friesland
 Sneidershoek,Noord-Brabant
@@ -5253,12 +4968,12 @@ Snelrewaard,Utrecht
 Snepseind,Noord-Brabant
 Snijders-Chaam,Noord-Brabant
 Snijdersberg,Limburg
-Sniksweach,
+Sniksweach,onbekend
 Snikzwaag,Friesland
-Snits,
+Snits,onbekend
 Snodenhoek,Gelderland
 Snorrenhoef,Utrecht
-Soarremoarre,
+Soarremoarre,onbekend
 Soerendonk,Noord-Brabant
 Soest,Utrecht
 Soestdijk,Utrecht
@@ -5274,7 +4989,7 @@ Son,Noord-Brabant
 Son en Breugel,Noord-Brabant
 Sondel,Friesland
 Sonnega,Friesland
-Sonnegea,
+Sonnegea,onbekend
 Sonniuswijk,Noord-Brabant
 Sopsum,Friesland
 Sorremorre,Friesland
@@ -5282,18 +4997,17 @@ Spaanrijt,Noord-Brabant
 Spaansehoek,Noord-Brabant
 Spaanshuisken,Limburg
 Spaarndam,Noord-Holland
-Spaarndam,Noord-Holland
 Spaarndam gem. Haarlem,Noord-Holland
 Spanbroek,Noord-Holland
 Spanga,Friesland
 Spankeren,Gelderland
-Spannenburch,
+Spannenburch,onbekend
 Spannenburg,Friesland
 Spannum,Friesland
 Sparjebird,Friesland
-Sparjeburd,
+Sparjeburd,onbekend
 Spaubeek,Limburg
-Spears,
+Spears,onbekend
 Speers,Friesland
 Spekhoek,Gelderland
 Spekklef,Noord-Brabant
@@ -5302,12 +5016,10 @@ Spengen,Utrecht
 Speuld,Gelderland
 Speurgt,Noord-Brabant
 Spier,Drenthe
-Spier,Drenthe
 Spierdijk,Noord-Holland
 Spiesberg,Limburg
 Spijk,Noord-Brabant
 Spijk,Groningen
-Spijk,Gelderland
 Spijk,Gelderland
 Spijk Gn,Groningen
 Spijkenise Zuid Holland,onbekend
@@ -5345,9 +5057,8 @@ Standdaarbuiten,Noord-Brabant
 Staphorst,Overijssel
 Starnmeer,Noord-Holland
 Startenhuizen,Groningen
-Startenhuizen,Groningen
 Startwijk,Noord-Brabant
-Starum,
+Starum,onbekend
 Statenboom,Zeeland
 Statendam,Noord-Brabant
 Stationsbuurt,Zeeland
@@ -5358,11 +5069,9 @@ Stedum,Groningen
 Steeg,Limburg
 Steelhoven,Noord-Brabant
 Steenbergen,Drenthe
-Steenbergen,Drenthe
 Steenbergen,Noord-Brabant
 Steendam,Groningen
 Steenderen,Gelderland
-Steenenkamer,Gelderland
 Steenenkamer,Gelderland
 Steenenkruis,Zeeland
 Steenhoven,Zeeland
@@ -5438,7 +5147,7 @@ Strijensas,Zuid-Holland
 Strijp,Noord-Brabant
 Strijp,Zuid-Holland
 Strikberg,Noord-Brabant
-Strobos,
+Strobos,onbekend
 Stroe,Gelderland
 Stroet,Noord-Holland
 Stroobos,Friesland
@@ -5454,44 +5163,42 @@ Struikberg,Drenthe
 Strype,Zuid-Holland
 Stuifakker,Zuid-Holland
 Stuifzand,Drenthe
-Stuifzand,Drenthe
 Stuivezand,Noord-Brabant
-Stuivezand,Noord-Brabant
-Stynsgea,
-Suameer,
-Suameerderheide,
-Suawoude,
+Stynsgea,onbekend
+Suameer,onbekend
+Suameerderheide,onbekend
+Suawoude,onbekend
 Sumar,Friesland
 Sumarreheide,Friesland
-Surch,
-Surhústerfean,
+Surch,onbekend
+Surhústerfean,onbekend
 Surhuisterveen,Friesland
 Surhuizum,Friesland
 Surhuizumer Mieden,Friesland
-Surhuzum,
-Surhuzumer Mieden,
+Surhuzum,onbekend
+Surhuzumer Mieden,onbekend
 Susteren,Limburg
 Suttum,Groningen
 Suwâld,Friesland
 Swaenwert,Friesland
 Swalmen,Limburg
 Swartbroek,Limburg
-Swarte Haan,
+Swarte Haan,onbekend
 Sweagerbosk,Friesland
 Sweikhuizen,Limburg
-Sweins,
+Sweins,onbekend
 Swichum,Friesland
 Swier,Limburg
 Swifterbant,Flevoland
 Swolgen,Limburg
 Sytebuorren,Friesland
 Sythuizen,Friesland
-Sythuzen,
+Sythuzen,onbekend
 T Harde,onbekend
 Taarlo,Drenthe
 Tappersheul,Utrecht
 Tasdijk,Zeeland
-Tearns,
+Tearns,onbekend
 Teckop,Utrecht
 Teeffelen,Noord-Brabant
 Teerns,Friesland
@@ -5522,28 +5229,26 @@ Ter Walslage,Groningen
 Ter Wisch,Groningen
 Ter Wupping,Groningen
 Terband,Friesland
-Terbant,
+Terbant,onbekend
 Terblijt (?),Limburg
 Terborg,Gelderland
 Terbregge (?),Zuid-Holland
 Terdiek,Noord-Holland
 Tereyken,Noord-Brabant
 Tergrêft,Friesland
-Tergrêft,Friesland
-Tergracht,
+Tergracht,onbekend
 Terhagen,Limburg
 Terheijden,Noord-Brabant
 Terheijl,Drenthe
-Terherne,
+Terherne,onbekend
 Terhofstede,Zeeland
 Terhole,Zeeland
 Terhorne,Friesland
 Terhorst,Limburg
-Teridzert,
+Teridzert,onbekend
 Terkaple,Friesland
 Terlet,Gelderland
 Terlinden,Limburg
-Termaar,Limburg
 Termaar,Limburg
 Termoors,Limburg
 Termunten,Groningen
@@ -5554,7 +5259,6 @@ Teroele,Friesland
 Terover,Noord-Brabant
 Terpoorten,Limburg
 Terschuur,Gelderland
-Tersoal,Friesland
 Tersoal,Friesland
 Terstraten,Limburg
 Tervaten,Zeeland
@@ -5569,11 +5273,6 @@ Teuge,Gelderland
 Texel Island NL,onbekend
 Teyebuorren,Friesland
 The Hague,onbekend
-The Hague,onbekend
-The Hague,onbekend
-The Hague,onbekend
-The Hague,onbekend
-The Hague,onbekend
 The Haque,onbekend
 Theetuin,Noord-Brabant
 Themaat,Utrecht
@@ -5586,14 +5285,12 @@ Tichelwurk,Friesland
 Tiel,Gelderland
 Tielse Hoeve,Noord-Brabant
 Tiendeveen,Drenthe
-Tiendeveen,Drenthe
 Tiengeboden,Gelderland
 Tiengemeten,Zuid-Holland
 Tienhoven,Utrecht
-Tienhoven,Utrecht
 Tienhoven aan de Lek,Utrecht
 Tienray,Limburg
-Tietjerk,
+Tietjerk,onbekend
 Tiggelt,Noord-Brabant
 Tiggeltscheberg,Noord-Brabant
 Tijnje,Friesland
@@ -5624,12 +5321,11 @@ Tonden,Gelderland
 Tongeren,Noord-Brabant
 Tongeren,Gelderland
 Tongerlo,Limburg
-Tongerlo,Limburg
 Tonnekreek,Noord-Brabant
 Tonsel,Gelderland
 Toom,Noord-Brabant
 Toornwerd,Groningen
-Toppenhuzen,
+Toppenhuzen,onbekend
 Topweer,Groningen
 Torenveen,Drenthe
 Toterfout,Noord-Brabant
@@ -5644,22 +5340,21 @@ Trijehuzen,Friesland
 Trimpert,Noord-Brabant
 Trintelen,Limburg
 Tripscompagnie,Groningen
-Tripscompagnie,Groningen
-Tritsum,
+Tritsum,onbekend
 Tritzum,Friesland
 Tronde,Friesland
 Trophorne,Friesland
 Trutjeshoek,Gelderland
 Trutjeshoek (?),Overijssel
 Tsienzerbuorren,Friesland
-Tsjalbert,
-Tsjalhuzum,
-Tsjeintgum,
+Tsjalbert,onbekend
+Tsjalhuzum,onbekend
+Tsjeintgum,onbekend
 Tsjerkebuorren,Friesland
-Tsjerkgaast,
-Tsjerkwert,
-Tsjom,
-Tsjummearum,
+Tsjerkgaast,onbekend
+Tsjerkwert,onbekend
+Tsjom,onbekend
+Tsjummearum,onbekend
 Tubbergen,Overijssel
 Tuil,Gelderland
 Tuindorp,Limburg
@@ -5668,9 +5363,9 @@ Tuk,Overijssel
 Tull en 't Waal,Utrecht
 Tungelroy,Limburg
 Turkeije,Zeeland
-Turkeye (?),
+Turkeye (?),onbekend
 Turnhout,onbekend
-Turns,
+Turns,onbekend
 Tusschen de Bruggen,Limburg
 Tusschenloegen,Groningen
 Tussenklappen,Groningen
@@ -5682,15 +5377,14 @@ Tweede Tol,Zuid-Holland
 Tweehuizen,Groningen
 Tweesluizen,Gelderland
 Twekkelo,Overijssel
-Twellingea,
+Twellingea,onbekend
 Twello,Gelderland
 Twijzel,Friesland
 Twijzelerheide,Friesland
 Twisk,Noord-Holland
-Twizel,
-Twizelerheide,
+Twizel,onbekend
+Twizelerheide,onbekend
 Tynaarlo,Drenthe
-Tytjerk,onbekend
 Tytjerk,onbekend
 Tytsjerk,Friesland
 Tzum,Friesland
@@ -5736,7 +5430,6 @@ Urk,Flevoland
 Urkhoven,Noord-Brabant
 Urmond,Limburg
 Ursem,Noord-Holland
-Ursem,Noord-Holland
 Ursem gem. S,Noord-Holland
 Usquert,Groningen
 Usselo,Overijssel
@@ -5755,7 +5448,6 @@ Valeiskreek,Zeeland
 Valenberg,Gelderland
 Valkenburg,Zuid-Holland
 Valkenburg,Limburg
-Valkenburg a/d Geul,onbekend
 Valkenburg a/d Geul,onbekend
 Valkenheide,Utrecht
 Valkenswaard,Noord-Brabant
@@ -5784,19 +5476,16 @@ Veenendaal,Utrecht
 Veenhof,Drenthe
 Veenhuizen,Drenthe
 Veenhuizen,Groningen
-Veenhuizen,Drenthe
-Veenhuizen,Groningen
-Veenhuizen,Drenthe
 Veenhuizerveld,Gelderland
 Veeningen,Drenthe
 Veenoord,Drenthe
-Veenwouden,
 Veenwouden,onbekend
-Veenwoudsterwal,
+Veenwouden,onbekend
+Veenwoudsterwal,onbekend
 Veere,Zeeland
 Veerste(r) Veldhuis,Groningen
 Veessen,Gelderland
-Vegelinsoard,
+Vegelinsoard,onbekend
 Vegelinsoord,Friesland
 Veghel,Noord-Brabant
 Veld,Limburg
@@ -5815,7 +5504,6 @@ Veldschuur,Limburg
 Veldstreek,Groningen
 Veldwijk,Gelderland
 Veldzicht,Zeeland
-Veldzicht,Zeeland
 Velp,Noord-Brabant
 Velp,Gelderland
 Velsen-Noord,Noord-Holland
@@ -5824,9 +5512,6 @@ Velserbroek,Noord-Holland
 Velswijk,Gelderland
 Veluwe,Gelderland
 Vemde,Gelderland
-Ven,Noord-Brabant
-Ven,Noord-Brabant
-Ven,Noord-Brabant
 Ven,Noord-Brabant
 Ven-Zelderheide,Limburg
 Venbergen,Noord-Brabant
@@ -5858,8 +5543,6 @@ Vierakker,Gelderland
 Vierbannen,Noord-Brabant
 Vierhouten,Gelderland
 Vierhuis,Friesland
-Vierhuis,Friesland
-Vierhuizen,Groningen
 Vierhuizen,Groningen
 Vierhuizen,Friesland
 Vierlingsbeek,Noord-Brabant
@@ -5873,8 +5556,6 @@ Vijfhuis,Friesland
 Vijfhuizen,Noord-Brabant
 Vijfhuizen,Noord-Holland
 Vijfhuizen,Friesland
-Vijfhuizen,Noord-Brabant
-Vijfhuizen,Noord-Brabant
 Vijlen,Limburg
 Vilgert,Limburg
 Vilsteren,Overijssel
@@ -5882,7 +5563,6 @@ Vilt,Limburg
 Vink,Limburg
 Vinke(n)kade,Utrecht
 Vinkega,Friesland
-Vinkel,Noord-Brabant
 Vinkel,Noord-Brabant
 Vinkenberg,Noord-Brabant
 Vinkenbroek,Noord-Brabant
@@ -5921,7 +5601,6 @@ Vlissingen,Zeeland
 Vlist,Zuid-Holland
 Vlodrop,Limburg
 Vloeieind,Noord-Brabant
-Vloeieind,Noord-Brabant
 Vloet,Noord-Brabant
 Vlootkant,Limburg
 Vlotho ,onbekend
@@ -5949,7 +5628,6 @@ Voorrijp,Friesland
 Voorschoten,Zuid-Holland
 Voorst,Gelderland
 Voorst,Limburg
-Voorst,Gelderland
 Voorste Beersdonk,Noord-Brabant
 Voorste Brug,Noord-Brabant
 Voorste Diesdonk,Noord-Brabant
@@ -5957,15 +5635,14 @@ Voorste Heikant,Noord-Brabant
 Voorsterveld,Limburg
 Voorstonden,Gelderland
 Voort,Noord-Brabant
-Voort,Noord-Brabant
-Voort (?),
+Voort (?),onbekend
 Voorteind,Noord-Brabant
 Voorthuizen,Gelderland
 Voortje,Noord-Brabant
 Voorweg,Zuid-Holland
 Vorchten,Gelderland
 Vorden,Gelderland
-Vorst,
+Vorst,onbekend
 Vorstenbosch,Noord-Brabant
 Vortum-Mullem,Noord-Brabant
 Vosberg,Limburg
@@ -5977,8 +5654,6 @@ Vosseberg,Groningen
 Vosseburen,Friesland
 Vosselen,Noord-Brabant
 Vossenberg,Noord-Brabant
-Vossenberg,Noord-Brabant
-Vossenpels,Gelderland
 Vossenpels,Gelderland
 Voulwames,Limburg
 Vrachelen,Noord-Brabant
@@ -6009,10 +5684,10 @@ Vuile Riete,Drenthe
 Vuilendam,Zuid-Holland
 Vuilpan,Zeeland
 Vuren,Gelderland
-Wâldsein,
+Wâldsein,onbekend
 Wâlterswâld,Friesland
 Wânswert,Friesland
-Wûns,
+Wûns,onbekend
 Waaksens,Friesland
 Waal,Zuid-Holland
 Waalbroek,Limburg
@@ -6025,7 +5700,7 @@ Waarder,Zuid-Holland
 Waardhuizen,Noord-Brabant
 Waarland,Noord-Holland
 Waatskamp,Limburg
-Waaxens,
+Waaxens,onbekend
 Waaxens,Friesland
 Wachtum,Drenthe
 Waddinxveen,Zuid-Holland
@@ -6058,7 +5733,7 @@ Warffum,Groningen
 Warfhuizen,Groningen
 Warfstermolen,Friesland
 Warga,Friesland
-Warkum,
+Warkum,onbekend
 Warm,Gelderland
 Warmenhuizen,Noord-Holland
 Warmond,Zuid-Holland
@@ -6066,9 +5741,9 @@ Warniahuizen,Friesland
 Warns,Friesland
 Warnsveld,Gelderland
 Warstiens,Friesland
-Warten,
+Warten,onbekend
 Wartena,Friesland
-Waskemar,
+Waskemar,onbekend
 Waskemeer,Friesland
 Waspik,Noord-Brabant
 Waspik-Zuid,Noord-Brabant
@@ -6098,7 +5773,6 @@ Weerdinge,Drenthe
 Weerestein,Zuid-Holland
 Weerselo,Overijssel
 Weert,Limburg
-Weert,Limburg
 Weerwille,Drenthe
 Weesp,Noord-Holland
 Wehe-den Hoorn,Groningen
@@ -6109,7 +5783,7 @@ Weijland,Zuid-Holland
 Weijpoort,Zuid-Holland
 Weilenseind,Noord-Brabant
 Weimeren,Noord-Brabant
-Weinterpfallaat,
+Weinterpfallaat,onbekend
 Weipoort,Zuid-Holland
 Weite,Groningen
 Weitemanslanden,Overijssel
@@ -6122,8 +5796,7 @@ Well,Gelderland
 Well L,Limburg
 Wellerlooi,Limburg
 Wellseind,Gelderland
-Welsrijp,
-Welsum,Overijssel
+Welsrijp,onbekend
 Welsum,Overijssel
 Welsumerveld,Overijssel
 Wely,Gelderland
@@ -6135,7 +5808,7 @@ Weper,Friesland
 Weperpolder,Friesland
 Wercheren,Gelderland
 Werendijke,Zeeland
-Wergea,
+Wergea,onbekend
 Werkendam,Noord-Brabant
 Werkhoven,Utrecht
 Wernhout,Noord-Brabant
@@ -6151,7 +5824,7 @@ Wessinghuizen,Groningen
 Wessingtange,Groningen
 West aan Zee,Friesland
 West Geesteren,Overijssel
-West Oan See,
+West Oan See,onbekend
 West-Graftdijk,Noord-Holland
 West-Souburg,Zeeland
 West-Terschelling,Friesland
@@ -6162,14 +5835,11 @@ Westdijk,Zuid-Holland
 Westdorp,Drenthe
 Westdorpe,Zeeland
 Westeind,Groningen
-Westeind,Groningen
 Westeinde,Zuid-Holland
 Westeinde,Noord-Holland
 Westeinde,Overijssel
 Westeinde,Drenthe
-Westeinde,Zuid-Holland
 Westelbeers,Noord-Brabant
-Westendorp,Gelderland
 Westendorp,Gelderland
 Westeneng,Gelderland
 Westenesch,Drenthe
@@ -6180,7 +5850,7 @@ Westerbroek,Groningen
 Westerbuorren,Friesland
 Westerdijkshorn,Groningen
 Westerein,Friesland
-Westerein Harich,
+Westerein Harich,onbekend
 Westeremden,Groningen
 Westergeast,Friesland
 Westerhaar,onbekend
@@ -6200,7 +5870,7 @@ Westerwijk,Noord-Brabant
 Westerwijtwerd,Groningen
 Westerzand,Groningen
 Westhem,Friesland
-Westhim,
+Westhim,onbekend
 Westhoek,Friesland
 Westkapelle,Zeeland
 Westkerke,Zeeland
@@ -6242,8 +5912,8 @@ Wierum,Friesland
 Wierum,Groningen
 Wierumerschouw,Groningen
 Wiesel,Gelderland
-Wieuwens,
-Wieuwerd,
+Wieuwens,onbekend
+Wieuwerd,onbekend
 Wijchen,Gelderland
 Wijckel,Friesland
 Wijdenes,Noord-Holland
@@ -6258,17 +5928,15 @@ Wijlre,Limburg
 Wijnaldum,Friesland
 Wijnandsrade,Limburg
 Wijnbergen,Gelderland
-Wijnbergen,Gelderland
-Wijnbergen,Gelderland
 Wijngaarden,Zuid-Holland
 Wijnjeterpverlaat,Friesland
 Wijnjewoude,Friesland
-Wijns,
+Wijns,onbekend
 Wijster,Drenthe
-Wijtgaard,
+Wijtgaard,onbekend
 Wijthmen,Overijssel
 Wijzend,Noord-Holland
-Wikel,
+Wikel,onbekend
 Wilbertoord,Noord-Brabant
 Wildenborch,Gelderland
 Wildeplaats,Groningen
@@ -6291,13 +5959,12 @@ Wilnis,Utrecht
 Wilp,Gelderland
 Wilsum,Overijssel
 Wilsveen,Zuid-Holland
-Winaem,
+Winaem,onbekend
 Winde,Drenthe
 Windesheim,Overijssel
 Windraak,Limburg
 Winkel,Noord-Brabant
 Winkel,Noord-Holland
-Winkel,Noord-Brabant
 Winkelshoek,Gelderland
 Winkelstraat,Noord-Brabant
 Winneweer,Groningen
@@ -6339,7 +6006,6 @@ Wittelte,Drenthe
 Wittem,Limburg
 Witten,Drenthe
 Witteveen,Drenthe
-Witteveen,Drenthe
 Wittewierum,Groningen
 Witveen,Friesland
 Wiuwert,Friesland
@@ -6360,7 +6026,6 @@ Wolfheze,Gelderland
 Wolfsbarge,Groningen
 Wolfsbosch,Noord-Brabant
 Wolfshoek,Noord-Brabant
-Wolfshoek,Noord-Brabant
 Wolfshuis,Limburg
 Wolfswinkel,Noord-Brabant
 Wollingboermarke,Groningen
@@ -6369,7 +6034,7 @@ Wolphaartsdijk,Zeeland
 Wolsum,Friesland
 Woltersum,Groningen
 Wolvega,Friesland
-Wolvegea,
+Wolvegea,onbekend
 Wommels,Friesland
 Wonneburen,Friesland
 Wons,Friesland
@@ -6386,27 +6051,27 @@ Woudenberg,Utrecht
 Woudrichem,Noord-Brabant
 Woudse Dijk,Zuid-Holland
 Woudsend,Friesland
-Wouterswoude,
+Wouterswoude,onbekend
 Wouw,Noord-Brabant
 Wouwse Hil,Noord-Brabant
 Wouwse Plantage,Noord-Brabant
 Wulpenbek,Zeeland
-Wurdum,
-Wygeast (?),
-Wynjewâld,
+Wurdum,onbekend
+Wygeast (?),onbekend
+Wynjewâld,onbekend
 Wyns,Friesland
 Wytgaard,Friesland
-Wytmarsum,
-Ychten,
-Ychtenbrêge,
+Wytmarsum,onbekend
+Ychten,onbekend
+Ychtenbrêge,onbekend
 Yde,Drenthe
 Yerseke,Zeeland
 Yersekendam,Zeeland
-Ymswâlde,
-Yndyk,
+Ymswâlde,onbekend
+Yndyk,onbekend
 Yndyk,Friesland
 Ypecolsga,Friesland
-Ypekolsgea,
+Ypekolsgea,onbekend
 Ypelo,Overijssel
 Ysbrechtum,Friesland
 Ysselsteyn,Limburg
@@ -6424,8 +6089,6 @@ Zandberg,Drenthe
 Zandberg,Gelderland
 Zandberg,Zeeland
 Zandberg,Limburg
-Zandberg,Limburg
-Zandberg,Limburg
 Zandburen,Friesland
 Zanddijk,Zeeland
 Zandeind,Noord-Brabant
@@ -6435,7 +6098,6 @@ Zandheuvel,Gelderland
 Zandhoek,Noord-Brabant
 Zandhoek,Limburg
 Zandhuizen,Friesland
-Zandkant,Noord-Brabant
 Zandkant,Noord-Brabant
 Zandoerle,Noord-Brabant
 Zandplaat,Zeeland
@@ -6469,13 +6131,10 @@ Zelhem,Gelderland
 Zelt,Noord-Brabant
 Zenderen,Overijssel
 Zennewijnen,Gelderland
-Zennewijnen,Gelderland
 Zethuis,Groningen
 Zetten,Gelderland
 Zevenaar,Gelderland
 Zevenbergen,Noord-Brabant
-Zevenbergen,Noord-Brabant
-Zevenbergschen Hoek,Noord-Brabant
 Zevenbergschen Hoek,Noord-Brabant
 Zevenbuurt,Friesland
 Zevender,Utrecht
@@ -6486,10 +6145,6 @@ Zevenhuizen,Groningen
 Zevenhuizen,Noord-Brabant
 Zevenhuizen,Zuid-Holland
 Zevenhuizen,Friesland
-Zevenhuizen,Groningen
-Zevenhuizen,Noord-Brabant
-Zevenhuizen,Groningen
-Zevenhuizen,Zuid-Holland
 Zevenhuizen ?,Friesland
 Zevenhutten,Noord-Brabant
 Zevenmorgen,Gelderland
@@ -6560,8 +6215,6 @@ Zuidwolde,Groningen
 Zuidwolde,Drenthe
 Zuidzande,Zeeland
 Zuidzijde,Zuid-Holland
-Zuidzijde,Zuid-Holland
-Zuidzijde,Zuid-Holland
 Zuilichem,Gelderland
 Zuna,Overijssel
 Zunderdorp,Noord-Holland
@@ -6572,10 +6225,9 @@ Zuuk,Gelderland
 Zuurdijk,Groningen
 Zwaag,Noord-Holland
 Zwaagdijk,Noord-Holland
-Zwaagdijk,Noord-Holland
 Zwaagdijk-Oost,Noord-Holland
 Zwaagdijk-West,Noord-Holland
-Zwaagwesteinde,
+Zwaagwesteinde,onbekend
 Zwaanenheike,Limburg
 Zwaanshoek,Noord-Holland
 Zwaantje,Zuid-Holland

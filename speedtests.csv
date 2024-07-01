@@ -1,6 +1,6 @@
-Device,Memory,Cores,Speed with -a option (2 databases till now)
-mac mini M1,16,8,6.39
-tc620,16,4,53.51
-tc620,8,4,55.05
-tc620,4,2,63.63
+Device,OS,Memory,Cores,Speed with -a option (2 databases till now)
+mac mini M1,mac os,16,8,6.39
+tc620,debian,16,4,53.51
+tc620,debian,8,4,55.05
+tc620,debian,4,2,63.63
 KVM/QEMU Standard PC i440FX + PIIX 1996 pc-i440fx-8.1,2,1,294.59

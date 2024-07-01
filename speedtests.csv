@@ -1,5 +1,5 @@
 Device,OS,Kernel,SubSystem,Memory,Cores,Speed with -a option (2 databases till now)
-mac mini M1,mac os,none,16,8,6.39
+mac mini M1,mac os,z,none,16,8,6.39
 HP t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,z,none,16,4,68.97
 HP t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,z,docker,16,4,65.50
 HP t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,z,none,8,4,53.49

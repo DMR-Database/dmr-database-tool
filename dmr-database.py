@@ -30,6 +30,8 @@ count_filename = 'count.txt'
 md5_filename = 'user.md5'
 ext_filename = 'user_ext.csv'
 city_state_csv = 'citys_nl.csv'
+countrys_filename = 'countrys.csv'
+states_filename = 'states.csv'
 line = "============================="
 
 # Search for empty County in Dutch callsign and fill them
@@ -89,6 +91,23 @@ def fill_empty_state():
         user_writer.writerows(updated_rows)
     
     print(f"\nCompleted updating {csv_filename}")
+
+def load_country_mapping():
+    country_mapping = {}
+    with open(countrys_filename, 'r', newline='', encoding='utf-8') as csvfile:
+        reader = csv.reader(csvfile)
+        next(reader)  # Skip header
+        for row in reader:
+            country_mapping[row[0]] = row[1]  # Country_long -> Country_short
+    return country_mapping
+
+def load_state_mapping():
+    state_mapping = {}
+    with open(states_filename, 'r', newline='', encoding='utf-8') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            state_mapping[row['State_long']] = row['State_short']
+    return state_mapping
 
 # Display header information about the application.
 def header():
@@ -331,20 +350,63 @@ def process_to_userhd():
 
 # Process CSV to Tytera MD2017 database (usermd2017.csv).
 def process_to_usermd2017():
-    print(f"{line}")
+    print("Starting process to generate usermd2017.csv...")
+    
+    # Check if user.csv exists
     if not os.path.exists(csv_filename):
-        print(f"{csv_filename} not found. Downloading it first.")
-        download_csv()
-
-    if os.path.exists(csv_filename):
-        try:
-            shutil.copyfile(csv_filename, usermd2017_filename)
-            print(f"Copied {csv_filename} to {usermd2017_filename}")
-        except Exception as e:
-            print(f"Error copying to {usermd2017_filename}: {e}")
-    else:
-        print(f"Failed to copy {csv_filename} to {usermd2017_filename}.")
+        print(f"{csv_filename} not found.")
         exit(1)
+    
+    # Load country and state mappings
+    country_mapping = load_country_mapping()
+    state_mapping = load_state_mapping()
+    
+    # Open user.csv for reading and usermd2017.csv for writing
+    with open(csv_filename, 'r', newline='', encoding='utf-8') as infile, \
+         open(usermd2017_filename, 'w', newline='', encoding='utf-8') as outfile:
+        
+        reader = csv.DictReader(infile)
+        writer = csv.writer(outfile)
+        
+        # Check if all required headers are present
+        required_headers = ['RADIO_ID', 'CALLSIGN', 'FIRST_NAME', 'LAST_NAME', 'CITY', 'STATE', 'COUNTRY']
+        if not all(header in reader.fieldnames for header in required_headers):
+            print("Some required headers are missing in user.csv.")
+            exit(1)
+        
+        # Write header to usermd2017.csv
+        writer.writerow(['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country'])
+        
+        total_rows = sum(1 for line in open(csv_filename, 'r', newline='', encoding='utf-8'))
+        current_row = 0
+        
+        for row in reader:
+            current_row += 1
+            
+            # Extract fields from the row
+            radio_id = row.get('RADIO_ID', '')  # Use .get() to avoid KeyError
+            callsign = row.get('CALLSIGN', '')
+            name = f"{row.get('FIRST_NAME', '')} {row.get('LAST_NAME', '')}"
+            city = row.get('CITY', '')
+            state = row.get('STATE', '')
+            country = row.get('COUNTRY', '')
+            
+            # Convert long country name to short version if mapping exists
+            if country in country_mapping:
+                country = country_mapping[country]
+            
+            # Convert long state name to short version if mapping exists
+            if state in state_mapping:
+                state = state_mapping[state]
+            
+            # Write updated row to usermd2017.csv
+            writer.writerow([radio_id, callsign, name, city, state, country])
+            
+            # Show progress
+            show_row_progress(current_row, total_rows, radio_id, callsign)
+    
+    print()  # Move to the next line after the progress completes
+    print(f"Generated {usermd2017_filename}")
 
 # Process CSV to Tytera MD380/390 database (user.bin).
 def process_to_userbin():

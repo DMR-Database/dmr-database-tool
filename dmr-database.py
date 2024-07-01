@@ -487,6 +487,8 @@ if __name__ == "__main__":
 
     if option == "-d":
         download_csv()
+        merge_csv()
+        fill_empty_state()
     elif option == "-m":
         merge_csv()
     elif option == "-userat":

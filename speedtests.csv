@@ -4,7 +4,7 @@ HP5 t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,none,16,4,68.97
 HP5 t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,docker,16,4,65.50
 HP3 t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,none,8,4,53.49
 HP3 t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,docker,8,4,67.46
-HP6 t620 Dual Core TC,microos,docker,16,2,140.86
+HP6 t620 Dual Core TC,openSUSE MicroOS x86_64,docker,16,2,140.86
 HP1 t620 Dual Core TC,Debian GNU/Linux 12 (bookworm) x86_64,none,4,2,59.43
 HP1 t620 Dual Core TC,Debian GNU/Linux 12 (bookworm) x86_64,docker,4,2,143.21
 KVM/QEMU Standard PC i440FX + PIIX 1996 pc-i440fx-8.1,debian,none,2,1,294.59

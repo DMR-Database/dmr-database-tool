@@ -352,12 +352,11 @@ def process_to_userhd():
 
 # Process CSV to Tytera MD2017 database (usermd2017.csv).
 def process_to_usermd2017():
-    print("Starting process to generate usermd2017.csv...")
-    
-    # Check if user.csv exists
+    print(f"{line}")
+    print(f"Starting process {csv_filename} to {userat_filename}...")
     if not os.path.exists(csv_filename):
-        print(f"{csv_filename} not found.")
-        exit(1)
+        print(f"{csv_filename} not found. Downloading it first.")
+        download_csv()
     
     # Load country and state mappings
     country_mapping = load_country_mapping()

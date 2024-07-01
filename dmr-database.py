@@ -357,7 +357,9 @@ def process_to_usermd2017():
     if not os.path.exists(csv_filename):
         print(f"{csv_filename} not found. Downloading it first.")
         download_csv()
-    
+    merge_csv()
+    fill_empty_state()
+        
     # Load country and state mappings
     country_mapping = load_country_mapping()
     state_mapping = load_state_mapping()

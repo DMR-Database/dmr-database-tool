@@ -1,5 +1,5 @@
 Device,OS,Kernel,SubSystem,Memory,Cores,Speed with -a option (2 databases till now)
-Macmini M1,macOS 14.5 arm64,macOS 14.5 arm64 ,none,16,8,6.39
+Macmini M1,macOS 14.5,macOS 14.5 23F79 arm64,none,16,8,6.39
 HP t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,Linux 6.1.0-21-amd64,none,16,4,68.97
 HP t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,Linux 6.1.0-21-amd64,docker,16,4,65.50
 HP t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,Linux 6.1.0-21-amd64,none,8,4,53.49

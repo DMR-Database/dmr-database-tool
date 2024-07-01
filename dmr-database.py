@@ -92,6 +92,7 @@ def fill_empty_state():
     
     print(f"\nCompleted updating {csv_filename}")
 
+# Convert Long Country names to Short version
 def load_country_mapping():
     country_mapping = {}
     with open(countrys_filename, 'r', newline='', encoding='utf-8') as csvfile:
@@ -101,6 +102,7 @@ def load_country_mapping():
             country_mapping[row[0]] = row[1]  # Country_long -> Country_short
     return country_mapping
 
+# Convert Long State names to Short version
 def load_state_mapping():
     state_mapping = {}
     with open(states_filename, 'r', newline='', encoding='utf-8') as csvfile:

@@ -1,4 +1,4 @@
 Device,OS,SubSystem,Memory,Cores,Speed with -a option (2 databases till now)
 mac mini M1,mac os,none,16,8,6.39
 tc620,microos,docker,16,2,53.51
-KVM/QEMU Standard PC i440FX + PIIX 1996 pc-i440fx-8.1,debian,2,1,294.59
+KVM/QEMU Standard PC i440FX + PIIX 1996 pc-i440fx-8.1,debian,none,2,1,294.59

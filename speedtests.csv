@@ -1,4 +1,4 @@
-device,mem,cores,time
+Device,Memory,Cores,Speedtime
 mac mini,16,m1,6.39
 tc620,16,4,53.51
   

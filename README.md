@@ -33,7 +33,7 @@ The DMR Database Tool supports converting data into formats suitable for the fol
 
 - Anytone Radio **supported*
 - Ailunce HD1 **wip** 1% done
-- Tytera MD2017 **wip** 1% done
+- Tytera MD2017 **wip** 51% done
 - Tytera MD380/MD390 **wip** 1% done
 - Pi-Star SSH Helper **wip** 1% done
 - Pi-Star **supported*

@@ -1,8 +1,9 @@
 Device,OS,SubSystem,Memory,Cores,Speed with -a option (2 databases till now)
 mac mini M1,mac os,none,16,8,6.39
-tc620,microos,docker,16,2,140.86
 HP5 t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,none,16,4,68.97
 HP5 t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,docker,16,4,65.50
-HP t620 Quad Core TC,debian,none,8,4,55.05
+HP3 t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,none,8,4,53.49
+HP3 t620 Quad Core TC,Debian GNU/Linux 12 (bookworm) x86_64,docker,8,4,67.46
+HP6 tc620,microos,docker,16,2,140.86
 tc620,debian,none,4,2,63.63
 KVM/QEMU Standard PC i440FX + PIIX 1996 pc-i440fx-8.1,debian,none,2,1,294.59

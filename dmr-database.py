@@ -352,6 +352,10 @@ def process_to_userhd():
 
 # Process CSV to Tytera MD2017 database (usermd2017.csv).
 def process_to_usermd2017():
+    csv_filename = 'user.csv'
+    usermd2017_filename = 'usermd2017.csv'
+    line = "-" * 40
+
     print(f"{line}")
     print(f"Starting process {csv_filename} to {usermd2017_filename}...")
     if not os.path.exists(csv_filename):
@@ -383,9 +387,12 @@ def process_to_usermd2017():
         
         total_rows = sum(1 for line in open(csv_filename, 'r', newline='', encoding='utf-8'))
         current_row = 0
+        max_users = 100000
         
         for row in reader:
             current_row += 1
+            if current_row > max_users:
+                break
             
             # Extract fields from the row
             radio_id = row.get('RADIO_ID', '')  # Use .get() to avoid KeyError
@@ -411,6 +418,7 @@ def process_to_usermd2017():
     
     print()  # Move to the next line after the progress completes
     print(f"Generated {usermd2017_filename}")
+    
 
 # Process CSV to Tytera MD380/390 database (user.bin).
 def process_to_userbin():

@@ -523,7 +523,7 @@ def process_to_usrbin():
 def clean_downloads():
     print(f"{line}")
     print(f"Cleanup all downloaded and converted files.")
-    files_to_remove = [csv_filename, userat_filename, userhd_filename, usermd2017_filename, userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename]
+    files_to_remove = [csv_filename, userat_filename, userhd_filename, usermd2017_filename, userbin_filename, usrbin_filename, pistar_filename, count_filename, md5_filename, userat_md5, userhd_md5, usermd2017_md5, userbin_md5, usrbin_md5, pistar_md5]
     for filename in files_to_remove:
         if os.path.exists(filename):
             try:

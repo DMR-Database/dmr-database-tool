@@ -121,10 +121,10 @@ def count_lines_in_files():
     for pattern in file_patterns:
         files.extend(glob.glob(pattern))
     
-    # Function to count lines in a file
+    # Function to count lines in a file, excluding the header
     def count_lines(filename):
         with open(filename, 'r', encoding='utf-8', errors='ignore') as file:
-            return sum(1 for _ in file)
+            line_count = sum(1 for _ in file)
             return max(0, line_count - 1)  # Subtract 1 to exclude the header, ensure non-negative
     
     # Display the filename and line count for each file

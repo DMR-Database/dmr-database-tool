@@ -18,7 +18,7 @@ dest_dir = os.path.join(src_dir, "output")
 os.makedirs(dest_dir, exist_ok=True)
 
 # Define files to exclude
-excluded_files = ["citys_nl.csv", "user_ext.csv"]
+excluded_files = ["citys_nl.csv", "user_ext.csv", "countrys.csv", "states.csv"]
 
 # Copy all .csv and .bin files to the output directory, excluding specific files
 for file_pattern in ["*.csv", "*.bin", "*.dat"]:

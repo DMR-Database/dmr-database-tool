@@ -39,7 +39,7 @@ ext_filename = 'user_ext.csv'
 city_state_csv = 'citys_nl.csv'
 countrys_filename = 'countrys.csv'
 states_filename = 'states.csv'
-line = "-" * 40
+line = "-" * 75
 
 
 # Search for empty County in Dutch callsign and fill them

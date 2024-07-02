@@ -152,7 +152,7 @@ def count_lines_in_files():
                 line_count = count_lines(filename)
             
             # Print the line count, file size, and filename
-            print(f"Filename: {filename}\n Users: {line_count} \n Size: {file_size}\n\n")
+            print(f"\/Filename: {filename}\nUsers: {line_count}\nSize: {file_size}")
         except Exception as e:
             print(f"Could not process {filename}: {e}")
 

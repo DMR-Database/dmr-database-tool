@@ -33,7 +33,7 @@ ext_filename = 'user_ext.csv'
 city_state_csv = 'citys_nl.csv'
 countrys_filename = 'countrys.csv'
 states_filename = 'states.csv'
-line = "============================="
+line = "-" * 30
 
 # Search for empty County in Dutch callsign and fill them
 def fill_empty_state():
@@ -381,7 +381,6 @@ def process_to_userhd():
 # Process CSV to Tytera MD2017 database (usermd2017.csv).
 def process_to_usermd2017():
     temp_filename = 'usermd2017_temp.csv'
-    #line = "-" * 40
 
     print(f"{line}")
     print(f"Starting process {csv_filename} to {usermd2017_filename}...")

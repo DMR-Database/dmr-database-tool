@@ -182,7 +182,7 @@ def download_csv():
     print(f"{line}")
     print(f"Download started from: {url}") 
     try:
-        response = requests.get(url, stream=True)
+        response = requests.get(url, stream=True, verify=False)
         total_size = int(response.headers.get('content-length', 0))
         downloaded = 0
         block_size = 1024  # 1 KB

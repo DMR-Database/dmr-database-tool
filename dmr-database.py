@@ -392,7 +392,7 @@ def process_to_usermd2017():
             current_row += 1
             if current_row > max_users:
                 break
-            name = row['FIRST_NAME'].split()[0] if row['FIRST_NAME'].strip() else ''
+            
             # Extract fields from the row
             radio_id = row.get('RADIO_ID', '')  # Use .get() to avoid KeyError
             callsign = row.get('CALLSIGN', '')

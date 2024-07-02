@@ -121,27 +121,32 @@ def load_state_mapping():
 
 # Count lines in files and show result
 def count_lines_in_files():
-    #print(f"{line}")
     file_patterns = ['*.csv', '*.bin', '*.dat']
     excluded_files = {'citys_nl.csv', 'user_ext.csv', 'countrys.csv', 'speedtests.csv', 'states.csv'}
     files = []
-    
+
     # Collect all files matching the patterns
     for pattern in file_patterns:
         files.extend(glob.glob(pattern))
-    
-    # Function to count lines in a file, excluding the header
-    def count_lines(filename):
+
+    # Function to count lines in a file, optionally excluding the header
+    def count_lines(filename, exclude_header=True):
         with open(filename, 'r', encoding='utf-8', errors='ignore') as file:
             line_count = sum(1 for _ in file)
-            return max(0, line_count - 1)  # Subtract 1 to exclude the header, ensure non-negative
-    
+            if exclude_header:
+                return max(0, line_count - 1)  # Subtract 1 to exclude the header, ensure non-negative
+            return line_count
+
     # Display the filename and line count for each file, excluding specific files
     for filename in files:
         if os.path.basename(filename) in excluded_files:
             continue
         try:
-            line_count = count_lines(filename)
+            # Check if the filename is 'DMRIds.dat'
+            if os.path.basename(filename) == 'DMRIds.dat':
+                line_count = count_lines(filename, exclude_header=False)
+            else:
+                line_count = count_lines(filename)
             print(f"{line_count} {filename}")
         except Exception as e:
             print(f"Could not process {filename}: {e}")

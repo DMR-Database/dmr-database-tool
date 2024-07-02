@@ -111,6 +111,28 @@ def load_state_mapping():
             state_mapping[row['State_long']] = row['State_short']
     return state_mapping
 
+# Count lines in files and show result
+def count_lines_in_files():
+    file_patterns = ['*.csv', '*.bin', '*.dat']
+    files = []
+    
+    # Collect all files matching the patterns
+    for pattern in file_patterns:
+        files.extend(glob.glob(pattern))
+    
+    # Function to count lines in a file
+    def count_lines(filename):
+        with open(filename, 'r', encoding='utf-8', errors='ignore') as file:
+            return sum(1 for _ in file)
+    
+    # Display the filename and line count for each file
+    for filename in files:
+        try:
+            line_count = count_lines(filename)
+            print(f"{line_count} {filename}")
+        except Exception as e:
+            print(f"Could not process {filename}: {e}")
+            
 # Display header information about the application.
 def header():
     print(f"===== {APP_NAME} =====")
@@ -548,3 +570,4 @@ if __name__ == "__main__":
     elapsed_time = end_time - start_time
     print(f"{line}")
     print(f"Elapsed time: {elapsed_time:.2f} seconds")
+    count_lines_in_files()

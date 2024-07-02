@@ -21,14 +21,17 @@ url = 'https://radioid.net/static/user.csv'
 
 # Filenames
 csv_filename = 'user.csv'
-userat_filename = 'userat.csv'
-userhd_filename = 'userhd.csv'
+md5_filename = 'user.md5'
+userat_filename = 'userat.md5'
+userat_md5 = 'userat.csv'
+userhd_filename = 'userhd.md5'
+userhd_md5 = 'userhd.csv'
 usermd2017_filename = 'usermd2017.csv'
+usermd2017_md5 = 'usermd2017.md5'
 userbin_filename = 'user.bin'
 usrbin_filename = 'usr.bin'
 pistar_filename = 'DMRIds.dat'
 count_filename = 'count.txt'
-md5_filename = 'user.md5'
 ext_filename = 'user_ext.csv'
 city_state_csv = 'citys_nl.csv'
 countrys_filename = 'countrys.csv'
@@ -139,6 +142,27 @@ def count_lines_in_files():
         except Exception as e:
             print(f"Could not process {filename}: {e}")
             
+# Generate the MD5 hash of a file and write the hash to another file.
+def generate_md5_hash(input_filename, output_filename):
+    print(f"{line}")
+    
+    # Initialize the MD5 hash object
+    hash_md5 = hashlib.md5()
+    
+    # Read the input file in chunks and update the hash object
+    with open(input_filename, 'rb') as infile:
+        for chunk in iter(lambda: infile.read(4096), b""):
+            hash_md5.update(chunk)
+    
+    # Get the hexadecimal digest of the hash
+    md5_hash = hash_md5.hexdigest()
+    
+    # Write the hash to the output file
+    with open(output_filename, 'w') as outfile:
+        outfile.write(md5_hash)
+    
+    print(f"MD5 hash of {input_filename} written to {output_filename}")
+    
 # Display header information about the application.
 def header():
     print(f"===== {APP_NAME} =====")
@@ -327,6 +351,8 @@ def process_to_userat():
 
         print()  # Move to the next line after the progress completes
         print(f"Processed {csv_filename} to {userat_filename}")
+        generate_md5_hash(userat_filename, userat_md5)
+        print(f"Hash genereated {userat_md5} for {userat_filename}")
 
     else:
         print(f"Failed to process {csv_filename} to {userat_filename}.")
@@ -356,6 +382,8 @@ def process_to_pistar():
 
         print()  # Move to the next line after the progress completes
         print(f"Processed {csv_filename} to {pistar_filename}")
+        generate_md5_hash(pistar_filename, pistar_md5)
+        print(f"Hash genereated {pistar_md5} for {pistar_filename}")
 
     else:
         print(f"Failed to process {csv_filename} to {pistar_filename}.")
@@ -458,7 +486,8 @@ def process_to_usermd2017():
     os.remove(temp_filename)
     
     print(f"Generated {usermd2017_filename}")
-    
+    generate_md5_hash(usermd2017_filename, usermd2017_md5)
+    print(f"Hash genereated {usermd2017_md5} for {usermd2017_filename}")
 
 # Process CSV to Tytera MD380/390 database (user.bin).
 def process_to_userbin():

@@ -114,7 +114,9 @@ def load_state_mapping():
 
 # Count lines in files and show result
 def count_lines_in_files():
+    print(f"{line}")
     file_patterns = ['*.csv', '*.bin', '*.dat']
+    excluded_files = {'citys_nl.csv', 'user_ext.csv', 'countrys.csv', 'speedtests.csv', 'states.csv'}
     files = []
     
     # Collect all files matching the patterns
@@ -127,8 +129,10 @@ def count_lines_in_files():
             line_count = sum(1 for _ in file)
             return max(0, line_count - 1)  # Subtract 1 to exclude the header, ensure non-negative
     
-    # Display the filename and line count for each file
+    # Display the filename and line count for each file, excluding specific files
     for filename in files:
+        if os.path.basename(filename) in excluded_files:
+            continue
         try:
             line_count = count_lines(filename)
             print(f"{line_count} {filename}")

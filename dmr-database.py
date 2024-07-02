@@ -539,20 +539,27 @@ if __name__ == "__main__":
         download_csv()
         merge_csv()
         fill_empty_state()
+        count_lines_in_files()
     elif option == "-m":
         merge_csv()
     elif option == "-userat":
         process_to_userat()
+        count_lines_in_files()
     elif option == "-userhd":
         process_to_userhd()
+        count_lines_in_files()
     elif option == "-usermd2017":
         process_to_usermd2017()
+        count_lines_in_files()
     elif option == "-userbin":
         process_to_userbin()
+        count_lines_in_files()
     elif option == "-usrbin":
         process_to_usrbin()
+        count_lines_in_files()
     elif option == "-pistar":
         process_to_pistar()
+        count_lines_in_files()
     elif option == "-c":
         clean_downloads()
     elif option == "-a":
@@ -566,14 +573,14 @@ if __name__ == "__main__":
         process_to_userbin()
         process_to_usrbin()
         process_to_pistar()
-        print(f"{line}")
         print("All operations completed.")
+        print(f"{line}")
         count_lines_in_files()
     else:
         print(f"Invalid option '{option}'. Use '-h' for help.")
         exit(1)
         
-    count_lines_in_files()
+    print(f"{line}")
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"{line}")

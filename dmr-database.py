@@ -137,19 +137,25 @@ def count_lines_in_files():
                 return max(0, line_count - 1)  # Subtract 1 to exclude the header, ensure non-negative
             return line_count
 
-    # Display the filename and line count for each file, excluding specific files
+    # Display the filename, line count, and file size for each file, excluding specific files
     for filename in files:
         if os.path.basename(filename) in excluded_files:
             continue
         try:
+            # Get the file size
+            file_size = os.path.getsize(filename)
+            
             # Check if the filename is 'DMRIds.dat'
             if os.path.basename(filename) == 'DMRIds.dat':
                 line_count = count_lines(filename, exclude_header=False)
             else:
                 line_count = count_lines(filename)
-            print(f"{line_count} {filename}")
+            
+            # Print the line count, file size, and filename
+            print(f"{line_count} {file_size} {filename}")
         except Exception as e:
             print(f"Could not process {filename}: {e}")
+
             
 # Generate the MD5 hash of a file and write the hash to another file.
 def generate_md5_hash(input_filename, output_filename):

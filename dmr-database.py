@@ -29,7 +29,9 @@ userhd_md5 = 'userhd.csv'
 usermd2017_filename = 'usermd2017.csv'
 usermd2017_md5 = 'usermd2017.md5'
 userbin_filename = 'user.bin'
+userbin_md5 = 'user.md5'
 usrbin_filename = 'usr.bin'
+usrbin_md5 = 'usr.md5'
 pistar_filename = 'DMRIds.dat'
 pistar_md5 = 'DMRIds.md5'
 count_filename = 'count.txt'
@@ -38,6 +40,7 @@ city_state_csv = 'citys_nl.csv'
 countrys_filename = 'countrys.csv'
 states_filename = 'states.csv'
 line = "-" * 40
+
 
 # Search for empty County in Dutch callsign and fill them
 def fill_empty_state():
@@ -352,9 +355,6 @@ def process_to_userat():
 
         print()  # Move to the next line after the progress completes
         print(f"Processed {csv_filename} to {userat_filename}")
-        generate_md5_hash(userat_filename, userat_md5)
-        print(f"Hash genereated {userat_md5} for {userat_filename}")
-
     else:
         print(f"Failed to process {csv_filename} to {userat_filename}.")
         exit(1)
@@ -383,9 +383,6 @@ def process_to_pistar():
 
         print()  # Move to the next line after the progress completes
         print(f"Processed {csv_filename} to {pistar_filename}")
-        generate_md5_hash(pistar_filename, pistar_md5)
-        print(f"Hash genereated {pistar_md5} for {pistar_filename}")
-
     else:
         print(f"Failed to process {csv_filename} to {pistar_filename}.")
         exit(1)
@@ -487,8 +484,6 @@ def process_to_usermd2017():
     os.remove(temp_filename)
     
     print(f"Generated {usermd2017_filename}")
-    generate_md5_hash(usermd2017_filename, usermd2017_md5)
-    print(f"Hash genereated {usermd2017_md5} for {usermd2017_filename}")
 
 # Process CSV to Tytera MD380/390 database (user.bin).
 def process_to_userbin():
@@ -573,21 +568,27 @@ if __name__ == "__main__":
         merge_csv()
     elif option == "-userat":
         process_to_userat()
+        generate_md5_hash(userat_filename, userat_md5)
         count_lines_in_files()
     elif option == "-userhd":
         process_to_userhd()
+        generate_md5_hash(userhd_filename, userhd_md5)
         count_lines_in_files()
     elif option == "-usermd2017":
         process_to_usermd2017()
+        generate_md5_hash(usermd2017_filename, usermd2017_md5)
         count_lines_in_files()
     elif option == "-userbin":
         process_to_userbin()
+        generate_md5_hash(userbin_filename, userbin_md5)
         count_lines_in_files()
     elif option == "-usrbin":
         process_to_usrbin()
+        generate_md5_hash(usrbin_filename, usrbin_md5)
         count_lines_in_files()
     elif option == "-pistar":
         process_to_pistar()
+        generate_md5_hash(pistar_filename, pistar_md5)
         count_lines_in_files()
     elif option == "-c":
         clean_downloads()
@@ -597,18 +598,24 @@ if __name__ == "__main__":
         merge_csv()
         fill_empty_state()
         process_to_userat()
+        generate_md5_hash(userat_filename, userat_md5)
         process_to_userhd()
+        generate_md5_hash(userhd_filename, userhd_md5)
         process_to_usermd2017()
+        generate_md5_hash(usermd2017_filename, usermd2017_md5)
         process_to_userbin()
+        generate_md5_hash(userbin_filename, userbin_md5)
         process_to_usrbin()
+        generate_md5_hash(usrbin_filename, usrbin_md5)
         process_to_pistar()
+        generate_md5_hash(pistar_filename, pistar_md5)
         print("All operations completed.")
         print(f"{line}")
         count_lines_in_files()
     else:
         print(f"Invalid option '{option}'. Use '-h' for help.")
         exit(1)
-        
+  
     #print(f"{line}")
     end_time = time.time()
     elapsed_time = end_time - start_time

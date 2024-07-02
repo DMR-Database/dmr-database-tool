@@ -382,7 +382,7 @@ def process_to_usermd2017():
             exit(1)
         
         # Write header to temporary file
-        writer.writerow(['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country'])
+        #writer.writerow(['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country'])
         
         total_rows = sum(1 for line in open(csv_filename, 'r', newline='', encoding='utf-8'))
         current_row = 0

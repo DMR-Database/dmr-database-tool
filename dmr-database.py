@@ -427,6 +427,9 @@ def process_to_usermd2017():
         outfile.write(f"{char_count},,,,,\n")
         outfile.write(content)
     
+    # Remove the temporary file
+    os.remove(temp_filename)
+    
     print(f"Generated {usermd2017_filename}")
     
 

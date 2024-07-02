@@ -125,6 +125,7 @@ def count_lines_in_files():
     def count_lines(filename):
         with open(filename, 'r', encoding='utf-8', errors='ignore') as file:
             return sum(1 for _ in file)
+            return max(0, line_count - 1)  # Subtract 1 to exclude the header, ensure non-negative
     
     # Display the filename and line count for each file
     for filename in files:
@@ -563,12 +564,14 @@ if __name__ == "__main__":
         process_to_pistar()
         print(f"{line}")
         print("All operations completed.")
+        count_lines_in_files()
     else:
         print(f"Invalid option '{option}'. Use '-h' for help.")
         exit(1)
-
+        
+    count_lines_in_files()
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"{line}")
     print(f"Elapsed time: {elapsed_time:.2f} seconds")
-    count_lines_in_files()
+    

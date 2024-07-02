@@ -381,7 +381,7 @@ def process_to_userhd():
 # Process CSV to Tytera MD2017 database (usermd2017.csv).
 def process_to_usermd2017():
     temp_filename = 'usermd2017_temp.csv'
-    line = "-" * 40
+    #line = "-" * 40
 
     print(f"{line}")
     print(f"Starting process {csv_filename} to {usermd2017_filename}...")

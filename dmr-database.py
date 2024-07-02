@@ -580,7 +580,7 @@ if __name__ == "__main__":
         print(f"Invalid option '{option}'. Use '-h' for help.")
         exit(1)
         
-    print(f"{line}")
+    #print(f"{line}")
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"{line}")

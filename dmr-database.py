@@ -8,6 +8,7 @@ import sys
 import hashlib
 import time
 import shutil
+import glob
 
 # Application information
 APP_NAME = "DMR Database Tool"

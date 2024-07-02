@@ -352,8 +352,7 @@ def process_to_userhd():
 
 # Process CSV to Tytera MD2017 database (usermd2017.csv).
 def process_to_usermd2017():
-    csv_filename = 'user.csv'
-    usermd2017_filename = 'usermd2017.csv'
+    temp_filename = 'usermd2017_temp.csv'
     line = "-" * 40
 
     print(f"{line}")
@@ -369,9 +368,9 @@ def process_to_usermd2017():
     country_mapping = load_country_mapping()
     state_mapping = load_state_mapping()
     
-    # Open user.csv for reading and usermd2017.csv for writing
+    # Open user.csv for reading and a temporary file for writing
     with open(csv_filename, 'r', newline='', encoding='utf-8') as infile, \
-         open(usermd2017_filename, 'w', newline='', encoding='utf-8') as outfile:
+         open(temp_filename, 'w', newline='', encoding='utf-8') as outfile:
         
         reader = csv.DictReader(infile)
         writer = csv.writer(outfile)
@@ -382,7 +381,7 @@ def process_to_usermd2017():
             print("Some required headers are missing in user.csv.")
             exit(1)
         
-        # Write header to usermd2017.csv
+        # Write header to temporary file
         writer.writerow(['Radio ID', 'Callsign', 'Name', 'City', 'State', 'Country'])
         
         total_rows = sum(1 for line in open(csv_filename, 'r', newline='', encoding='utf-8'))
@@ -410,13 +409,24 @@ def process_to_usermd2017():
             if state in state_mapping:
                 state = state_mapping[state]
             
-            # Write updated row to usermd2017.csv
+            # Write updated row to the temporary file
             writer.writerow([radio_id, callsign, name, city, state, country])
             
             # Show progress
             show_row_progress(current_row, total_rows, radio_id, callsign)
     
     print()  # Move to the next line after the progress completes
+    
+    # Calculate the number of characters in the temporary file
+    with open(temp_filename, 'r', encoding='utf-8') as temp_file:
+        content = temp_file.read()
+        char_count = len(content)
+    
+    # Write the final output file with the character count header
+    with open(usermd2017_filename, 'w', newline='', encoding='utf-8') as outfile:
+        outfile.write(f"{char_count},,,,,\n")
+        outfile.write(content)
+    
     print(f"Generated {usermd2017_filename}")
     
 

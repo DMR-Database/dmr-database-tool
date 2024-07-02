@@ -33,7 +33,7 @@ ext_filename = 'user_ext.csv'
 city_state_csv = 'citys_nl.csv'
 countrys_filename = 'countrys.csv'
 states_filename = 'states.csv'
-line = "-" * 30
+line = "-" * 40
 
 # Search for empty County in Dutch callsign and fill them
 def fill_empty_state():

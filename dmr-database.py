@@ -627,11 +627,10 @@ if __name__ == "__main__":
         generate_md5_hash(usrbin_filename, usrbin_md5)
         process_to_pistar()
         generate_md5_hash(pistar_filename, pistar_md5)
+        print(f"{line}")
         count_lines_in_files()
         print(f"{line}")
         print("All operations completed.")
-        print(f"{line}")
-
     else:
         print(f"Invalid option '{option}'. Use '-h' for help.")
         exit(1)

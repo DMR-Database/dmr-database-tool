@@ -307,6 +307,7 @@ def merge_csv():
                 user_writer.writerow(row)
 
         print(f"Merged {merge_count} lines from {ext_filename} into {csv_filename}.")
+        print(f"\nCompleted updating {csv_filename} from {ext_filename}")
 
     else:
         if not os.path.exists(csv_filename):

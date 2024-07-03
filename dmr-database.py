@@ -97,8 +97,8 @@ def fill_empty_state():
         user_writer = csv.DictWriter(user_file, fieldnames=fieldnames)
         user_writer.writeheader()
         user_writer.writerows(updated_rows)
-    
-    print(f"\nCompleted updating {csv_filename}")
+    print(f"Completed updating {csv_filename} from {states_filename}")
+    #print(f"\nCompleted updating {csv_filename}")
 
 # Convert Long Country names to Short version
 def load_country_mapping():

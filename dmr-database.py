@@ -581,26 +581,32 @@ if __name__ == "__main__":
     elif option == "-userat":
         process_to_userat()
         generate_md5_hash(userat_filename, userat_md5)
+        print(f"{line}")
         count_lines_in_files()
     elif option == "-userhd":
         process_to_userhd()
         generate_md5_hash(userhd_filename, userhd_md5)
+        print(f"{line}")
         count_lines_in_files()
     elif option == "-usermd2017":
         process_to_usermd2017()
         generate_md5_hash(usermd2017_filename, usermd2017_md5)
+        print(f"{line}")
         count_lines_in_files()
     elif option == "-userbin":
         process_to_userbin()
         generate_md5_hash(userbin_filename, userbin_md5)
+        print(f"{line}")
         count_lines_in_files()
     elif option == "-usrbin":
         process_to_usrbin()
         generate_md5_hash(usrbin_filename, usrbin_md5)
+        print(f"{line}")
         count_lines_in_files()
     elif option == "-pistar":
         process_to_pistar()
         generate_md5_hash(pistar_filename, pistar_md5)
+        print(f"{line}")
         count_lines_in_files()
     elif option == "-c":
         clean_downloads()

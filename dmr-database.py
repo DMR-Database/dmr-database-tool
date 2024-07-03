@@ -159,7 +159,7 @@ def count_lines_in_files():
             
 # Generate the MD5 hash of a file and write the hash to another file.
 def generate_md5_hash(input_filename, output_filename):
-    print(f"{line}")
+    #print(f"{line}")
     
     # Initialize the MD5 hash object
     hash_md5 = hashlib.md5()

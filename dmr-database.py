@@ -494,8 +494,8 @@ def process_to_usermd2017():
     
     # Remove the temporary file
     os.remove(temp_filename)
-    
-    print(f"Generated {usermd2017_filename}")
+    print(f"Processed {csv_filename} to {userat_filename}")
+    #print(f"Generated {usermd2017_filename}")
 
 # Process CSV to Tytera MD380/390 database (user.bin).
 def process_to_userbin():
